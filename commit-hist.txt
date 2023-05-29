@@ -1,9 +1,29 @@
+commit b402efd2eb79dc6c1e442c8be7bb057621d95f1d
+Author: Arfaz Hossain <arfazhussain@uvic.ca>
+Date:   Sun May 28 20:47:22 2023 -0700
+
+    bash script updated
+    Scheduled Commit by @arfazhxss on Sun 28 May 2023 20:47:22 PDT
+
+commit 1a08586337afce5f5b99f5a1a5652aa00b4af70d
+Merge: 80bb2da c39fb35
+Author: Arfaz Hossain <arfazhussain@uvic.ca>
+Date:   Sun May 28 20:47:08 2023 -0700
+
+    Merge branch 'main' of https://www.github.com/arfazhxss/portfolio006
+
 commit 80bb2da5f73a67182b246c11a06e12fe0dd55a89
 Author: Arfaz Hossain <arfazhussain@uvic.ca>
 Date:   Sun May 28 20:46:24 2023 -0700
 
     bash script updated
     Scheduled Commit by @arfazhxss on Sun 28 May 2023 20:46:24 PDT
+
+commit c39fb3549e3c3c7c40a443e6a78753de63283397
+Author: Arfaz Hussain <arfazhussain@uvic.ca>
+Date:   Wed May 24 21:40:10 2023 -0700
+
+    README.md
 
 commit 4bb0b3315a4d26291d4b1360a44d8e5090d74147
 Author: Arfaz Hossain <arfazhussain@uvic.ca>
