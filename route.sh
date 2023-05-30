@@ -1,12 +1,22 @@
 #!/bin/bash
-# route git 4.2
+#auto-git v4.5
 
 echo "Commit Message:"
 read commit_message
 
-git add . && \
-git add -u && \
-git commit -m $"$commit_message"$'\nScheduled Commit by @arfazhxss on '"$(date)" && \
-git push origin HEAD
-git log > commit-hist.txt
-rm -rf .DS_Store/
+if [[ -z "$commit_message" || ${#commit_message} -lt 3 ]]; then
+  commit_message="Routine Commit"
+  git add . && \
+  git add -u && \
+  git commit -m $"$commit_message"$'\nby @arfazhxss on '"$(date +'%a %d %b %Y')" && \
+  git push origin HEAD
+  git log > commit-hist.txt
+  rm -rf .DS_Store/
+else
+  git add . && \
+  git add -u && \
+  git commit -m $"$commit_message"$'\nCommit by @arfazhxss on '"$(date +'%a %d %b %Y')" && \
+  git push origin HEAD
+  git log > commit-hist.txt
+  rm -rf .DS_Store/
+fi
