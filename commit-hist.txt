@@ -1,3 +1,10 @@
+commit 3c136a83fdf17af789fa8910dd1084d1528f4802
+Author: Arfaz Hossain <arfazhussain@uvic.ca>
+Date:   Tue May 30 15:17:49 2023 -0700
+
+    Bash Script Update
+    Commit by @arfazhxss on Tue 30 May 2023
+
 commit 1e92f0cc229197119799ea4090905ed52298afe3
 Author: Arfaz Hossain <arfazhussain@uvic.ca>
 Date:   Tue May 30 15:17:00 2023 -0700
