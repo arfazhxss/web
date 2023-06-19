@@ -1,3 +1,10 @@
+commit d1f64f817d5736ddd8fae5a4101916d75a4cf13a
+Author: Arfaz Hossain <arfazhussain@uvic.ca>
+Date:   Sat Jun 17 23:13:09 2023 -0700
+
+    Changed "Recent Project" Component Details; Added Analyics
+    Commit by @arfazhxss on Sat 17 Jun 2023
+
 commit b4d491fadc8de6c09f86436cbc8a86287c842692
 Author: Arfaz Hossain <arfazhussain@uvic.ca>
 Date:   Wed Jun 14 23:19:00 2023 -0700
