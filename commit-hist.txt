@@ -1,3 +1,10 @@
+commit 832d5ebc6f8245c988199bb2fb0c10583aa075e8
+Author: arfazhxss <arfazhussain@uvic.ca>
+Date:   Thu Jul 20 02:12:24 2023 -0700
+
+    ModularComponent Updated
+    Commit by @arfazhxss on Thu 20 Jul 2023
+
 commit 97cf5bcc60d444e68a347a686baeb79c3a16fce7
 Author: arfazhxss <arfazhussain@uvic.ca>
 Date:   Mon Jul 17 09:36:35 2023 -0700
