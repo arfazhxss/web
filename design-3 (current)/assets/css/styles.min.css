@@ -1,1 +1,51 @@
-:root,[data-bs-theme=light]{--bs-body-color:#ffffff;--bs-body-color-rgb:255,255,255;--bs-secondary-color:rgba(255,255,255,0.75);--bs-secondary-color-rgb:255,255,255,0.75;--bs-tertiary-color:rgba(255,255,255,0.5);--bs-tertiary-color-rgb:255,255,255,0.5;--bs-body-bg:#000000;--bs-body-bg-rgb:0,0,0}.greyfont{margin:0;padding:0;font-size:15px;color:#9c9c9c}.whitefont{margin:0;padding:0;font-size:25px;color:#fff}a:hover{font-style:oblique;color:var(--bs-teal)}.whitefont-secondary{margin:0;padding:0;font-size:12px;color:#fff}.linked-route{font-size:15px;color:var(--bs-body-color);text-decoration:none}
+:root,
+[data-bs-theme=dark] {
+    --bs-body-color: #ffffff;
+    --bs-body-color-rgb: 255, 255, 255;
+    --bs-secondary-color: rgba(255, 255, 255, 0.75);
+    --bs-secondary-color-rgb: 255, 255, 255, 0.75;
+    --bs-tertiary-color: rgba(255, 255, 255, 0.5);
+    --bs-tertiary-color-rgb: 255, 255, 255, 0.5;
+    --bs-body-bg: #000000;
+    --bs-body-bg-rgb: 0, 0, 0
+}
+
+.greyfont {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #9c9c9c
+}
+
+.whitefont {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: #fff
+}
+
+.greyfont,
+.whitefont,
+.whitefont-secondary,
+.linked-route,
+h1 {
+    font-family: 'core_sans_ar25_extralight';
+}
+
+a:hover {
+    font-style: oblique;
+    color: var(--bs-teal)
+}
+
+.whitefont-secondary {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #fff
+}
+
+.linked-route {
+    font-size: 15px;
+    color: var(--bs-body-color);
+    text-decoration: none
+}
