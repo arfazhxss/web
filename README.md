@@ -9,5 +9,5 @@ Design 1: [arfazhxss-v1.netlify.app](https://arfazhxss-v1.netlify.app) [![Netlif
 
 Design 2: [arfazhxss-v2.netlify.app](https://arfazhxss-v2.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/ae8662ab-e561-4527-9dbe-375fcbe08083/deploy-status)](https://app.netlify.com/sites/arfazhxss/deploys)
 
-Design 3: [arfazhxss.netlify.app](https://arfazhxss-v3.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/cfe5fda1-9655-4d69-ba9e-0ef6c2907b96/deploy-status)](https://app.netlify.com/sites/arfazhxss-v3/deploys)
+Design 3: [arfazhxss.netlify.app](https://arfazhxss.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/cfe5fda1-9655-4d69-ba9e-0ef6c2907b96/deploy-status)](https://app.netlify.com/sites/arfazhxss-v3/deploys)
 
