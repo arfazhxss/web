@@ -1,11 +1,12 @@
-# portfolio-website
-History of changes made towards the portfolio will be reflected here, including separate design ideas
+# Portfolio Website Repository 
+A history of changes made to the portfolio will be reflected here, including separate design ideas.
+Check it out! [www.arfazhxss.com](https://arfazhxss.com/) 
 
-## Design and Development: 
+### Design and Development
 Figma: Design Layout, Color Palate, Orientation
 BootStrap Studio: HTML/CSS Organization, Responsible UI/UX Design
 
-## Deployment in Netlify 
+### Deployment in Netlify 
 
 #### Design 1: 
 [arfazhxss-v1.netlify.app](https://arfazhxss-v1.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/51e54bfe-b25e-4d10-b1b2-7ea7bd590b25/deploy-status)](https://app.netlify.com/sites/arfazhxss-v1/deploys)
