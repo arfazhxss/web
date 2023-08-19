@@ -23,7 +23,8 @@
     margin: 0;
     padding: 0;
     font-size: min(calc(18px + .5vw), 25px);
-    color: #fff
+    color: #fff;
+    font-family: 'Suisse International Regular'
 }
 
 a:hover {
@@ -32,9 +33,10 @@ a:hover {
 }
 
 .linked-route {
-    font-size: min(calc(12px + .5vw), 15px);
+    font-size: min(calc(21px + .4vw), 23px);
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
+    font-family: 'Core Sans AR 45 Regular'
 }
 
 @font-face {
@@ -93,6 +95,8 @@ body {
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
     background-color: var(--bs-body-bg);
+    background: #141a28;
+    background-image: conic-gradient(from 0deg at -50% 50%, rgba(0, 0, 255, .14), rgba(128, 0, 128, .14), rgba(128, 0, 128, .14), rgba(0, 0, 255, .14));
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
 }
@@ -143,17 +147,6 @@ body {
     src: url("https://db.onlinewebfonts.com/t/5fd67a513c281af0ec9aa97250c6d1a6.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/5fd67a513c281af0ec9aa97250c6d1a6.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/5fd67a513c281af0ec9aa97250c6d1a6.woff") format("woff"), url("https://db.onlinewebfonts.com/t/5fd67a513c281af0ec9aa97250c6d1a6.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/5fd67a513c281af0ec9aa97250c6d1a6.svg#Core Sans AR 45 Regular") format("svg")
 }
 
-.greyfont,
-.head,
-.smallfont,
-.whitefont {
-    font-family: 'Core Sans AR 35 Light'
-}
-
-.linked-route {
-    font-family: 'Core Sans AR 45 Regular'
-}
-
 .greyfont-2 {
     font-family: 'Core Sans AR 35 Light';
     color: #7a7979;
@@ -165,4 +158,40 @@ body {
 .projectIcon {
     padding-bottom: 0;
     padding-top: 0
+}
+
+.greyfont {
+    font-family: 'Euclid C-A L1'
+}
+
+@font-face {
+    font-family: "Suisse International";
+    src: url("https://db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot");
+    src: url("https://db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.woff") format("woff"), url("https://db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.svg#Suisse Int'l") format("svg")
+}
+
+@font-face {
+    font-family: "Suisse International Regular";
+    src: url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot");
+    src: url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff") format("woff"), url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.svg#SuisseIntl-Regular") format("svg")
+}
+
+.head {
+    font-family: "Euclid C-A"
+}
+
+.smallfont {
+    font-family: "Core Sans AR 35 Light"
+}
+
+@font-face {
+    font-family: "Euclid C-A";
+    src: url("https://db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.eot");
+    src: url("https://db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.woff") format("woff"), url("https://db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/a575313c6dc4fd00c1a9506e1c3ea4fc.svg#Euclid Circular A") format("svg")
+}
+
+@font-face {
+    font-family: "Euclid C-A L1";
+    src: url("https://db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot");
+    src: url("https://db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff") format("woff"), url("https://db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.svg#Euclid Circular A Light") format("svg")
 }
