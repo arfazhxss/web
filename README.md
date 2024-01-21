@@ -3,8 +3,9 @@ A history of changes made to the portfolio will be reflected here, including sep
 Check it out! [www.arfazhxss.com](https://arfazhxss.com/) 
 
 ### Design and Development
-Figma: Design Layout, Color Palate, Orientation
-BootStrap Studio: HTML/CSS Organization, Responsible UI/UX Design
+Figma (Design Layout, Color Palate, Orientation)
+
+BootStrap Studio (HTML/CSS Organization, Responsible UI/UX Design)
 
 ### Deployment in Netlify 
 
