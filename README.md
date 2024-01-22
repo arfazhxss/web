@@ -1,8 +1,8 @@
 # Portfolio Website Repository 
-A history of changes made to the portfolio will be reflected here, including separate design ideas. 
+&nbsp; A history of changes made to the portfolio will be reflected here, including separate design ideas. 
 Check it out!
 
-### [arfazhxss.com](https://arfazhxss.com/)
+### &nbsp; [arfazhxss.com](https://arfazhxss.com/)
 &nbsp; The site is going to be migrated to *arfazhxss.ca* soon. <br>
 
 ## Design and Development
