@@ -1,5 +1,5 @@
 # Portfolio Website Repository 
-&nbsp; A history of changes made to the portfolio will be reflected here, including separate design ideas. 
+A history of changes made to the portfolio will be reflected here, including separate design ideas. 
 Check it out!
 
 ### &nbsp; [arfazhxss.com](https://arfazhxss.com/)
