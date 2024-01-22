@@ -1,9 +1,9 @@
 # Portfolio Website Repository 
-A history of changes made to the portfolio will be reflected here, including separate design ideas.
+A history of changes made to the portfolio will be reflected here, including separate design ideas. <br>
 Check it out! <br>
 
-#### [www.arfazhxss.com](https://arfazhxss.com/) <br>
-*The site is going to be migrated to arfazhxss.ca soon.* <br>
+# [arfazhxss.com](https://arfazhxss.com/) <br>
+The site is going to be migrated to *arfazhxss.ca* soon. <br>
 
 ### Design and Development
 &nbsp; Figma (Design Layout, Color Palate, Orientation) <br>
