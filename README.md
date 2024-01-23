@@ -3,7 +3,7 @@ A history of changes made to the portfolio will be reflected here, including sep
 Check it out!
 
 ### &nbsp; [arfazhxss.com](https://arfazhxss.com/)
-&nbsp; The site is going to be migrated to *arfazhxss.ca* soon. <br>
+The site is going to be migrated to *arfazhxss.ca* soon. <br>
 
 ## Design and Development
 &nbsp; Figma (Design Layout, Color Palate, Orientation) <br>
