@@ -5,7 +5,7 @@ Check it out!<br>
 <p align="center">
     <a href="https://www.arfazhxss.ca/">
         <img alt="Static Badge" 
-            src="https://img.shields.io/badge/_www.arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="50">
+            src="https://img.shields.io/badge/_www.arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="70">
     </a>
 </p>
 
