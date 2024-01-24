@@ -4,13 +4,9 @@ Check it out!<br>
 
 <div style="text-align: center;">
   <a href="https://www.arfazhxss.ca/">
-    <img alt="Static Badge" src="https://img.shields.io/badge/_arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="100">
+    <img alt="Static Badge" src="https://img.shields.io/badge/_arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="50">
   </a>
 </div>
-
-
-### Heading 3
-
 
 ## Design and Development
 &nbsp; Figma (Design Layout, Color Palate, Orientation) <br>
