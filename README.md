@@ -30,5 +30,5 @@ Check them out!<br>
 
 <a href="https://arfazhxss-v1.netlify.app">
     <img alt="Static Badge" 
-        src="https://img.shields.io/badge/_Version_1_Build-LINK?logo=superuser&color=white&logoColor=black" height="17">
+        src="https://img.shields.io/badge/_Version_1_Build-LINK?logo=superuser&color=white&logoColor=black" height="27">
 </a>
