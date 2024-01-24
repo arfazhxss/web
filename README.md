@@ -22,7 +22,7 @@ sfml&color=white&logoColor=black" height="27"> </a>
 &nbsp; <a href="https://arfazhxss-v2.netlify.app"> <img src="https://img.shields.io/badge/_Version_2_Build-LINK?logo=
 sfml&color=white&logoColor=black" height="27"> </a>
 <a href="https://app.netlify.com/sites/arfazhxss-v2/deploys"><img src="https://api.netlify.com/api/v1/badges/ae8662ab-e561-4527-9dbe-375fcbe08083/deploy-status" alt="Version 2 Build" height="27"> </a> <br> 
-&nbsp; <a href="https://arfazhxss-v3.netlify.app"> <img src="https://img.shields.io/badge/_Version_3_Build-LINK?logo=
+&nbsp; <a href="https://arfazhxss-v3.netlify.app"> <img src="https://img.shields.io/badge/_Version_3_Build-LINK?&logo=
 sfml&color=white&logoColor=black" height="27"> </a>
 <a href="https://app.netlify.com/sites/arfazhxss-v3/deploys"><img src="https://api.netlify.com/api/v1/badges/cfe5fda1-9655-4d69-ba9e-0ef6c2907b96/deploy-status" alt="Version 3 Build" height="27"> </a> <br>
 
