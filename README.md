@@ -2,7 +2,11 @@
 A history of changes made to the portfolio will be reflected here, including separate design ideas. 
 Check it out!
 
-## &nbsp; <a href="https://arfazhxss.ca/" style="font-size: 18px;">arfazhxss.com</a>
+### &nbsp; <a href="https://arfazhxss.ca/" style="font-size: 18px;">arfazhxss.com</a>
+<span style="font-size: 18px;">[arfazhxss.com](https://arfazhxss.ca/)</span>
+
+### Heading 3
+
 
 ## Design and Development
 &nbsp; Figma (Design Layout, Color Palate, Orientation) <br>
