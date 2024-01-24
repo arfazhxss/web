@@ -1,6 +1,6 @@
 # Portfolio Website Repository 
-A history of changes made to the portfolio will be reflected here, including separate design ideas. 
-Check it out!<br>
+A history of changes made to the portfolio will be reflected here, including initial design ideas. 
+Check them out!<br>
 
 <p align="center">
     <a href="https://www.arfazhxss.ca/">
@@ -10,10 +10,10 @@ Check it out!<br>
 </p>
 
 ## Design and Development
-&nbsp; Figma (Design Layout, Color Palate, Orientation) <br>
-&nbsp; BootStrap Studio (HTML/CSS Organization, Responsible UI/UX Design)<br>
-&nbsp; Web Hosting Canada (Advanced DNS Management, Domain Registration, Web Hosting)<br>
-&nbsp; Netlify (Branch Development and Continuous Deployment)<br>
+&nbsp; [Figma](https://www.figma.com/) (Design Layout, Color Palate, Orientation) <br>
+&nbsp; [BootStrap Studio[(https://bootstrapstudio.io/) (HTML/CSS Organization, Responsible UI/UX Design)<br>
+&nbsp; [Web Hosting Canada](https://whc.ca/en) (Advanced DNS Management, Domain Registration, Web Hosting)<br>
+&nbsp; [Netlify](https://www.netlify.com/) (Branch Development and Continuous Deployment)<br>
 
 ## Deployment in Netlify 
 
