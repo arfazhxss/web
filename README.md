@@ -22,5 +22,6 @@ Check them out!<br>
 &nbsp; [Current Design](https://arfazhxss-v3.netlify.app) &nbsp; &nbsp; &nbsp; [![Current Build](https://api.netlify.com/api/v1/badges/cfe5fda1-9655-4d69-ba9e-0ef6c2907b96/deploy-status)](https://app.netlify.com/sites/arfazhxss-v3/deploys) <br>
 
 &nbsp; <a href="https://arfazhxss-v1.netlify.app">Version 1 Design</a>
-&nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v1/deploys"><img src="https://api.netlify.com/api/v1/badges/51e54bfe-b25e-4d10-b1b2-7ea7bd590b25/deploy-status" alt="Version 1 Build" height="10"></a>
+&nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v1/deploys"><img src="https://api.netlify.com/api/v1/badges/51e54bfe-b25e-4d10-b1b2-7ea7bd590b25/deploy-status" alt="Version 1 Build" height="15"></a>
+
 
