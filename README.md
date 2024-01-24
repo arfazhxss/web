@@ -11,7 +11,7 @@ Check them out!<br>
 
 ## Design and Development
 &nbsp; [Figma](https://www.figma.com/) (Design Layout, Color Palate, Orientation) <br>
-&nbsp; [BootStrap Studio[(https://bootstrapstudio.io/) (HTML/CSS Organization, Responsible UI/UX Design)<br>
+&nbsp; [BootStrap Studio](https://bootstrapstudio.io/) (HTML/CSS Organization, Responsible UI/UX Design)<br>
 &nbsp; [Web Hosting Canada](https://whc.ca/en) (Advanced DNS Management, Domain Registration, Web Hosting)<br>
 &nbsp; [Netlify](https://www.netlify.com/) (Branch Development and Continuous Deployment)<br>
 
