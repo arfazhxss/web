@@ -3,7 +3,7 @@ A history of changes made to the portfolio will be reflected here, including sep
 Check it out!
 
 ### &nbsp; <a href="https://arfazhxss.ca/" style="font-size: 18px;">arfazhxss.com</a>
-<a href="https://www.arfazhxss.ca/"><img alt="Static Badge" src="https://img.shields.io/badge/_arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="200"></a>
+<a href="https://www.arfazhxss.ca/"><img alt="Static Badge" src="https://img.shields.io/badge/_arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="100"></a>
 
 ### Heading 3
 
