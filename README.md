@@ -8,6 +8,11 @@ Check it out!<br>
   </a>
 </p>
 
+<p align="center">
+    <img src="https://raw.githubusercontent.com/badges/shields/master/readme-logo.svg?sanitize=true"
+        height="130">
+</p>
+
 ## Design and Development
 &nbsp; Figma (Design Layout, Color Palate, Orientation) <br>
 &nbsp; BootStrap Studio (HTML/CSS Organization, Responsible UI/UX Design)
