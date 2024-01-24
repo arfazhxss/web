@@ -3,16 +3,16 @@ A history of changes made to the portfolio will be reflected here, including sep
 Check it out!<br>
 
 <p align="center;">
-    <a href="https://www.arfazhxss.ca/">
+<!--     <a href="https://www.arfazhxss.ca/"> -->
         <img alt="Static Badge" 
             src="https://img.shields.io/badge/_www.arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="50">
-    </a>
+<!--     </a> -->
 </p>
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/badges/shields/master/readme-logo.svg?sanitize=true"
-        height="130">
-</p>
+<!--     <p align="center"> -->
+<!--     <img src="https://raw.githubusercontent.com/badges/shields/master/readme-logo.svg?sanitize=true" -->
+<!--         height="130"> -->
+<!-- </p> -->
 
 ## Design and Development
 &nbsp; Figma (Design Layout, Color Palate, Orientation) <br>
