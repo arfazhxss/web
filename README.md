@@ -27,3 +27,8 @@ Check them out!<br>
 &nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v2/deploys"><img src="https://api.netlify.com/api/v1/badges/ae8662ab-e561-4527-9dbe-375fcbe08083/deploy-status" alt="Version 2 Build" height="17"> </a> <br> 
 &nbsp; <a href="https://arfazhxss-v3.netlify.app"> <b> <u> Current Design </u> </b> </a>
 &nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v3/deploys"><img src="https://api.netlify.com/api/v1/badges/cfe5fda1-9655-4d69-ba9e-0ef6c2907b96/deploy-status" alt="Current Build" height="17"> </a> <br>
+
+<a href="https://arfazhxss-v1.netlify.app">
+    <img alt="Static Badge" 
+        src="https://img.shields.io/badge/_Version_1_Build-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="70">
+</a>
