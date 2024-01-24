@@ -1,9 +1,13 @@
 # Portfolio Website Repository 
 A history of changes made to the portfolio will be reflected here, including separate design ideas. 
-Check it out!
+Check it out!<br>
 
-### &nbsp; <a href="https://arfazhxss.ca/" style="font-size: 18px;">arfazhxss.com</a>
-<a href="https://www.arfazhxss.ca/"><img alt="Static Badge" src="https://img.shields.io/badge/_arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="100"></a>
+<div style="text-align: center;">
+  <a href="https://www.arfazhxss.ca/">
+    <img alt="Static Badge" src="https://img.shields.io/badge/_arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="100">
+  </a>
+</div>
+
 
 ### Heading 3
 
