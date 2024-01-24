@@ -4,8 +4,7 @@ Check them out!<br>
 
 <p align="center">
     <a href="https://www.arfazhxss.ca/">
-        <img alt="Static Badge" 
-            src="https://img.shields.io/badge/_www.arfazhxss.ca-LINK?logo=superuser&color=black&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="70">
+        <img src="https://img.shields.io/badge/_www.arfazhxss.ca-LINK?logo=codecademy&style=flat-square&color=0D1117&logoColor=white&link=https%3A%2F%2Fwww.arfazhxss.ca" height="70">
     </a>
 </p> 
 
@@ -21,14 +20,10 @@ Check them out!<br>
 &nbsp; [Version 2 Design](https://arfazhxss-v2.netlify.app) &nbsp; [![Version 2 Build](https://api.netlify.com/api/v1/badges/ae8662ab-e561-4527-9dbe-375fcbe08083/deploy-status)](https://app.netlify.com/sites/arfazhxss-v2/deploys) <br>
 &nbsp; [Current Design](https://arfazhxss-v3.netlify.app) &nbsp; &nbsp; &nbsp; [![Current Build](https://api.netlify.com/api/v1/badges/cfe5fda1-9655-4d69-ba9e-0ef6c2907b96/deploy-status)](https://app.netlify.com/sites/arfazhxss-v3/deploys) <br> -->
 
-&nbsp; <a href="https://arfazhxss-v1.netlify.app"> <b> <u> Version 1 Design </u> </b> </a>
-&nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v1/deploys"><img src="https://api.netlify.com/api/v1/badges/51e54bfe-b25e-4d10-b1b2-7ea7bd590b25/deploy-status" alt="Version 1 Build" height="17"></a> <br>
+&nbsp; <a href="https://arfazhxss-v1.netlify.app"> <img src="https://img.shields.io/badge/_Version_1_Build-LINK?logo=superuser&color=white&logoColor=black" height="27"> </a>
+&nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v1/deploys"><img src="https://api.netlify.com/api/v1/badges/51e54bfe-b25e-4d10-b1b2-7ea7bd590b25/deploy-status" alt="Version 1 Build" height="27"></a> <br>
 &nbsp; <a href="https://arfazhxss-v2.netlify.app"> <b> <u> Version 2 Design </u> </b> </a>
-&nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v2/deploys"><img src="https://api.netlify.com/api/v1/badges/ae8662ab-e561-4527-9dbe-375fcbe08083/deploy-status" alt="Version 2 Build" height="17"> </a> <br> 
+&nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v2/deploys"><img src="https://api.netlify.com/api/v1/badges/ae8662ab-e561-4527-9dbe-375fcbe08083/deploy-status" alt="Version 2 Build" height="27"> </a> <br> 
 &nbsp; <a href="https://arfazhxss-v3.netlify.app"> <b> <u> Current Design </u> </b> </a>
-&nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v3/deploys"><img src="https://api.netlify.com/api/v1/badges/cfe5fda1-9655-4d69-ba9e-0ef6c2907b96/deploy-status" alt="Current Build" height="17"> </a> <br>
+&nbsp; &nbsp; <a href="https://app.netlify.com/sites/arfazhxss-v3/deploys"><img src="https://api.netlify.com/api/v1/badges/cfe5fda1-9655-4d69-ba9e-0ef6c2907b96/deploy-status" alt="Current Build" height="27"> </a> <br>
 
-<a href="https://arfazhxss-v1.netlify.app">
-    <img alt="Static Badge" 
-        src="https://img.shields.io/badge/_Version_1_Build-LINK?logo=superuser&color=white&logoColor=black" height="27">
-</a>
