@@ -12,6 +12,8 @@ Check it out!<br>
 ## Design and Development
 &nbsp; Figma (Design Layout, Color Palate, Orientation) <br>
 &nbsp; BootStrap Studio (HTML/CSS Organization, Responsible UI/UX Design)
+&nbsp; Web Hosting Canada (Advanced DNS Management, Domain Registration, Web Hosting)
+&nbsp; Netlify (Branch Development and Continuous Deployment)
 
 ## Deployment in Netlify 
 
