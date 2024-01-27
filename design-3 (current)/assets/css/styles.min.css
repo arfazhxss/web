@@ -119,6 +119,10 @@ body {
     color: var(--bs-dark-text-emphasis)
 }
 
+.whitefont {
+    font-family: 'Suisse Intl Regular'
+}
+
 .linked-route:hover {
     cursor: pointer
 }
@@ -301,6 +305,15 @@ a {
     padding: 0
 }
 
+.bottom-center-image {
+    visibility: hidden;
+    margin-bottom: 7px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
 .overlay {
     height: 100%;
     width: 0;
@@ -355,56 +368,4 @@ a {
         top: 15px;
         right: 35px
     }
-}
-
-@font-face {
-    font-family: "Euclid Circular A Light";
-    src: url("/assets/fonts/1dced00e473a2db7b3d52a4c8392f31e.eot");
-    src: url("/assets/fonts/1dced00e473a2db7b3d52a4c8392f31e.eot?#iefix")format("embedded-opentype"),
-        url("/assets/fonts/1dced00e473a2db7b3d52a4c8392f31e.woff")format("woff"),
-        url("/assets/fonts/1dced00e473a2db7b3d52a4c8392f31e.woff2")format("woff2"),
-        url("/assets/fonts/1dced00e473a2db7b3d52a4c8392f31e.ttf")format("truetype"),
-        url("/assets/fonts/1dced00e473a2db7b3d52a4c8392f31e.svg#Euclid Circular A Light")format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Core Sans AR 45 Regular";
-    src: url("/assets/fonts/5fd67a513c281af0ec9aa97250c6d1a6.eot");
-    src: url("/assets/fonts/5fd67a513c281af0ec9aa97250c6d1a6.eot?#iefix")format("embedded-opentype"),
-        url("/assets/fonts/5fd67a513c281af0ec9aa97250c6d1a6.woff")format("woff"),
-        url("/assets/fonts/5fd67a513c281af0ec9aa97250c6d1a6.woff2")format("woff2"),
-        url("/assets/fonts/5fd67a513c281af0ec9aa97250c6d1a6.ttf")format("truetype"),
-        url("/assets/fonts/5fd67a513c281af0ec9aa97250c6d1a6.svg#Core Sans AR 45 Regular")format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Suisse Intl Regular";
-    src: url("/assets/fonts/eb270b13b84d5a43462737e3fb0a268d.eot");
-    src: url("/assets/fonts/eb270b13b84d5a43462737e3fb0a268d.eot?#iefix")format("embedded-opentype"),
-        url("/assets/fonts/eb270b13b84d5a43462737e3fb0a268d.woff")format("woff"),
-        url("/assets/fonts/eb270b13b84d5a43462737e3fb0a268d.woff2")format("woff2"),
-        url("/assets/fonts/eb270b13b84d5a43462737e3fb0a268d.ttf")format("truetype"),
-        url("/assets/fonts/eb270b13b84d5a43462737e3fb0a268d.svg#Suisse Intl Regular")format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Core Sans AR 35 Light";
-    src: url("/assets/fonts/98f3334fc7997c5a45cccbbe7939ab97.eot");
-    src: url("/assets/fonts/98f3334fc7997c5a45cccbbe7939ab97.eot?#iefix")format("embedded-opentype"),
-        url("/assets/fonts/98f3334fc7997c5a45cccbbe7939ab97.woff")format("woff"),
-        url("/assets/fonts/98f3334fc7997c5a45cccbbe7939ab97.woff2")format("woff2"),
-        url("/assets/fonts/98f3334fc7997c5a45cccbbe7939ab97.ttf")format("truetype"),
-        url("/assets/fonts/98f3334fc7997c5a45cccbbe7939ab97.svg#Core Sans AR 35 Light")format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
 }
