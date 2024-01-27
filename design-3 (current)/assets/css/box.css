@@ -119,6 +119,10 @@ body {
     color: var(--bs-dark-text-emphasis)
 }
 
+.whitefont {
+    font-family: 'Suisse Intl Regular'
+}
+
 .linked-route:hover {
     cursor: pointer
 }
@@ -299,6 +303,15 @@ a {
 #sidebar-nav li,
 #sidebar-wrapper {
     padding: 0
+}
+
+.bottom-center-image {
+    visibility: hidden;
+    margin-bottom: 7px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .overlay {
