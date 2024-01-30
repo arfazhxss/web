@@ -3,7 +3,10 @@
 commit-hist.txt
 
 # Ignoring Directories (Illustrator Output Directories)
-1x_folder/
-1xx_folder/
-1xxx_folder/
+1x*/
+1xx*/
+1xxx*/
 
+# Ignoring Main Design Directories
+design-1 (depricated)/
+design-2 (depricated)/
