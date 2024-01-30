@@ -8,5 +8,5 @@ commit-hist.txt
 1xxx*/
 
 # Ignoring Main Design Directories
-#design-1 (depricated)/
-#design-2 (depricated)/
+design-1 (depricated)/
+design-2 (depricated)/
