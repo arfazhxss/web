@@ -1,3 +1,9 @@
+# Ignoring Files
 .DS_Store
 commit-hist.txt
-nc-idea*
+
+# Ignoring Directories (Illustrator Output Directories)
+1x_folder/
+1xx_folder/
+1xxx_folder/
+
