@@ -1,3 +1,12 @@
+# Ignoring Files
 .DS_Store
 commit-hist.txt
-nc-idea*
+
+# Ignoring Directories (Illustrator Output Directories)
+1x*/
+1xx*/
+1xxx*/
+
+# Ignoring Main Design Directories
+design-1 (depricated)/
+design-2 (depricated)/
