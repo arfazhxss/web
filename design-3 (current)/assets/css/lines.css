@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: LineAwesome;
-    src: url(../fonts/line-awesome.eot?v=1.1.);
-    src: url(../fonts/line-awesome.eot??v=1.1.#iefix) format("embedded-opentype"), url(../fonts/line-awesome.woff2?v=1.1.) format("woff2"), url(../fonts/line-awesome.woff?v=1.1.) format("woff"), url(../fonts/line-awesome.ttf?v=1.1.) format("truetype"), url(../fonts/line-awesome.svg?v=1.1.#fa) format("svg");
+    src: url(../fonts/line-awesome.eot);
+    src: url(../fonts/line-awesome.eot) format("embedded-opentype"), url(../fonts/line-awesome.woff2) format("woff2"), url(../fonts/line-awesome.woff) format("woff"), url(../fonts/line-awesome.ttf) format("truetype"), url(https://maxcdn.icons8.com/fonts/line-awesome/1.1/fonts/line-awesome.svg?v=1.1.#fa) format("svg");
     font-weight: 400;
     font-style: normal
 }
@@ -19,7 +19,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family: LineAwesome;
-        src: url(../fonts/line-awesome.svg?v=1.1.#fa) format("svg")
+        src: url(https://maxcdn.icons8.com/fonts/line-awesome/1.1/fonts/line-awesome.svg?v=1.1.#fa) format("svg")
     }
 }
 
@@ -30,8 +30,7 @@
     text-rendering: optimizeLegibility;
     text-transform: none;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased
 }
 
 .la-lg {
