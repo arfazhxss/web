@@ -104,8 +104,7 @@ body {
 .topmost {
     position: fixed;
     width: 100vw;
-    top: 0;
-    height: 130px
+    top: 0
 }
 
 .navbar-container {
@@ -252,6 +251,19 @@ body {
     border-radius: 22px;
     width: 95vw;
     max-width: 960px
+}
+
+@media (max-width:1000px) {
+    .exp-unit:hover .linked-icon {
+        transition: none
+    }
+}
+
+@media (min-width:1001px) {
+    .exp-unit:hover .linked-icon {
+        transition: transform .3s ease-in-out;
+        transform: translate(2.5px, -2.5px)
+    }
 }
 
 @font-face {
@@ -401,4 +413,8 @@ a {
         top: 15px;
         right: 35px
     }
+}
+
+.no-scroll {
+    overflow: hidden
 }
