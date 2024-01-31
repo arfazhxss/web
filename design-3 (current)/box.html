@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="dark" lang="en">
+<html data-bs-theme="auto" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -23,9 +23,94 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://www.arfazhxss.ca/">
     <meta property="og:url" content="https://www.arfazhxss.ca/">
-    <meta name="description" content="Portfolio Website of Arfaz Hussain">
+    <meta property="og:description" content="Aspiring Software Development Engineer">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.arfazhxss.ca/assets/img/OG.webp">
+    <meta name="description"
+        content="Arfaz Hussain is a third year software engineering student at University of Victoria. He has an interest in XR/VR technologies and is currently exploring opportunities in Vancouver Island, British Columbia.">
     <script
-        type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Arfaz Hussain - Software Engineer","url":"https://www.arfazhxss.ca/"}</script>
+        type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Arfaz Hussain ","url":"https://www.arfazhxss.ca/"}</script>
+    <script>
+        (function () {
+
+            // JavaScript snippet handling Dark/Light mode switching
+
+            const getStoredTheme = () => localStorage.getItem('theme');
+            const setStoredTheme = theme => localStorage.setItem('theme', theme);
+            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
+
+            const getPreferredTheme = () => {
+
+                if (forcedTheme) return forcedTheme;
+
+                const storedTheme = getStoredTheme();
+                if (storedTheme) {
+                    return storedTheme;
+                }
+
+                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
+
+                if (pageTheme) {
+                    return pageTheme;
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            }
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
+
+                if (!themeSwitchers.length) return;
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active');
+                    element.setAttribute('aria-pressed', 'false');
+                });
+
+                for (const themeSwitcher of themeSwitchers) {
+
+                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
+
+                    if (btnToActivate) {
+                        btnToActivate.classList.add('active');
+                        btnToActivate.setAttribute('aria-pressed', 'true');
+                    }
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const theme = toggle.getAttribute('data-bs-theme-value');
+                            setStoredTheme(theme);
+                            setTheme(theme);
+                            showActiveTheme(theme);
+                        })
+                    })
+            });
+        })();
+    </script>
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/apple-touch-icon-16x16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/apple-touch-icon-16x16.png"
@@ -37,16 +122,18 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/android-chrome-512x512.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <!-- <link rel="manifest" href="/manifest.json?h=45fb05ac4be3bd4e851d8fedd16ebd93" crossorigin="use-credentials"> -->
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css?h=ae988b345777c1b18e9092b46d9e4dc2">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
 </head>
 
 <body>
-    <div class="d-sm-flex flex-row justify-content-sm-center navbar-container" style="height: 70px;">
-        <div class="d-flex flex-row justify-content-center align-items-center align-items-sm-center topmost">
+    <div class="d-flex d-sm-flex flex-row align-items-center justify-content-sm-center navbar-container"
+        style="height: 70px;">
+        <div class="d-flex flex-row justify-content-center align-items-center align-items-sm-center topmost"
+            style="/*border: 1px solid rgb(235, 238, 241);*//*background-color: rgba(255, 255, 255, 0.5);*/padding-top: 44px;backdrop-filter: blur(10px);border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;padding-bottom: 11px;">
             <div class="container d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-sm-center justify-content-md-center align-items-md-center"
-                style="max-width: 440px;">
+                style="max-width: 440px;padding-top: 0px;">
                 <div id="navCloak" class="overlay">
                     <div class="overlay-content"><a id="scrollToAbout" href="#about">About&nbsp;<svg
                                 xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
@@ -85,9 +172,9 @@
                 <div
                     class="row d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center navrow">
                     <div class="col d-flex d-md-flex align-items-center align-items-md-center">
-                        <div id="logo-1"><a href="https://www.arfazhxss.ca/"><img class="img-fluid" id="arfazhxsse"
-                                    src="/assets/img/notBlurredImage.svg?h=b4b868b99da3517b03d666562c5782f6" width="89"
-                                    height="43" style="margin-left: -8px;"></a></div>
+                        <div id="logo-1"><a href="https://www.arfazhxss.ca/"><img class="rounded-circle img-fluid"
+                                    id="arfazhxsse" src="/assets/img/arfazhxsse-1.webp" width="37"
+                                    style="margin-left: -8px;" height="37"></a></div>
                     </div>
                     <div
                         class="col d-flex justify-content-end align-items-center align-items-sm-center align-items-lg-end">
@@ -112,8 +199,7 @@
                         class="row d-inline-flex d-sm-flex flex-row justify-content-start justify-content-sm-center align-items-sm-center">
                         <div class="col d-flex justify-content-start align-items-center"
                             style="max-height: 100px;padding: 0px;padding-left: 14px;"><img
-                                class="rounded-circle img-fluid"
-                                src="/assets/img/arfazhxsseXR.webp?h=b4b868b99da3517b03d666562c5782f6"
+                                class="rounded-circle img-fluid" src="/assets/img/arfazhxsseXR.webp"
                                 style="min-width: 50px;max-width: 100px;width: calc(50px + 4vw);height: calc(50px + 4vw);min-height: 50px;max-height: 100px;"
                                 loading="lazy"></div>
                         <div class="col d-flex flex-column align-items-sm-start justify-content-xl-center">
@@ -121,7 +207,7 @@
                                 style="font-size: 27px;margin: 0px;padding: 0px;width: calc(200px + 2vw);max-width: 310px;">
                                 <span style="color: var(--bonhomme-colors-white-500);">Arfaz Hussain</span>
                             </h1>
-                            <p class="text-nowrap greyfont" style="max-width: 310px;">Software Development Engineer</p>
+                            <p class="text-nowrap greyfont" style="max-width: 310px;">Aspiring Software Engineer</p>
                         </div>
                     </div>
                 </div>
@@ -137,14 +223,11 @@
                         <div class="col d-flex flex-column justify-content-center align-items-start"
                             style="border-radius: 22px;border-color: var(--bs-body-color);">
                             <p class="greyfont" style="border-radius: 32px;border-color: rgb(255,255,255);">I love
-                                creating and
-                                designing systems, whether it's developing a website's graphic interface or an immersive
-                                3D Graphical
-                                Interface in XR. My current interests include working with the latest VR/AR technologies
-                                and building
-                                unique experiences to users in virtual spaces. My future goal is to work with scalable,
-                                sustainable
-                                systems and developing dynamic user interfaces.</p>
+                                creating and designing systems, whether it's developing a website's graphic interface or
+                                an immersive 3D Graphical Interface in XR. My current interests include working with the
+                                latest VR/AR technologies and building unique experiences to users in virtual spaces. My
+                                future goal is to work with scalable, sustainable systems and developing dynamic user
+                                interfaces.</p>
                         </div>
                     </div>
                 </div>
@@ -158,12 +241,9 @@
                 style="min-width: 0;max-width: none;">
                 <section id="e1-1" class="exp-unit">
                     <div id="WE-UVR-Cloak" class="overlay" style="/*width: 100%;*/">
-                        <div class="overlay-content"><img
-                                src="/assets/img/Rocketier.svg?h=3a5f9060b0d7735810b7047661be7b34" width="50px"
-                                loading="lazy">
+                        <div class="overlay-content"><img src="/assets/img/Rocketier.svg" width="50px" loading="lazy">
                             <p style="font-family: 'Suisse Intl Regular';"><br>UVIC Rocketry</p><img
-                                class="bottom-center-image" src="/assets/img/ban.png?h=9124d8ef0233316a29ccf860eecb82a8"
-                                width="10">
+                                class="bottom-center-image" src="/assets/img/ban.png" width="10">
                         </div>
                     </div>
                     <div class="row d-flex flex-column flex-grow-1 justify-content-start align-items-center"
@@ -198,10 +278,8 @@
                         </div>
                         <div class="col">
                             <p class="greyfont">Collaborating with Ground Support in developing a portable application
-                                using SDR/SRAD
-                                transceiver for real-time telemetry data visualization, using MERN stack, microservices,
-                                and
-                                component-based design</p>
+                                using SDR/SRAD transceiver for real-time telemetry data visualization, using MERN stack,
+                                microservices, and component-based design</p>
                         </div>
                     </div>
                 </section>
@@ -228,10 +306,10 @@
                             <p class="greyfont" style="margin-top: 5px;">2023 - Present</p>
                         </div>
                         <div class="col d-flex flex-column align-items-start"><span id="WE-DE"
-                                class="linked-route">Software
-                                Engineer – Dream EliXR&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round"
+                                class="linked-route">Software Engineer – Dream EliXR&nbsp;<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round"
                                     class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M17 7l-10 10"></path>
@@ -284,8 +362,7 @@
                             style="max-width: 130px;padding-bottom: 12px;">
                             <p class="greyfont" style="margin-top: 5px;">May 2023</p>
                         </div>
-                        <div class="col projectIcon"><img class="img-fluid"
-                                src="/assets/img/rubikCube3D.svg?h=b4b868b99da3517b03d666562c5782f6" width="32"
+                        <div class="col projectIcon"><img class="img-fluid" src="/assets/img/rubikCube3D.svg" width="32"
                                 height="32" loading="lazy"></div>
                     </div>
                     <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
@@ -295,10 +372,9 @@
                             <p class="greyfont"></p>
                         </div>
                         <div class="col d-flex flex-column align-items-start"><a id="SE-RuBiS"
-                                class="linked-route">Rubik Cube
-                                Simulation&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round"
+                                class="linked-route">Rubik Cube Simulation&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round"
                                     class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M17 7l-10 10"></path>
@@ -313,8 +389,8 @@
                         </div>
                         <div class="col">
                             <p class="greyfont">A 3D simulation utilizing OpenGL libraries GLUT, GLFW and GLM for
-                                mathematical
-                                operations, contexts and GLSL Shader Language for graphics rendering, manipulation</p>
+                                mathematical operations, contexts and GLSL Shader Language for graphics rendering,
+                                manipulation</p>
                         </div>
                     </div>
                 </section>
@@ -341,10 +417,9 @@
                             <p class="greyfont" style="margin-top: 5px;">April 2023</p>
                         </div>
                         <div class="col d-flex flex-column align-items-start"><a id="SE-WeTR"
-                                class="linked-route">Weather
-                                Application&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round"
+                                class="linked-route">Weather Application&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round"
                                     class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M17 7l-10 10"></path>
@@ -359,8 +434,7 @@
                         </div>
                         <div class="col">
                             <p class="greyfont">An iOS application utilizing OpenWeather for providing real-time
-                                location-based
-                                weather data</p>
+                                location-based weather data</p>
                         </div>
                     </div>
                 </section>
@@ -404,8 +478,7 @@
                         </div>
                         <div class="col">
                             <p class="greyfont">A command-line game featuring a 3×3 grid, two players (X and O) and
-                                conditional logics
-                            </p>
+                                conditional logics</p>
                         </div>
                     </div>
                 </section>
@@ -449,8 +522,7 @@
                         </div>
                         <div class="col">
                             <p class="greyfont">A 2D game utilizing object-oriented principles, Java Swing library for
-                                graphical user
-                                interface</p>
+                                graphical user interface</p>
                         </div>
                     </div>
                 </section>
@@ -533,9 +605,8 @@
             </div>
         </section>
     </section>
-    <div class="container d-flex justify-content-center"><img class="img-fluid"
-            src="/assets/img/ban.png?h=9124d8ef0233316a29ccf860eecb82a8" width="10" style="margin-bottom: 7px;"
-            loading="lazy"></div>
+    <div class="container d-flex justify-content-center"><img class="img-fluid" src="/assets/img/ban.png" width="10"
+            style="margin-bottom: 7px;" loading="lazy"></div>
     <section class="d-flex justify-content-center align-items-center">
         <div
             class="container d-flex d-xxl-flex flex-column align-items-center justify-content-xxl-center align-items-xxl-center">
@@ -544,8 +615,9 @@
                     id="currentYear"></span>&nbsp;Arfaz Hussain. All rights reserved.</p>
         </div>
     </section>
-    <!-- <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
-    <script async src="/assets/js/script.min.js?h=35e500f361affbfba78edb12c9c00e26"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script async src="/assets/js/script.min.js"></script>
 </body>
 
 </html>
