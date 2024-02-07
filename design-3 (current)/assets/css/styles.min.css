@@ -182,7 +182,8 @@ body {
 }
 
 .cloak-preview-image, .popup-content {
-    padding: 20px
+    padding-right: 20px;
+    padding-left: 5px
 }
 
 .closePopup {
@@ -481,7 +482,7 @@ a {
 .cloak-link {
     padding: 8px !important;
     width: 100%;
-    min-width: 90vw;
+    min-width: 100px;
     font-size: inherit !important;
     color: inherit !important;
     display: inherit !important;
