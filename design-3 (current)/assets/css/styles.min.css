@@ -182,7 +182,8 @@ body {
 }
 
 .cloak-preview-image, .popup-content {
-    padding: 20px
+    padding-right: 20px;
+    padding-left: 5px
 }
 
 .closePopup {
@@ -433,6 +434,7 @@ a {
     -webkit-backdrop-filter: blur(1px);
     display: flex;
     max-width: 400px;
+    min-width: min(90vw, 400px);
     margin: 20px auto;
     background-color: rgba(255, 255, 255, .03);
     border-radius: 8px;
@@ -481,7 +483,6 @@ a {
 .cloak-link {
     padding: 8px !important;
     width: 100%;
-    min-width: 90vw;
     font-size: inherit !important;
     color: inherit !important;
     display: inherit !important;
