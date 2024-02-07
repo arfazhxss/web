@@ -483,7 +483,6 @@ a {
 .cloak-link {
     padding: 8px !important;
     width: 100%;
-    min-width: 100px;
     font-size: inherit !important;
     color: inherit !important;
     display: inherit !important;
