@@ -1,7 +1,6 @@
 #!/bin/bash
-# git workflow v7.0
-# 2022-2023 @arfazhxss
-# Modified for UVic Rocketry 
+# git workflow v8.0
+# 2024 @arfazhxss
 
 breakStrSize=50
 breakStrIter=$(printf '_%.0s' $(seq 1 "$breakStrSize"))
@@ -25,7 +24,7 @@ function syncBranch() {
   echo -e "YES'ED\n${breakStrIter}"
   git stash
   git stash clear
-  git pull
+  git pull --quiet
   echo -e "${breakStrIter}\n\t\tYour Repository is synced\n\t\twith the latest commit :)\n${breakStrIter}"
 }
 
@@ -36,12 +35,14 @@ function pushChanges() {
   fi
 
   git add . && git add -u && \
-  git commit -m $"$CommitMessage"$'\nCommit by @arfazhxss on '"$(date +'%a %d %b %Y')" && \
-  git push --set-upstream origin "$branch"
-  rm -Rf .DS_Store/
-  echo -e "${breakStrIter}\n\t\tYour changes have been pushed\n\t\tto the repository :)\n${breakStrIter}"
+  git commit -m "$CommitMessage"$'\nCommit by @arfazhxss on '"$(date +'%a %d %b %Y')" && \
+  if git push --set-upstream origin "$branch" --quiet; then
+    rm -Rf .DS_Store/
+    echo -e "${breakStrIter}\n\t\tYour changes have been pushed\n\t\tto the repository :)\n${breakStrIter}"
+  else
+    echo -e "${breakStrIter}\n\t\tError: Failed to push changes to the repository\n${breakStrIter}"
+  fi
 }
-
 
 function gitWorkflow() {
   find . -name ".DS_Store" -type f -delete
