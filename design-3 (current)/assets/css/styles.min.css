@@ -181,7 +181,7 @@ body {
     animation: .3s forwards slideUp
 }
 
-.popup-content {
+.cloak-preview-image, .popup-content {
     padding: 20px
 }
 
@@ -417,4 +417,73 @@ a {
 
 .no-scroll {
     overflow: hidden
+}
+
+.top-layer {
+    display: flex;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+}
+
+.cloak-top-layer {
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    display: flex;
+    max-width: 450px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, .03);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    transition: background-color .5s
+}
+
+.cloak-preview-image img {
+    width: 80px;
+    height: 80px;
+}
+
+.cloak-preview-info {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.cloak-title {
+    font-weight: 700;
+    color: var(--bs-body-color);
+    font-size: min(calc(15px + .7vw), 20px);
+    margin: 0
+}
+
+.cloak-description {
+    margin: 0 !important;
+    font-size: min(calc(9px + .5vw), 13px);
+    color: var(--bs-secondary-color);
+    padding-right: 10px
+}
+
+.cloak-title:hover {
+    font-size: min(calc(15px + .7vw), 20px)
+}
+
+.la.la-github.github-link-preview-1 {
+    font-size: 51px;
+    color: #801414
+}
+
+.cloak-top-layer:hover {
+    background-color: rgba(25, 172, 194, 0.2);
+    cursor: pointer
+}
+
+.cloak-link {
+    padding: 8px !important;
+    width: inherit;
+    font-size: inherit !important;
+    color: inherit !important;
+    display: inherit !important;
+    transition: inherit !important;
+    font-family: inherit !important;
 }
