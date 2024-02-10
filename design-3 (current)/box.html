@@ -20,6 +20,8 @@
     <link rel="icon" type="image/png" sizes="2084x2084" href="/assets/img/favicon-2084x2084.png">
     <link rel="apple-touch-icon" type="image/png" sizes="16x16" href="/assets/img/apple-touch-icon-16x16.png">
     <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="/assets/img/apple-touch-icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/apple-touch-icon-32x32.png"
+        media="(prefers-color-scheme: dark)">
     <link rel="apple-touch-icon" type="image/png" sizes="48x48" href="/assets/img/apple-touch-icon-48x48.png">
     <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/assets/img/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/assets/img/apple-touch-icon-60x60.png">
@@ -29,7 +31,8 @@
     <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/img/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/img/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="/assets/img/apple-touch-icon.png">
     <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/assets/img/apple-touch-icon-192x192.png">
     <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/assets/img/apple-touch-icon-512x512.png">
     <link rel="apple-touch-icon" type="image/png" sizes="2084x2084" href="/assets/img/apple-touch-icon-2084x2084.png">
@@ -48,11 +51,8 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="2084x2084" href="/assets/img/android-chrome-2084x2084.png">
-
+    <link rel="mask-icon" href="/assets/img/arfazhxsse-3.svg" color="black">
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/apple-touch-icon-32x32.png"
-        media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="180x180" href="/assets/img/apple-touch-icon.png">
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <link rel="stylesheet" href="/assets/css/lines.css">
     <link rel="stylesheet" href="/assets/css/styles.min.css">
@@ -162,11 +162,11 @@
             <div class="container d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-sm-center justify-content-md-center align-items-md-center"
                 style="max-width: 440px;padding-top: 0px;">
                 <div id="navCloak" class="overlay">
-                    <div class="overlay-content"><a id="scrollToAbout" href="#about">About&nbsp;<svg
-                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                                stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right"
-                                id="linked-icon-nav1">
+                    <div class="overlay-content">
+                        <a id="scrollToAbout" href="#about">About&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icon-tabler-arrow-up-right" id="linked-icon-nav1">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M17 7l-10 10"></path>
                                 <path d="M8 7l9 0l0 9"></path>
@@ -194,14 +194,15 @@
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M17 7l-10 10"></path>
                                 <path d="M8 7l9 0l0 9"></path>
-                            </svg></a></div>
+                            </svg></a>
+                    </div>
                 </div>
                 <div
                     class="row d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center navrow">
                     <div class="col d-flex d-md-flex align-items-center align-items-md-center">
-                        <div id="logo-1"><a href="https://www.arfazhxss.ca/"><img class="rounded-circle img-fluid"
-                                    id="arfazhxsse" src="/assets/img/arfazhxsse-5.webp" width="37"
-                                    style="margin-left: -8px;" height="37"></a></div>
+                        <div id="logo-1"><a href="/"><img class="rounded-circle img-fluid" id="arfazhxsse"
+                                    src="/assets/img/arfazhxsse-5.webp" width="37" style="margin-left: -8px;"
+                                    height="37"></a></div>
                     </div>
                     <div
                         class="col d-flex justify-content-end align-items-center align-items-sm-center align-items-lg-end">
@@ -227,17 +228,18 @@
                         <div class="col d-flex justify-content-start align-items-center"
                             style="max-height: 100px;padding: 0px;padding-left: 14px;"><img
                                 class="rounded-circle img-fluid" src="assets/img/arfazhxsseXR.webp"
-                                style="min-width: 50px;max-width: 100px;width: min(calc(60px + 4vw), 85px);height: min(calc(60px + 4vw), 85px);min-height: 50px;max-height: 100px;"
-                                loading="lazy" /></div>
+                                style="min-width: 50px;max-width: 100px;width: min(calc(60px + 4vw), 85px);height: min(calc(60px + 4vw), 85px);min-height: 50px;max-height: 100px;" />
+                        </div>
                         <div class="col d-flex flex-column align-items-sm-start justify-content-xl-center">
                             <h1 class="text-nowrap d-flex justify-content-sm-start head"
                                 style="font-size: 27px;margin: 0px;padding: 0px;width: calc(200px + 2vw);max-width: 310px;">
                                 <span style="color: var(--bonhomme-colors-white-500);">Arfaz Hussain</span>
                             </h1>
                             <p class="text-nowrap greyfont" style="max-width: 310px;">Aspiring Software Engineer</p>
-                            <p class="greyfont"
-                                style="font-size: min(calc(10px + 1vw), 14px);letter-spacing: -0.5px;padding-top: 1px;color: rgba(243,255,245,0.72);">
-                                / ɑr ˈfæz hʊˈ seɪn /</p>
+                            <a class="greyfont" href="/resume.pdf"
+                                style="font-size: min(calc(10px + 1vw), 14px); letter-spacing: -0.5px; padding-top: 1px; color: rgba(243, 255, 245, 0.72); text-decoration: none;">
+                                My Resume <i class="la la-chain"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -269,107 +271,88 @@
             style="margin-bottom: 20px;margin-top: 30px;">
             <div class="container d-flex flex-column justify-content-center align-items-center"
                 style="min-width: 0;max-width: none;">
-                <section id="e1-1" class="exp-unit">
-                    <div id="WE-UVR-Cloak" class="overlay">
-                        <div class="overlay-content"><img src="/assets/img/Rocketier.svg" width="50px" loading="lazy">
-                            <p style="font-family: 'Suisse Intl Regular';"><br>UVIC Rocketry</p><img
-                                class="bottom-center-image" src="/assets/img/ban.png" width="10">
-                        </div>
-                    </div>
-                    <div class="row d-flex flex-column flex-grow-1 justify-content-start align-items-center"
-                        style="max-width: 460px;width: max(250px, 97vw);">
-                        <div class="col d-flex flex-column justify-content-center align-items-start"
-                            style="margin-bottom: 7px;">
-                            <p id="workExperience" class="whitefont">Work Experience</p>
-                        </div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont" style="margin-top: 5px;">2023 - Present</p>
-                        </div>
-                        <div class="col d-flex flex-column align-items-start justify-content-sm-start"><span id="WE-UVR"
-                                class="linked-route" href="">Software Developer – UVic Rocketry&nbsp;<svg
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M17 7l-10 10"></path>
-                                    <path d="M8 7l9 0l0 9"></path>
-                                </svg></span></div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont"></p>
-                        </div>
-                        <div class="col">
-                            <p class="greyfont">Collaborating with Ground Support in developing a portable application
-                                using SDR/SRAD transceiver for real-time telemetry data visualization, using MERN stack,
-                                microservices, and component-based design</p>
-                        </div>
-                    </div>
-                </section>
-                <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                    style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
-                    <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                        style="max-width: 130px;">
-                        <p class="greyfont"></p>
-                    </div>
-                    <div class="col">
-                        <p class="greyfont-2">TS • React • Mongoose • Figma</p>
+                <div class="row d-flex flex-column flex-grow-1 justify-content-start align-items-center"
+                    style="max-width: 460px;width: max(250px, 97vw);">
+                    <div class="col d-flex flex-column justify-content-center align-items-start"
+                        style="margin-bottom: 7px;">
+                        <p id="workExperience" class="whitefont">Work Experience</p>
                     </div>
                 </div>
+                <section id="e1">
+                    <!-- style="display: none;" -->
+                    <section id="e1-1" class="exp-unit">
+                        <div id="WE-UVR-Cloak" class="overlay">
+                            <div
+                                class="d-flex d-sm-flex d-md-flex justify-content-center justify-content-md-center align-items-md-center overlay-content">
+                                <div class="cloak-top-layer"><a class="cloak-link"
+                                        href="https://github.com/UVicRocketry/Ground-Support">
+                                        <div class="d-flex align-items-center cloak-preview-image"><i
+                                                class="la la-github github-link-preview-1"></i></div>
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-start cloak-preview-info">
+                                            <h2 class="text-start cloak-title"><strong>Ground Support</strong></h2>
+                                            <p class="text-start cloak-description"><span
+                                                    style="color: rgb(230, 237, 243);">University of Victoria
+                                                    Rocketry </span></p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont" style="margin-top: 5px;">2023 - Present</p>
+                            </div>
+                            <div class="col d-flex flex-column align-items-start justify-content-sm-start"><span
+                                    id="WE-UVR" class="linked-route" href="">Software Developer – UVic
+                                    Rocketry&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M17 7l-10 10"></path>
+                                        <path d="M8 7l9 0l0 9"></path>
+                                    </svg></span></div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont">Collaborating with Ground Support in developing a portable
+                                    application
+                                    using SDR/SRAD transceiver for real-time telemetry data visualization, using MERN
+                                    stack,
+                                    microservices, and component-based design</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont-2">TS • React • Mongoose • Figma</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
                 <section id="e1-2" class="exp-unit">
                     <div id="WE-DE-Cloak" class="overlay">
-                        <div class="overlay-content">
+                        <div
+                            class="d-flex d-sm-flex d-md-flex justify-content-center justify-content-md-center align-items-md-center overlay-content">
                             <p style="font-family: 'Suisse Intl Regular';"><br>DE</p>
                         </div>
                     </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont" style="margin-top: 5px;">2023 - Present</p>
-                        </div>
-                        <div class="col d-flex flex-column align-items-start"><span id="WE-DE"
-                                class="linked-route">Software Engineer – Dream EliXR&nbsp;<svg
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M17 7l-10 10"></path>
-                                    <path d="M8 7l9 0l0 9"></path>
-                                </svg></span></div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont"></p>
-                        </div>
-                        <div class="col">
-                            <p class="greyfont">Collaborating on an XR based simulation project 'The FirePlace'</p>
-                        </div>
-                    </div>
                 </section>
-                <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                    style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);">
-                    <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                        style="max-width: 130px;">
-                        <p class="greyfont"></p>
-                    </div>
-                    <div class="col">
-                        <p class="greyfont-2">Unity • Vuforia • Blender</p>
-                    </div>
-                </div>
             </div>
         </section>
-        <section class="d-flex justify-content-center align-items-center align-content-center" id="side-projects"
+        <section id="side-projects" class="d-flex justify-content-center align-items-center align-content-center"
             style="margin-bottom: 20px;margin-top: 30px;">
             <div class="container d-flex flex-column justify-content-center align-items-center"
                 style="min-width: 0;max-width: none;">
@@ -377,195 +360,250 @@
                     style="max-width: 460px;width: max(250px, 97vw);">
                     <div class="col d-flex flex-column justify-content-center align-items-start"
                         style="margin-bottom: 7px;">
-                        <p id="sideProjects" class="whitefont">Side Projects</p>
+                        <p id="sideProjects" class="whitefont">Selected Projects</p>
                     </div>
                 </div>
-                <section id="e2-1" class="exp-unit">
-                    <div id="SE-RuBiS-Cloak" class="overlay">
-                        <div class="overlay-content">
-                            <p style="font-family: 'Suisse Intl Regular';"><br>Rubik Cube Simulation</p>
+                <section id="e2">
+                    <!-- style="display: none;" -->
+                    <section id="e2-1" class="exp-unit">
+                        <div id="SE-RuBiS-Cloak" class="overlay">
+                            <div class="overlay-content">
+                                <div class="cloak-top-layer"><a class="cloak-link"
+                                        href="https://github.com/arfazhxss/OpenGL-Projects/tree/main">
+                                        <div class="d-flex align-items-center cloak-preview-image"><i
+                                                class="la la-github github-link-preview-1"></i></div>
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-start cloak-preview-info">
+                                            <h2 class="text-start cloak-title">Rubik&#39;s Cube Simulation</h2>
+                                            <p class="text-start cloak-description"><span
+                                                    style="color: rgb(230, 237, 243);">OpenGL
+                                                    implementation based on C++</span></p>
+                                        </div>
+                                    </a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-center flex-md-row align-items-md-center flex-lg-row flex-xl-row flex-xxl-row align-items-xxl-center"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-center align-items-start justify-content-sm-start align-items-md-start"
-                            style="max-width: 130px;padding-bottom: 12px;">
-                            <p class="greyfont" style="margin-top: 5px;">May 2023</p>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-center flex-md-row align-items-md-center flex-lg-row flex-xl-row flex-xxl-row align-items-xxl-center"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-center align-items-start justify-content-sm-start align-items-md-start"
+                                style="max-width: 130px;padding-bottom: 12px;">
+                                <p class="greyfont" style="margin-top: 5px;">May 2023</p>
+                            </div>
+                            <div class="col projectIcon"><img class="img-fluid" src="/assets/img/rubikCube3D.svg"
+                                    width="32" height="32" loading="lazy" /></div>
                         </div>
-                        <div class="col projectIcon"><img class="img-fluid" src="/assets/img/rubikCube3D.svg" width="32"
-                                height="32" loading="lazy"></div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont"></p>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col d-flex flex-column align-items-start"><a id="SE-RuBiS"
+                                    class="linked-route">Rubik&#39;s Cube Simulation <svg
+                                        class="icon icon-tabler icon-tabler-arrow-up-right linked-icon"
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M17 7l-10 10"></path>
+                                        <path d="M8 7l9 0l0 9"></path>
+                                    </svg></a></div>
                         </div>
-                        <div class="col d-flex flex-column align-items-start"><a id="SE-RuBiS"
-                                class="linked-route">Rubik Cube Simulation&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
-                                    width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M17 7l-10 10"></path>
-                                    <path d="M8 7l9 0l0 9"></path>
-                                </svg></a></div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont"></p>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont">A 3D simulation utilizing OpenGL libraries GLUT, GLFW and GLM for
+                                    mathematical operations, contexts and GLSL Shader Language for graphics rendering,
+                                    manipulation</p>
+                            </div>
                         </div>
-                        <div class="col">
-                            <p class="greyfont">A 3D simulation utilizing OpenGL libraries GLUT, GLFW and GLM for
-                                mathematical operations, contexts and GLSL Shader Language for graphics rendering,
-                                manipulation</p>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont-2">C++ • OpenGL • GLFW </p>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    <section id="e2-2" class="exp-unit">
+                        <div id="SE-WeTR-Cloak" class="overlay">
+                            <div class="overlay-content">
+                                <div class="cloak-top-layer"><a class="cloak-link"
+                                        href="https://github.com/arfazhxss/Weather-Application">
+                                        <div class="d-flex align-items-center cloak-preview-image"><i
+                                                class="la la-github github-link-preview-1"></i></div>
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-start cloak-preview-info">
+                                            <h2 class="text-start cloak-title"><strong>iOS Weather Application</strong>
+                                            </h2>
+                                            <p class="text-start cloak-description"><span
+                                                    style="color: rgb(230, 237, 243);">SwiftUI-based
+                                                    Weather App on iOS</span></p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont" style="margin-top: 5px;">April 2023</p>
+                            </div>
+                            <div class="col d-flex flex-column align-items-start"><a id="SE-WeTR"
+                                    class="linked-route">Weather
+                                    Application <svg class="icon icon-tabler icon-tabler-arrow-up-right linked-icon"
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M17 7l-10 10"></path>
+                                        <path d="M8 7l9 0l0 9"></path>
+                                    </svg></a></div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont">An iOS application utilizing OpenWeather for providing real-time
+                                    location-based weather data</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont-2">SwiftUI • OpenWeatherAPI</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="e2-3" class="exp-unit">
+                        <div id="SE-TTT-Cloak" class="overlay">
+                            <div class="overlay-content">
+                                <div class="cloak-top-layer"><a class="cloak-link"
+                                        href="https://github.com/arfazhxss/miniprojects/tree/main/0%20Tic%20Tac%20Toe%20(C%2B%2B)">
+                                        <div class="d-flex align-items-center cloak-preview-image"><i
+                                                class="la la-github github-link-preview-1"></i></div>
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-start cloak-preview-info">
+                                            <h2 class="text-start cloak-title"><strong>Tic-Tac-Toe</strong></h2>
+                                            <p class="text-start cloak-description"><span
+                                                    style="color: rgb(230, 237, 243);">C++
+                                                    implementation on Command Line Interface</span></p>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont" style="margin-top: 5px;">Oct 2022</p>
+                            </div>
+                            <div class="col d-flex flex-column align-items-start"><a id="SE-TTT"
+                                    class="linked-route">Tic-Tac-Toe <svg
+                                        class="icon icon-tabler icon-tabler-arrow-up-right linked-icon"
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M17 7l-10 10"></path>
+                                        <path d="M8 7l9 0l0 9"></path>
+                                    </svg></a></div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont">A command-line game featuring a 3×3 grid, two players (X and O) and
+                                    conditional logics</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont-2">C++ • Bash</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="e2-4" class="exp-unit">
+                        <div id="SE-TRe-Cloak" class="overlay">
+                            <div class="overlay-content">
+                                <div>
+                                    <div class="cloak-top-layer"><a class="cloak-link"
+                                            href="https://github.com/arfazhxss/t-rex">
+                                            <div class="d-flex align-items-center cloak-preview-image"><i
+                                                    class="la la-github github-link-preview-1"></i></div>
+                                            <div
+                                                class="d-flex flex-column justify-content-center align-items-start cloak-preview-info">
+                                                <h2 class="text-start cloak-title"><strong>T-Rex</strong></h2>
+                                                <p class="text-start cloak-description"><span
+                                                        style="color: rgb(230, 237, 243);">Java-based
+                                                        2D game</span></p>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont" style="margin-top: 5px;">Aug 2022</p>
+                            </div>
+                            <div class="col d-flex flex-column align-items-start"><a id="SE-TRe"
+                                    class="linked-route">T-Rex <svg
+                                        class="icon icon-tabler icon-tabler-arrow-up-right linked-icon"
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M17 7l-10 10"></path>
+                                        <path d="M8 7l9 0l0 9"></path>
+                                    </svg></a></div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont">A 2D game utilizing object-oriented principles, Java Swing library
+                                    for
+                                    graphical user interface</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
+                            style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
+                            <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
+                                style="max-width: 130px;">
+                                <p class="greyfont"></p>
+                            </div>
+                            <div class="col">
+                                <p class="greyfont-2">Java • Swing</p>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                    style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
-                    <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                        style="max-width: 130px;">
-                        <p class="greyfont"></p>
-                    </div>
-                    <div class="col">
-                        <p class="greyfont-2">C++ • OpenGL • GLFW&nbsp;</p>
-                    </div>
-                </div>
-                <section id="e2-2" class="exp-unit">
-                    <div id="SE-WeTR-Cloak" class="overlay">
-                        <div class="overlay-content">
-                            <p style="font-family: 'Suisse Intl Regular';"><br>Weather Application</p>
-                        </div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont" style="margin-top: 5px;">April 2023</p>
-                        </div>
-                        <div class="col d-flex flex-column align-items-start"><a id="SE-WeTR"
-                                class="linked-route">Weather Application&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
-                                    width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M17 7l-10 10"></path>
-                                    <path d="M8 7l9 0l0 9"></path>
-                                </svg></a></div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont"></p>
-                        </div>
-                        <div class="col">
-                            <p class="greyfont">An iOS application utilizing OpenWeather for providing real-time
-                                location-based weather data</p>
-                        </div>
-                    </div>
-                </section>
-                <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                    style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
-                    <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                        style="max-width: 130px;">
-                        <p class="greyfont"></p>
-                    </div>
-                    <div class="col">
-                        <p class="greyfont-2">SwiftUI • OpenWeatherAPI</p>
-                    </div>
-                </div>
-                <section id="e2-3" class="exp-unit">
-                    <div id="SE-TTT-Cloak" class="overlay">
-                        <div class="overlay-content">
-                            <p style="font-family: 'Suisse Intl Regular';"><br>TTT</p>
-                        </div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont" style="margin-top: 5px;">Oct 2022</p>
-                        </div>
-                        <div class="col d-flex flex-column align-items-start"><a id="SE-TTT"
-                                class="linked-route">Tic-Tac-Toe&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
-                                    width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M17 7l-10 10"></path>
-                                    <path d="M8 7l9 0l0 9"></path>
-                                </svg></a></div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont"></p>
-                        </div>
-                        <div class="col">
-                            <p class="greyfont">A command-line game featuring a 3×3 grid, two players (X and O) and
-                                conditional logics</p>
-                        </div>
-                    </div>
-                </section>
-                <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                    style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
-                    <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                        style="max-width: 130px;">
-                        <p class="greyfont"></p>
-                    </div>
-                    <div class="col">
-                        <p class="greyfont-2">C++ • Bash</p>
-                    </div>
-                </div>
-                <section id="e2-4" class="exp-unit">
-                    <div id="SE-TRe-Cloak" class="overlay">
-                        <div class="overlay-content">
-                            <p style="font-family: 'Suisse Intl Regular';"><br>TRex</p>
-                        </div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont" style="margin-top: 5px;">Aug 2022</p>
-                        </div>
-                        <div class="col d-flex flex-column align-items-start"><a id="SE-TRe"
-                                class="linked-route">T-Rex&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icon-tabler-arrow-up-right linked-icon">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M17 7l-10 10"></path>
-                                    <path d="M8 7l9 0l0 9"></path>
-                                </svg></a></div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                        style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 8px;">
-                        <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                            style="max-width: 130px;">
-                            <p class="greyfont"></p>
-                        </div>
-                        <div class="col">
-                            <p class="greyfont">A 2D game utilizing object-oriented principles, Java Swing library for
-                                graphical user interface</p>
-                        </div>
-                    </div>
-                </section>
-                <div class="row d-flex flex-column justify-content-start align-items-start flex-sm-row align-items-sm-start flex-md-row flex-lg-row flex-xl-row flex-xxl-row"
-                    style="max-width: 460px;min-width: 330px;width: max(340px, 97vw);margin-bottom: 25px;">
-                    <div class="col d-flex flex-column justify-content-start align-items-start justify-content-sm-start"
-                        style="max-width: 130px;">
-                        <p class="greyfont"></p>
-                    </div>
-                    <div class="col">
-                        <p class="greyfont-2">Java • Swing</p>
-                    </div>
-                </div>
             </div>
         </section>
     </section>
