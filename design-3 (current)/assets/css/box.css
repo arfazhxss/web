@@ -434,7 +434,7 @@ a {
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     display: flex;
-    max-width: min(calc(150px + 40vw), 400px);
+    max-width: min(calc(120px + 50vw), 400px);
     width: 100%;
     margin: 20px auto;
     background-color: rgba(255, 255, 255, .03);
@@ -482,6 +482,7 @@ a {
 }
 
 .cloak-link {
+    width: 95%;
     padding: 8px !important;
     font-size: inherit !important;
     color: inherit !important;
@@ -491,5 +492,5 @@ a {
 }
 
 .link-res {
-    color: rgba(117, 222, 238, 0.45) !important;
+    color: rgba(117, 222, 238, 0.641) !important;
 }
