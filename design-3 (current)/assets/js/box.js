@@ -61,7 +61,7 @@ document.addEventListener("click", event => {
 window.addEventListener("scroll", function () {
     const scrollPosition = window.scrollY;
     const startScroll = 0;
-    const endScroll = 100;
+    const endScroll = 1000;
     progress = Math.min(1, (scrollPosition - startScroll) / (endScroll - startScroll));
     const blurValue = 2 * progress;
 
@@ -71,8 +71,9 @@ window.addEventListener("scroll", function () {
         const imageElement = topBlurEffect.querySelector('#arfazhxsse');
         const iconElement = topBlurEffect.querySelector('.material-icons');
 
-        topBlurEffect.style.backgroundColor = `rgba(100, 100, 100, ${0.5 * progress})`;
-        topBlurEffect.style.backdropFilter = `blur(${2 * progress}px)`; // Use blurValue variable
+        topBlurEffect.style.backgroundColor = `rgba(0, 0, 0, ${0.2 * progress})`;
+        // console.log(5 * progress);
+        topBlurEffect.style.backdropFilter = `blur(${3 * progress}px)`; // Use blurValue variable
         // topBlurEffect.style.border = `${1 * progress}px solid rgb(235, 238, 241)`;
         // imageElement.src = progress < 0.5 ? "assets/img/arfazhxsse-1" : "assets/img/arfazhxsse-1";
         // iconElement.style.color = progress < 0.5 ? "#ffffff" : "#011E15";
@@ -108,7 +109,6 @@ addScrollListener('scrollToLinks', 'linksLower');
 
 // LinkCloak ///////////////////////////////////////////////////////////////////////////////
 document.getElementById("WE-UVR").addEventListener("click", function () { CloakBarOP('WE-UVR-Cloak'); });
-document.getElementById("WE-DE").addEventListener("click", function () { CloakBarOP('WE-DE-Cloak'); });
 document.getElementById("SE-RuBiS").addEventListener("click", function () { CloakBarOP('SE-RuBiS-Cloak'); });
 document.getElementById("SE-WeTR").addEventListener("click", function () { CloakBarOP('SE-WeTR-Cloak'); });
 document.getElementById("SE-TTT").addEventListener("click", function () { CloakBarOP('SE-TTT-Cloak'); });
@@ -123,7 +123,6 @@ function CloakBarOP(elementId) {
 function CloakBarCL(excludeThisElementId) {
     const CloakLinks = [
         "WE-UVR-Cloak",
-        "WE-DE-Cloak",
         "SE-RuBiS-Cloak",
         "SE-WeTR-Cloak",
         "SE-TTT-Cloak",
@@ -136,10 +135,18 @@ function CloakBarCL(excludeThisElementId) {
     document.body.classList.remove('no-scroll');
 }
 
+// ExpandSection ///////////////////////////////////////////////////////////////////////////////
+function toggleDisplayAndMargin(expandId, marginId) {
+    var expand = document.getElementById(expandId);
+    var margin = document.getElementById(marginId);
+    var isExpanded = expand.style.display !== "none";
+    expand.style.display = isExpanded ? "none" : "block";
+    margin.style.marginBottom = isExpanded ? "0px" : "20px";
+    if (marginId === "side-projects") { margin.style.marginTop = isExpanded ? "0px" : "30px"; }
+}
 
-
-
-
+document.getElementById("workExperience").addEventListener("click", function () { toggleDisplayAndMargin("e1", "work-experience"); });
+document.getElementById("sideProjects").addEventListener("click", function () { toggleDisplayAndMargin("e2", "side-projects"); });
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
