@@ -434,13 +434,13 @@ a {
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     display: flex;
-    max-width: 400px;
-    min-width: min(90vw, 400px);
+    max-width: min(calc(150px + 40vw), 400px);
+    width: 100%;
     margin: 20px auto;
     background-color: rgba(255, 255, 255, .03);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-    transition: background-color .5s
+    transition: background-color 0.6s
 }
 
 .cloak-preview-image img {
@@ -483,10 +483,13 @@ a {
 
 .cloak-link {
     padding: 8px !important;
-    width: 100%;
     font-size: inherit !important;
     color: inherit !important;
     display: inherit !important;
     transition: inherit !important;
     font-family: inherit !important;
+}
+
+.link-res {
+    color: rgba(117, 222, 238, 0.45) !important;
 }
