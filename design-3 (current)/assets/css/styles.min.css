@@ -514,3 +514,7 @@ a {
     font-size: 20px;
     z-index: 1000;
 }
+
+#navigationBar:hover {
+    cursor: pointer;
+}
