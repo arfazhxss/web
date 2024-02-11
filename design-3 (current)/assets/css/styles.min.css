@@ -519,6 +519,10 @@ a {
     cursor: pointer;
 }
 
+#navigationBar {
+    position: absolute;
+}
+
 #cross-site-1,
 #cross-site-2,
 #cross-site-3,
