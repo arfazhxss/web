@@ -93,7 +93,7 @@ function scrollToSection(sectionId) {
     }
 }
 
-// Function to attach click event listener to an element /////////////////////////////////
+// Function to attach click event listener to an element //////////////////////////////////
 function addScrollListener(elementId, targetSectionId) {
     document.getElementById(elementId).addEventListener('click', function (event) {
         event.preventDefault();
@@ -109,6 +109,7 @@ addScrollListener('scrollToLinks', 'linksLower');
 
 // LinkCloak ///////////////////////////////////////////////////////////////////////////////
 document.getElementById("WE-UVR").addEventListener("click", function () { CloakBarOP('WE-UVR-Cloak'); });
+// document.getElementById("WE-DE").addEventListener("click", function () { CloakBarOP('WE-DE-Cloak'); });
 document.getElementById("SE-RuBiS").addEventListener("click", function () { CloakBarOP('SE-RuBiS-Cloak'); });
 document.getElementById("SE-WeTR").addEventListener("click", function () { CloakBarOP('SE-WeTR-Cloak'); });
 document.getElementById("SE-TTT").addEventListener("click", function () { CloakBarOP('SE-TTT-Cloak'); });
@@ -123,6 +124,7 @@ function CloakBarOP(elementId) {
 function CloakBarCL(excludeThisElementId) {
     const CloakLinks = [
         "WE-UVR-Cloak",
+        // "WE-DE-Cloak",
         "SE-RuBiS-Cloak",
         "SE-WeTR-Cloak",
         "SE-TTT-Cloak",
@@ -135,18 +137,31 @@ function CloakBarCL(excludeThisElementId) {
     document.body.classList.remove('no-scroll');
 }
 
-// ExpandSection ///////////////////////////////////////////////////////////////////////////////
-function toggleDisplayAndMargin(expandId, marginId) {
-    var expand = document.getElementById(expandId);
-    var margin = document.getElementById(marginId);
-    var isExpanded = expand.style.display !== "none";
-    expand.style.display = isExpanded ? "none" : "block";
-    margin.style.marginBottom = isExpanded ? "0px" : "20px";
-    if (marginId === "side-projects") { margin.style.marginTop = isExpanded ? "0px" : "30px"; }
+// GoToTop Feature ////////////////////////////////////////////////////////////////////////
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("goToTopButton").style.display = "block";
+    } else {
+        document.getElementById("goToTopButton").style.display = "none";
+    }
 }
 
-document.getElementById("workExperience").addEventListener("click", function () { toggleDisplayAndMargin("e1", "work-experience"); });
-document.getElementById("sideProjects").addEventListener("click", function () { toggleDisplayAndMargin("e2", "side-projects"); });
+document.getElementById("goToTopButton").addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
 
 ///////////////////////////////////////////////////////////////////////////////////////////
-
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+/////  /////////   ///   ///   /////////        /////////   ///    //   ////////     //////
+/////     ///      ///   ///   ///              //          // /   //   ///   ///    //////
+/////     ///      /////////   /////////        /////////   //  /  //   ///    //    //////
+/////     ///      ///   ///   ///              //          //   / //   ///   ///    //////
+/////     ///      ///   ///   /////////        /////////   //    ///   ////////     //////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////

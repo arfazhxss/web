@@ -494,3 +494,24 @@ a {
 .link-res {
     color: rgba(117, 222, 238, 0.641) !important;
 }
+
+#goToTopButton:hover {
+    background-color: rgba(0, 86, 179, 0.2);
+}
+
+#goToTopButton {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 77, 0, 0.04);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    z-index: 1000;
+}
