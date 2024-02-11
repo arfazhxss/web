@@ -528,3 +528,20 @@ a {
     text-decoration: none;
     color: #ffffff;
 }
+
+.exp-unit:hover {
+    background-color: rgba(0, 72, 255, 0.03);
+    cursor: pointer;
+    /* border: 0.5px solid rgba(60, 128, 157, 0.79); */
+}
+
+.exp-unit {
+    background-color: rgba(0, 67, 63, 0.1);
+    background-blend-mode: color-dodge;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
