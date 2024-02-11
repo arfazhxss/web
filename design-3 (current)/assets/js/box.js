@@ -17,8 +17,18 @@ const overlayIndex = () => document.querySelector(".topmost").style.backdropFilt
 const overlayIndexBack = () => document.querySelector(".topmost").style.backdropFilter = 'blur(2px)';
 if (!navOverlay) overlayIndex();
 const setNavWidth = width => document.getElementById("navCloak").style.width = width;
-const OpenNavbarFullWidth = () => { document.body.classList.add('no-scroll'); overlayIndex(); setNavWidth("100%") };
-const closeNavbarFullWidth = () => { document.body.classList.remove('no-scroll'); overlayIndexBack(); setNavWidth("0%"); };
+const OpenNavbarFullWidth = () => {
+    document.getElementById("goToTopButton").style.display = "none";
+    document.body.classList.add('no-scroll');
+    overlayIndex();
+    setNavWidth("100%")
+};
+const closeNavbarFullWidth = () => {
+    document.getElementById("goToTopButton").style.display = "block";
+    document.body.classList.remove('no-scroll');
+    overlayIndexBack();
+    setNavWidth("0%");
+};
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 // Main Scripts ///////////////////////////////////////////////////////////////////////////
