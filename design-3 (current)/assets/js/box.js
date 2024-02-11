@@ -117,11 +117,13 @@ document.getElementById("SE-TRe").addEventListener("click", function () { CloakB
 
 function CloakBarOP(elementId) {
     CloakBarCL(elementId);
+    document.getElementById("goToTopButton").style.display = "none";
     const currentElement = document.getElementById(elementId);
     if (currentElement) { currentElement.style.width = "100%"; document.body.classList.add('no-scroll'); }
 }
 
 function CloakBarCL(excludeThisElementId) {
+    document.getElementById("goToTopButton").style.display = "block";
     const CloakLinks = [
         "WE-UVR-Cloak",
         // "WE-DE-Cloak",
