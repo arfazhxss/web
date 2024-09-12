@@ -8,21 +8,39 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import Particles from "@/components/particles";
+import { buttonVariants } from "@/components/ui/button"
+import ScrollDownArrow from "@/components/ui/scroll-down-arrow";
 
-const BLUR_FADE_DELAY = 0.04;
+const BLUR_FADE_DELAY = 0.01;
 
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <div className="flex flex-col min-h-screen">
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-6xl text-transparent bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text">
+          Arfaz Hussain
+        </h1>
+        <div className="absolute top-[calc(53%+100px)] left-1/2 transform -translate-x-1/2 z-10">
+          {/* <Link href="/your-link-destination" className={buttonVariants({ variant: "secondary" })}>
+            <span className="inline-block text-base sm:text-lg p-2">Check out my resume!</span>
+          </Link> */}
+          <ScrollDownArrow />
+        </div>
+        <Particles
+          className="absolute inset-0 -z-50 animate-fade-in"
+          quantity={1000}
+        />
+      </div>
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-center">
-            <div className="flex-col flex flex-1 space-y-1.5">
+        <div className="mx-auto w-full max-w-1xl space-y-8">
+          <div className="gap-8 flex">
+            <div className="flex-col flex flex-1 space-y-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, This is ${DATA.name.split(" ")[0]}!`}
+                text={`People call me ${DATA.name.split(" ")[0]}`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
@@ -208,7 +226,7 @@ export default function Page() {
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Want to chat? Just shoot me a dm{" "}
                 <Link
-                  href={DATA.contact.social.X.url}
+                  href={DATA.contact.social.GitHub.url}
                   className="text-blue-500 hover:underline"
                 >
                   with a direct question on twitter
@@ -220,6 +238,6 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-    </main>
+    </main >
   );
 }

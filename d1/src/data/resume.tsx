@@ -8,7 +8,7 @@ export const DATA = {
   location: "Victoria, British Columbia",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Aspiring Software Engineer and full-stack developer",
+    "I am a software engineering student by day, and a full-stack developer by night — constantly learning and building along the way 🔧⚙️",
   summary:
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.png",
@@ -18,8 +18,8 @@ export const DATA = {
     "Typescript",
     "Node.js",
     "Python",
-    "Go",
-    "Postgres",
+    "Swift",
+    "PostgreSQL",
     "Docker",
     "Kubernetes",
     "Java",
@@ -52,12 +52,6 @@ export const DATA = {
         url: "https://dub.sh/dillion-twitter",
         icon: Icons.x,
 
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
         navbar: true,
       },
       email: {
@@ -149,15 +143,15 @@ export const DATA = {
       school: "University of Victoria",
       href: "https://uvic.ca",
       degree: "Bachelor of Software Engineering (BSE)",
-      logoUrl: "/waterloo.png",
+      logoUrl: "/uvic.png",
       start: "2021",
       end: "2026",
     },
     {
       school: "Dhaka Residential Model College",
       href: "https://uvic.ca",
-      degree: "Bachelor of Software Engineering (BSE)",
-      logoUrl: "/waterloo.png",
+      degree: "Middle School, High School",
+      logoUrl: "/drmc.png",
       start: "2010",
       end: "2020",
     }

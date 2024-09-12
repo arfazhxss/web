@@ -27,7 +27,7 @@ export default function Navbar() {
                     "size-12"
                   )}
                 >
-                  <item.icon className="size-4" />
+                  <item.icon className="size-5" />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
@@ -50,7 +50,7 @@ export default function Navbar() {
                       "size-12"
                     )}
                   >
-                    <social.icon className="size-4" />
+                    <social.icon className="size-5" />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>
