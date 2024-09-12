@@ -10,7 +10,8 @@ export const DATA = {
   description:
     "I am a software engineering student by day, and a full-stack developer by night — constantly learning and building along the way 🔧⚙️",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    // "At the beginning of 2024, I decided to take a step back from the familiar path and dive headfirst into new challenges that blend creativity with technology. My journey has been a mix of leading teams, organizing community events, and contributing to causes close to my heart. Whether mentoring fellow students, designing for a student society, or volunteering in animal welfare, I've always sought opportunities to connect with people and make an impact.",
+    "At the beginning of 2022, I chose to step away from the familiar path and embrace new challenges that combine creativity with technology. My journey has involved [leading teams](#experiences), [organizing events](#volunteering-experiences), and [volunteering for causes](#volunteering-experiences) that matter to me. I’m passionate about using technology to drive change, whether through building software, mentoring others, or fostering community connections.",
   avatarUrl: "/me.png",
   skills: [
     "React",
