@@ -150,8 +150,8 @@ export const DATA = {
     },
     {
       school: "Dhaka Residential Model College",
-      href: "https://uvic.ca",
-      degree: "Middle School, High School",
+      href: "https://drmc.edu.bd",
+      degree: "Elementary, Middle and High School",
       logoUrl: "/drmc.png",
       start: "2010",
       end: "2020",

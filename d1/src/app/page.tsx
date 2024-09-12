@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <div className="flex flex-col min-h-screen">
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-6xl text-transparent bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text">
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-4xl sm:text-6xl md:text-6xl lg:text-6xl text-transparent bg-white cursor-default text-edge-outline animate-title font-display whitespace-nowrap bg-clip-text">
           Arfaz Hussain
         </h1>
         <div className="absolute top-[calc(53%+100px)] left-1/2 transform -translate-x-1/2 z-10">
