@@ -1,42 +1,72 @@
-import Header from "@/components/header";
+import Navbar from "@/components/navbar";
+import { ThemeProvider } from "@/components/theme-provider";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { DATA } from "@/data/resume";
+import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import ActiveSectionContextProvider from "@/context/active-section-context";
-// import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
-import ThemeContextProvider from "@/context/theme-context";
-import { Toaster } from "react-hot-toast";
 
-const inter = Inter({ subsets: ["latin"] });
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
-export const metadata = {
-  title: "Arfaz Hussain",
-  description: "Arfaz's personal website",
+export const metadata: Metadata = {
+  metadataBase: new URL(DATA.url),
+  title: {
+    default: DATA.name,
+    template: `%s | ${DATA.name}`,
+  },
+  description: DATA.description,
+  openGraph: {
+    title: `${DATA.name}`,
+    description: DATA.description,
+    url: DATA.url,
+    siteName: `${DATA.name}`,
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: `${DATA.name}`,
+    card: "summary_large_image",
+  },
+  verification: {
+    google: "",
+    yandex: "",
+  },
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+          fontSans.variable
+        )}
       >
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
-
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <TooltipProvider delayDuration={0}>
             {children}
-            {/* <Footer /> */}
-
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+            <Navbar />
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
