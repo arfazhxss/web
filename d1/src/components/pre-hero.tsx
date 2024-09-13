@@ -22,7 +22,7 @@ export default function TitleWithParticles() {
                     } cursor-default text-edge-outline animate-title font-display whitespace-nowrap`}
             > Arfaz Hussain
             </h1>
-            <div className="absolute top-[calc(39%+100px)] left-[calc(20%+100px)] transform -translate-x-1/2 z-10"><ScrollDownArrow /></div>
+            <div className="absolute top-[calc(39%+100px)] right-1/2 left-1/2 transform -translate-x-1/2 z-10"><ScrollDownArrow /></div>
         </div >
     );
 }
