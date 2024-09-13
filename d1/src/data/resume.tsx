@@ -11,7 +11,7 @@ export const DATA = {
     "I am a software engineering student by day, and a full-stack developer by night — constantly learning and building along the way 🔧⚙️",
   summary:
     // "At the beginning of 2024, I decided to take a step back from the familiar path and dive headfirst into new challenges that blend creativity with technology. My journey has been a mix of leading teams, organizing community events, and contributing to causes close to my heart. Whether mentoring fellow students, designing for a student society, or volunteering in animal welfare, I've always sought opportunities to connect with people and make an impact.",
-    "At the beginning of 2022, I chose to step away from the familiar path and embrace new challenges that combine creativity with technology. My journey has involved [leading teams](#experiences), [organizing events](#volunteering-experiences), and [volunteering for causes](#volunteering-experiences) that matter to me. I’m passionate about using technology to drive change, whether through building software, mentoring others, or fostering community connections.",
+    "Currently, I'm an independent TypeScript Full-Stack developer based in Victoria, British Columbia. At the beginning of 2022, I chose to step away from the familiar path and embrace new challenges that combine creativity with technology. My journey has involved [leading teams](#experiences), [organizing events](#volunteering-experiences), and [volunteering for causes](#volunteering-experiences) that matter to me. I’m passionate about using technology to drive change, whether through building software, mentoring others, or fostering community connections.\n\n I was born and raised in Dhaka, Bangladesh. My Bengali name is আরফাজ হোসাইন (ahr-fahz ho-sain).",
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -622,3 +622,21 @@ export const DATA = {
     //     },
   ],
 } as const;
+
+const Profile = () => {
+  return (
+    <div>
+      <h1>{DATA.name}</h1>
+      <p className="font-noto-light">{DATA.description}</p> {/* Apply font-noto-light here */}
+      <p>{DATA.summary}</p>
+      <img src={DATA.avatarUrl} alt={DATA.name} />
+      <ul>
+        {DATA.skills.map((skill) => (
+          <li key={skill}>{skill}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default Profile;

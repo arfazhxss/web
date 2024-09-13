@@ -21,7 +21,8 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        display: ["var(--font-calsans)"]
+        display: ["var(--font-calsans)"],
+        noto: ["'Noto Sans Bengali'", ...fontFamily.sans],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -83,10 +84,10 @@ const config = {
             opacity: "40%",
           },
           "75%": {
-            opacity: "75%",
+            opacity: "65%",
           },
           "100%": {
-            opacity: "100%",
+            opacity: "80%",
           },
         },
         "fade-left": {
