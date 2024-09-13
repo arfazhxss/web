@@ -13,16 +13,9 @@ import EmailButton from "@/components/ui/email-button";
 export default function TitleWithParticles() {
     const { theme, systemTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
-    const [showSubtitle, setShowSubtitle] = useState(false);
 
     useEffect(() => {
         setMounted(true);
-
-        const timer = setTimeout(() => {
-            setShowSubtitle(true);
-        }, 1500);
-
-        return () => clearTimeout(timer);
     }, []);
 
     const currentTheme = theme === "system" ? systemTheme : theme;

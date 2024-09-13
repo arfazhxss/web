@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function ResumePage() {
-  const pdfPath = `@/resume.pdf`;
+  const pdfPath = `/resume.pdf`;
   console.log('PDF Path:', pdfPath);
   return (
     <div className="container mx-auto p-4">

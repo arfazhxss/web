@@ -7,13 +7,15 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 import { Loader2 } from 'lucide-react';
 import { Button } from './ui/button';
 
-pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+pdfjs.GlobalWorkerOptions.workerSrc = 'file://node_modules/react-pdf/node_modules/pdfjs-dist/build/pdf.worker.mjs';
+
+// pdfjs.GlobalWorkerOptions.workerSrc = "@/node_modules/@types/react-pdf/node_modules/pdfjs-dist/legacy/build/pdf.worker.js";
 
 interface PDFViewerProps {
     pdfUrl: string;
 }
 
-export function PDFViewer({ pdfUrl }: PDFViewerProps) {
+export function PDFViewer({ pdfUrl }: Readonly<PDFViewerProps>) {
     const [numPages, setNumPages] = useState<number>(0);
     const [pageNumber, setPageNumber] = useState<number>(1);
 
