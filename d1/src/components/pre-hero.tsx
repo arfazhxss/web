@@ -39,9 +39,9 @@ export default function TitleWithParticles() {
             </h1>
             <div className="absolute top-[calc(25%+47px)] animate-fade-in delay-[4s] flex gap-2">
                 <Button asChild variant={'outline'} size="sm">
-                    <a href="/public/Arfaz's Resume.pdf" download>
+                    <Link href="/resume.pdf">
                         View Resume <ArrowUpRightIcon className="ml-2 size-4" />
-                    </a>
+                    </Link>
                 </Button>
                 <EmailButton />
             </div>
