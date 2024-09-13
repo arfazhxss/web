@@ -131,12 +131,6 @@ export default function Particles({
 			context.current.translate(translateX, translateY);
 			context.current.beginPath();
 			context.current.arc(x, y, size, 0, 2 * Math.PI);
-			// context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`;
-
-			// Alternate color logic based on index
-			// const color = index % 2 === 0
-			// 	? `rgba(255, 255, 255, ${alpha})` // White particles
-			// 	: `rgba(0, 0, 0, ${alpha})`;       // Black particles
 			const color = theme === "dark" ? `rgba(255, 255, 255, ${alpha})` : `rgba(0, 0, 0, ${alpha})`;
 			context.current.fillStyle = color;
 			context.current.fill();
