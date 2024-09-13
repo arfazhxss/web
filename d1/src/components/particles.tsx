@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import { useMousePosition } from "@/lib/mouse";
+import { useTheme } from "next-themes";
 
 interface ParticlesProps {
 	className?: string;
@@ -18,6 +19,7 @@ export default function Particles({
 	ease = 50,
 	refresh = false,
 }: ParticlesProps) {
+	const { theme } = useTheme();
 	const canvasRef = useRef<HTMLCanvasElement>(null);
 	const canvasContainerRef = useRef<HTMLDivElement>(null);
 	const context = useRef<CanvasRenderingContext2D | null>(null);
@@ -43,6 +45,11 @@ export default function Particles({
 	useEffect(() => {
 		onMouseMove();
 	}, [mousePosition.x, mousePosition.y]);
+
+	useEffect(() => {
+		initCanvas();
+		drawParticles();
+	}, [theme]);
 
 	useEffect(() => {
 		initCanvas();
@@ -124,7 +131,14 @@ export default function Particles({
 			context.current.translate(translateX, translateY);
 			context.current.beginPath();
 			context.current.arc(x, y, size, 0, 2 * Math.PI);
-			context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+			// context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+
+			// Alternate color logic based on index
+			// const color = index % 2 === 0
+			// 	? `rgba(255, 255, 255, ${alpha})` // White particles
+			// 	: `rgba(0, 0, 0, ${alpha})`;       // Black particles
+			const color = theme === "dark" ? `rgba(255, 255, 255, ${alpha})` : `rgba(0, 0, 0, ${alpha})`;
+			context.current.fillStyle = color;
 			context.current.fill();
 			context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
 
@@ -196,19 +210,15 @@ export default function Particles({
 			circle.translateY +=
 				(mouse.current.y / (staticity / circle.magnetism) - circle.translateY) /
 				ease;
-			// circle gets out of the canvas
 			if (
 				circle.x < -circle.size ||
 				circle.x > canvasSize.current.w + circle.size ||
 				circle.y < -circle.size ||
 				circle.y > canvasSize.current.h + circle.size
 			) {
-				// remove the circle from the array
 				circles.current.splice(i, 1);
-				// create a new circle
 				const newCircle = circleParams();
 				drawCircle(newCircle);
-				// update the circle position
 			} else {
 				drawCircle(
 					{

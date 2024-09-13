@@ -8,30 +8,31 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import Particles from "@/components/particles";
-import { buttonVariants } from "@/components/ui/button"
 import ScrollDownArrow from "@/components/ui/scroll-down-arrow";
+import TitleWithParticles from "@/components/pre-hero";
+import Particles from "@/components/particles";
 
 const BLUR_FADE_DELAY = 0.01;
 
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <div className="flex flex-col min-h-screen">
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-4xl sm:text-6xl md:text-6xl lg:text-6xl text-transparent bg-white cursor-default text-edge-outline animate-title font-display whitespace-nowrap bg-clip-text">
+      {/* <div className="flex flex-col min-h-screen"> */}
+      {/* <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-4xl sm:text-6xl md:text-6xl lg:text-6xl text-transparent bg-white cursor-default text-edge-outline animate-title font-display whitespace-nowrap bg-clip-text">
           Arfaz Hussain
-        </h1>
-        <div className="absolute top-[calc(53%+100px)] left-1/2 transform -translate-x-1/2 z-10">
-          {/* <Link href="/your-link-destination" className={buttonVariants({ variant: "secondary" })}>
+        </h1> */}
+      {/* <div className="absolute top-[calc(53%+100px)] left-1/2 transform -translate-x-1/2 z-10"> */}
+      {/* <Link href="/your-link-destination" className={buttonVariants({ variant: "secondary" })}>
             <span className="inline-block text-base sm:text-lg p-2">Check out my resume!</span>
           </Link> */}
-          <ScrollDownArrow />
-        </div>
-        <Particles
-          className="absolute inset-0 -z-50 animate-fade-in"
-          quantity={1000}
-        />
-      </div>
+      {/* <ScrollDownArrow /> */}
+      {/* </div> */}
+      <Particles
+        className="absolute inset-0 -z-50 animate-fade-in"
+        quantity={1000}
+      />
+      {/* </div> */}
+      <TitleWithParticles />
       <section id="hero">
         <div className="mx-auto w-full max-w-1xl space-y-8">
           <div className="gap-8 flex">
@@ -90,7 +91,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-      {/* <section id="work">
+      <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
@@ -114,7 +115,7 @@ export default function Page() {
             </BlurFade>
           ))}
         </div>
-      </section> */}
+      </section>
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
