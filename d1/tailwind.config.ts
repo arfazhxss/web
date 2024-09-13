@@ -63,6 +63,9 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      animationDelay: {
+        '4s': '4s',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -138,10 +141,6 @@ const config = {
             transform: "translateY(0px)",
             opacity: "0%",
           },
-          // "25%, 75%": {
-          //   transform: "translateY(-95px)",
-          //   opacity: "50%",
-          // },
           "50%": {
             transform: "translateY(10px)",
             opacity: "100%",
