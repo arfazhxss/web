@@ -1,17 +1,17 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import css from "styled-jsx/css";
 
 export const DATA = {
   name: "Arfaz Hussain",
-  initials: "AH",
+  initials: "Arfaz",
   url: "https://arfazhxss.ca",
   location: "Victoria, British Columbia",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     "I am a software engineering student by day, and a full-stack developer by night — constantly learning and building along the way 🔧⚙️",
   summary:
-    // "At the beginning of 2024, I decided to take a step back from the familiar path and dive headfirst into new challenges that blend creativity with technology. My journey has been a mix of leading teams, organizing community events, and contributing to causes close to my heart. Whether mentoring fellow students, designing for a student society, or volunteering in animal welfare, I've always sought opportunities to connect with people and make an impact.",
-    "Currently, I'm an independent TypeScript Full-Stack developer based in Victoria, British Columbia. At the beginning of 2022, I chose to step away from the familiar path and embrace new challenges that combine creativity with technology. My journey has involved [leading teams](#experiences), [organizing events](#volunteering-experiences), and [volunteering for causes](#volunteering-experiences) that matter to me. I’m passionate about using technology to drive change, whether through building software, mentoring others, or fostering community connections.\n\n I was born and raised in Dhaka, Bangladesh. My Bengali name is আরফাজ হোসাইন (ahr-fahz ho-sain).",
+    "Currently, I'm an independent TypeScript Full-Stack developer based in British Columbia. At the beginning of 2021, I chose to step away from the familiar path and embrace new challenges that combine creativity with technology. My journey has involved [leading teams](#experiences), [organizing events](#volunteering-experiences), and [volunteering for causes](#volunteering-experiences) that matter to me. I'm passionate about using technology to drive change, whether through building software, mentoring others, or fostering community connections.\n\n",
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -41,28 +41,18 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/arfazhxss",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://linkedin.com/in/arfazhussain",
         icon: Icons.linkedin,
-
         navbar: true,
       },
-      // X: {
-      //   name: "X",
-      //   url: "https://dub.sh/dillion-twitter",
-      //   icon: Icons.x,
-
-      //   navbar: true,
-      // },
       email: {
         name: "Send Email",
         url: "#",
         icon: Icons.email,
-
         navbar: false,
       },
     },
@@ -82,14 +72,26 @@ export const DATA = {
         "Worked with 5+ team leads to organize workshops for 100+ CS and software engineering students, and partnered with executives from 3+ student clubs to co-host tech events, increasing attendance by 25% and strengthening collaborations with other student organizations.",
     },
     {
+      company: "Burgir Studios",
+      badges: [],
+      href: "https://burgirstudio.com",
+      location: "Remote",
+      title: "iOS Developer",
+      logoUrl: "/shopify.svg",
+      start: "Jan 2022",
+      end: "Aug 2022",
+      description:
+        "Developed and mantained iOS apps using React Native, Swift, and Xcode. This was my first exposure to a startup engineering team.",
+    },
+    {
       company: "MTPL Ltd.",
       badges: [],
-      href: "https://shopify.com",
+      href: "https://www.facebook.com/momenttouchpropertiesltd",
       location: "Remote",
       title: "Data Analyst Intern",
-      logoUrl: "/shopify.svg",
-      start: "January 2023",
-      end: "August 2023",
+      logoUrl: "/mtpl.png",
+      start: "Jan 2021",
+      end: "Apr 2021",
       description:
         "Improved property valuation accuracy by 7% through Excel analysis, automated data scraping with Python, and streamlined reporting using bash scripts and Excel macros.",
     },
@@ -622,21 +624,3 @@ export const DATA = {
     //     },
   ],
 } as const;
-
-const Profile = () => {
-  return (
-    <div>
-      <h1>{DATA.name}</h1>
-      <p className="font-noto-light">{DATA.description}</p> {/* Apply font-noto-light here */}
-      <p>{DATA.summary}</p>
-      <img src={DATA.avatarUrl} alt={DATA.name} />
-      <ul>
-        {DATA.skills.map((skill) => (
-          <li key={skill}>{skill}</li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default Profile;

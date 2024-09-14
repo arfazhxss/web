@@ -1,16 +1,16 @@
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
-import Link from "next/link";
 import Markdown from "react-markdown";
-import ScrollDownArrow from "@/components/ui/scroll-down-arrow";
 import TitleWithParticles from "@/components/pre-hero";
 import Particles from "@/components/particles";
+import ContactForm from "@/components/contact-form";
+import { CalendarForm } from "@/components/calender-form";
 
 const BLUR_FADE_DELAY = 0.01;
 
@@ -28,9 +28,9 @@ export default function Page() {
             <div className="flex-col flex flex-1 space-y-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-5xl/none"
                 yOffset={8}
-                text={`I also go by ${DATA.name.split(" ")[0]}`}
+                text={`I usually go by ${DATA.name.split(" ")[0]}`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-x font-noto-s-350"
@@ -38,12 +38,12 @@ export default function Page() {
                 text={DATA.description}
               />
             </div>
-            {/* <BlurFade delay={BLUR_FADE_DELAY}> */}
-            {/* <Avatar className="size-28 border">
+            <BlurFade delay={BLUR_FADE_DELAY}>
+              <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar> */}
-            {/* </BlurFade> */}
+              </Avatar>
+            </BlurFade>
           </div>
         </div>
       </section>
@@ -52,7 +52,7 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty text-sm dark:prose-invert font-extralight">
+          <Markdown className="prose max-w-full text-pretty text-sm dark:prose-invert font-light">
             {DATA.summary}
           </Markdown>
         </BlurFade>
@@ -206,28 +206,23 @@ export default function Page() {
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
+            <div className="space-y-3 w-full">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Get in Touch
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.GitHub.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+              <p className="mx-auto max-w-[600px] text-muted-foreground sm:text-l/relaxed md:text-base/relaxed lg:text-l/relaxed xl:text-l/relaxed">
+                Send me an email
+                and I&apos;ll respond as soon as I can!
               </p>
+              <ContactForm />
+              {/* <CalendarForm /> */}
             </div>
           </BlurFade>
         </div>
-      </section>
+      </section >
     </main >
   );
 }
