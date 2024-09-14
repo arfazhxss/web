@@ -50,7 +50,7 @@ export default function ContactForm() {
                                 id="name"
                                 name="name"
                                 required
-                                placeholder="First and Last Name"
+                                placeholder="Your Name"
                                 className="w-full"
                             />
                         </div>
