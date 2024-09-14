@@ -218,7 +218,6 @@ export default function Page() {
                 and I&apos;ll respond as soon as I can!
               </p>
               <ContactForm />
-              {/* <CalendarForm /> */}
             </div>
           </BlurFade>
         </div>

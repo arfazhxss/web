@@ -40,10 +40,10 @@ export default function ContactForm() {
     };
 
     return (
-        <Card className="w-full max-w-2xl mx-auto shadow-lg">
+        <Card className="w-full max-w-2xl mx-auto shadow-lg py-4">
             <form onSubmit={handleSubmit}>
-                <CardContent className="space-y-2">
-                    <div className="grid grid-cols-2 gap-1">
+                <CardContent className="space-y-2 px-3">
+                    <div className="grid grid-cols-2 gap-0">
                         <div className="flex flex-col items-start space-y-1">
                             <Input
                                 type="text"
@@ -88,7 +88,7 @@ export default function ContactForm() {
                         />
                     </div>
                 </CardContent>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center py-0">
                     <CardFooter>
                         <Button type="submit" variant={"outline"} className="w-full">
                             <Send className="w-5 h-5 mr-2" />
