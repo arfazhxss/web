@@ -1,14 +1,12 @@
 "use client";
 
-import Particles from "@/components/particles";
+import Link from "next/link";
+import EmailButton from "@/components/ui/email-button";
 import ScrollDownArrow from "@/components/ui/scroll-down-arrow";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRightIcon } from 'lucide-react';
-import { EnvelopeOpenIcon } from "@radix-ui/react-icons"
-import Link from "next/link";
-import EmailButton from "@/components/ui/email-button";
 
 export default function TitleWithParticles() {
     const { theme, systemTheme } = useTheme();

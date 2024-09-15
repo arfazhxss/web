@@ -39,19 +39,6 @@ export async function markdownToHTML(markdown: string) {
   return p.toString();
 }
 
-// export async function getPost(slug: string) {
-//   const filePath = path.join("content", `${slug}.mdx`);
-//   let source = fs.readFileSync(filePath, "utf-8");
-//   const { content: rawContent, data: metadata } = matter(source);
-//   const content = await markdownToHTML(rawContent);
-//   const readingTime = calculateReadingTime(rawContent);
-//   return {
-//     source: content,
-//     metadata,
-//     slug,
-//   };
-// }
-
 export async function getPost(slug: string) {
   const filePath = path.join("content", `${slug}.mdx`);
   let source = fs.readFileSync(filePath, "utf-8");
