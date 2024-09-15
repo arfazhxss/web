@@ -1,6 +1,22 @@
 #!/bin/bash
-# git workflow v8.0
-# 2024 @arfazhxss
+
+# ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+# ┃                                 Git Workflow                                      ┃
+# ┃===================================================================================┃
+# ┃ Developed for this Github Repository Application System (APP SYS)                 ┃
+# ┃ Tested on Mac, Fedora 36, and unix-based Distributions,                           ┃
+# ┃                                                                                   ┃
+# ┃ One-Keyboard Function(s): Pull/Push, Reset & Sync.                                ┃
+# ┃                                                                                   ┃
+# ┃ This is an open-source script. Feel free to use it at your own risk.              ┃
+# ┃                                                                                   ┃
+# ┃===================================================================================┃
+# ┃                    Suggestions/Others: <arfazhxss@duck.com>                       ┃
+# ┃===================================================================================┃
+# ┃                               Stable Script 8.1                                   ┃
+# ┃                                2024 @arfazhxss                                    ┃
+# ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
 
 breakStrSize=50
 breakStrIter=$(printf '_%.0s' $(seq 1 "$breakStrSize"))
@@ -23,8 +39,8 @@ function versionCheck() {
 function syncBranch() {
   echo -e "YES'ED\n${breakStrIter}"
   git stash
+  git pull --rebase --autostash --quiet
   git stash clear
-  git pull --quiet
   echo -e "${breakStrIter}\n\t\tYour Repository is synced\n\t\twith the latest commit :)\n${breakStrIter}"
 }
 

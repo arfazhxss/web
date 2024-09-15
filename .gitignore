@@ -36,3 +36,15 @@
 **/*.tsbuildinfo
 **/next-env.d.ts
 
+# Ignoring Files
+.DS_Store
+commit-hist.txt
+
+# Ignoring Directories (Illustrator Output Directories)
+1x*/
+1xx*/
+1xxx*/
+
+# Ignoring Main Design Directories
+design-1 (depricated)/
+design-2 (depricated)/
