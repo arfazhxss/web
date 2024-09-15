@@ -240,11 +240,11 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
+      title: "Vikelabs 2024 Hackathon",
+      dates: "May 25, 2024",
+      location: "Victoria, British Columbia",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Developed Course Planner, a web application for University of Victoria students, utilizing NextJS, React, TailwindCSS, and Shadcn UI to simplify degree planning with a streamlined interface and progress tracking",
       image:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",

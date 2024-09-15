@@ -43,7 +43,7 @@ export default function ContactForm() {
         <Card className="w-full max-w-2xl mx-auto shadow-lg py-4">
             <form onSubmit={handleSubmit}>
                 <CardContent className="space-y-2 px-3">
-                    <div className="grid grid-cols-2 gap-0">
+                    <div className="grid grid-cols-2 gap-2">
                         <div className="flex flex-col items-start space-y-1">
                             <Input
                                 type="text"
@@ -65,7 +65,7 @@ export default function ContactForm() {
                             />
                         </div>
                     </div>
-                    <div className="flex flex-col items-start space-y-0">
+                    <div className="flex flex-col items-start space-y-1">
                         <select
                             id="subject"
                             name="subject"
