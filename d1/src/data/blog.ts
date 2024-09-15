@@ -6,12 +6,15 @@ import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
+import calculateReadingTime from "@/lib/readingTime";
 
 type Metadata = {
   title: string;
   publishedAt: string;
   summary: string;
   image?: string;
+  readingTime: string;
+  [key: string]: any; // This allows for additional properties
 };
 
 function getMDXFiles(dir: string) {
@@ -36,11 +39,31 @@ export async function markdownToHTML(markdown: string) {
   return p.toString();
 }
 
+// export async function getPost(slug: string) {
+//   const filePath = path.join("content", `${slug}.mdx`);
+//   let source = fs.readFileSync(filePath, "utf-8");
+//   const { content: rawContent, data: metadata } = matter(source);
+//   const content = await markdownToHTML(rawContent);
+//   const readingTime = calculateReadingTime(rawContent);
+//   return {
+//     source: content,
+//     metadata,
+//     slug,
+//   };
+// }
+
 export async function getPost(slug: string) {
   const filePath = path.join("content", `${slug}.mdx`);
   let source = fs.readFileSync(filePath, "utf-8");
-  const { content: rawContent, data: metadata } = matter(source);
+  const { content: rawContent, data: frontmatterMetadata } = matter(source);
   const content = await markdownToHTML(rawContent);
+  const readingTime = calculateReadingTime(rawContent);
+
+  const metadata: Metadata = {
+    ...frontmatterMetadata as Metadata,
+    readingTime,
+  };
+
   return {
     source: content,
     metadata,

@@ -1,7 +1,7 @@
 import { getBlogPosts, getPost } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import { formatDate } from "@/lib/utils";
-import type { Metadata } from "next";
+import type { Metadata as NextMetadata } from 'next';
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
@@ -16,7 +16,7 @@ export async function generateMetadata({
   params: {
     slug: string;
   };
-}): Promise<Metadata | undefined> {
+}): Promise<NextMetadata | undefined> {
   let post = await getPost(params.slug);
 
   let {
@@ -24,6 +24,7 @@ export async function generateMetadata({
     publishedAt: publishedTime,
     summary: description,
     image,
+    readingTime,
   } = post.metadata;
   let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
 
@@ -47,6 +48,9 @@ export async function generateMetadata({
       title,
       description,
       images: [ogImage],
+    },
+    other: {
+      readingTime,
     },
   };
 }
@@ -94,7 +98,7 @@ export default async function Blog({
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
         <Suspense fallback={<p className="h-5" />}>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            {formatDate(post.metadata.publishedAt)}
+            {formatDate(post.metadata.publishedAt)} • {post.metadata.readingTime}
           </p>
         </Suspense>
       </div>
