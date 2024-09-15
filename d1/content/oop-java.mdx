@@ -1,0 +1,948 @@
+---
+title: "Object Oriented Programming (with Java)"
+publishedAt: "2024-02-18"
+summary: ""
+Date: February 18, 2024
+---
+
+## Why Java?
+
+Java was created out of necessity in the early 1990s by a team at Sun Microsystems, led by James Gosling. They needed a **platform-independent** language that could run on various consumer electronics like TVs and microwaves. At the time, **C** and **C++** dominated programming, but they weren’t flexible enough. C, though powerful, was too **low-level**, requiring complex memory management. C++ added **Object-Oriented Programming (OOP)** to organize code but remained complex and error-prone.
+
+Java aimed to solve these issues by simplifying things. It introduced **automatic garbage collection**, reducing memory errors common in C/C++, and made OOP concepts like **Classes and Objects** easier to implement, allowing developers to write modular, reusable code.
+
+As software complexity grew, Java’s support for **Inheritance**, **Polymorphism**, **Encapsulation**, and **Abstraction** became critical. These concepts helped manage large codebases, avoid duplication, and ensure systems could scale without chaos.
+
+In the sections ahead, we’ll explore these OOP principles and how they shaped Java into what it is today.
+
+---
+
+# Object-Oriented Programming Principles
+
+## 1. Classes and Objects
+
+### What is a Class?
+
+A class in Java is a blueprint for creating objects. It defines the properties (fields) and behaviors (methods) that the objects created from the class will have.
+
+```java
+// Example of a class in Java
+class Car {
+    // Fields (attributes of the class)
+    String model;
+    int year;
+
+    // Constructor (special method to initialize objects)
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method (behavior of the class)
+    void displayDetails() {
+        System.out.println("Car model: " + model);
+        System.out.println("Manufacturing year: " + year);
+    }
+}
+```
+
+### What is an Object?
+
+An object is an instance of a class. It contains the state and behavior as defined by the class. You can create multiple objects from the same class, each with its own values for the fields.
+
+```java
+// Creating an object of the Car class
+public class Main {
+    public static void main(String[] args) {
+        // Creating an instance of the Car class
+        Car car1 = new Car("Tesla Model S", 2023);
+
+        // Calling a method on the object
+        car1.displayDetails();
+    }
+}
+```
+
+### Fields and Methods
+
+- **Fields** (also known as attributes or properties) are variables that store the state of an object.
+- **Methods** define the actions or behaviors that an object can perform.
+
+```java
+// Adding more fields and methods
+class Person {
+    // Fields
+    String name;
+    int age;
+
+    // Constructor
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Method to display person's details
+    void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+// Creating an object of Person class
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person("Alice", 30);
+        person.displayInfo();  // Output: Name: Alice, Age: 30
+    }
+}
+```
+
+### Constructors
+
+A constructor in Java is a special method used to initialize objects. It is called when an object is created and can be used to set initial values for fields.
+
+```java
+class Student {
+    String name;
+    int id;
+
+    // Constructor to initialize fields
+    Student(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    // Method to display student information
+    void showDetails() {
+        System.out.println("Student Name: " + name);
+        System.out.println("Student ID: " + id);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of Student class
+        Student student1 = new Student("John Doe", 101);
+        student1.showDetails();
+    }
+}
+```
+
+### Static Keyword
+
+- **Static fields** belong to the class rather than a specific instance.
+- **Static methods** can be called without creating an instance of the class.
+
+```java
+class MathOperations {
+    // Static method
+    static int add(int a, int b) {
+        return a + b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Calling static method without creating an object
+        int result = MathOperations.add(10, 20);
+        System.out.println("Sum: " + result);  // Output: Sum: 30
+    }
+}
+```
+
+### Access Modifiers
+
+Java provides four types of access modifiers:
+
+- `public`: Accessible from any class.
+- `private`: Accessible only within the same class.
+- `protected`: Accessible within the same package and subclasses.
+- Default (no modifier): Accessible within the same package.
+
+```java
+class Employee {
+    private String name;
+    private double salary;
+
+    // Constructor
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    // Public method to access private fields
+    public void displayInfo() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Salary: $" + salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee("Jane Smith", 50000);
+        emp.displayInfo();
+    }
+}
+```
+
+---
+
+## 2. Inheritance
+
+### What is Inheritance?
+
+Inheritance is one of the core principles of Object-Oriented Programming (OOP) that allows one class (called a **subclass** or **child class**) to inherit the properties and behaviors of another class (called a **superclass** or **parent class**). This concept helps in reusing existing code, reducing redundancy, and making systems more scalable and easier to maintain.
+
+When a class inherits from another, it automatically gains access to all the fields and methods of the parent class. The child class can also add its own fields and methods, or it can modify (override) the behaviors of the parent class.
+
+```java
+// Example of inheritance in Java
+class Animal {
+    // Field
+    String name;
+
+    // Constructor
+    Animal(String name) {
+        this.name = name;
+    }
+
+    // Method
+    void sound() {
+        System.out.println("This animal makes a sound.");
+    }
+}
+
+// Dog class inherits from Animal class
+class Dog extends Animal {
+    // Constructor
+    Dog(String name) {
+        super(name);  // Call the parent class's constructor
+    }
+
+    // Overriding the parent class method
+    @Override
+    void sound() {
+        System.out.println(name + " barks.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog("Buddy");
+        dog.sound();  // Output: Buddy barks.
+    }
+}
+```
+
+In the above example, `Dog` inherits from `Animal`, meaning `Dog` can access fields like `name` and methods like `sound()` from `Animal`. However, the `Dog` class overrides the `sound()` method to provide its own implementation. This is a key feature of inheritance: the child class can extend or modify the behavior of the parent class.
+
+### The History of Inheritance
+
+The concept of inheritance has its roots in earlier programming languages, but it became popularized with the rise of Object-Oriented Programming in the 1980s. Inheritance was formally introduced in programming with **Simula** in the 1960s, the first programming language that supported classes and objects.
+
+Simula, originally developed for simulation purposes, laid the groundwork for many OOP concepts that we use today, including inheritance. Later, languages like **Smalltalk**, developed in the 1970s, further refined these ideas. Smalltalk made inheritance a key feature, allowing software engineers to organize large systems more effectively by creating hierarchies of classes.
+
+In the 1990s, Java inherited many ideas from these earlier languages, but it improved on them by making the inheritance model simpler and more robust. While languages like **C++** support **multiple inheritance** (where a class can inherit from more than one parent class), Java simplified this by allowing a class to inherit from only one class (called **single inheritance**). However, Java also introduced **interfaces** to allow classes to inherit behaviors from multiple sources without the complexity of multiple inheritance.
+
+### The Mechanics of Inheritance in Java
+
+In Java, inheritance is achieved using the `extends` keyword. A class can inherit from only one other class, which helps avoid the "diamond problem" found in languages that allow multiple inheritance, where a class could inherit conflicting behaviors from two different parent classes.
+
+```java
+class Parent {
+    // Fields
+    String familyName;
+
+    // Constructor
+    Parent(String familyName) {
+        this.familyName = familyName;
+    }
+
+    // Method
+    void showFamilyName() {
+        System.out.println("Family name: " + familyName);
+    }
+}
+
+class Child extends Parent {
+    // Field
+    String firstName;
+
+    // Constructor
+    Child(String firstName, String familyName) {
+        super(familyName);  // Call the parent class's constructor
+        this.firstName = firstName;
+    }
+
+    // Method
+    void showFullName() {
+        System.out.println("Full name: " + firstName + " " + familyName);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child child = new Child("John", "Doe");
+        child.showFullName();  // Output: Full name: John Doe
+    }
+}
+```
+
+In the above example, the `Child` class extends the `Parent` class. The `super()` keyword is used to call the parent class's constructor. The `Child` class not only inherits the `familyName` field and the `showFamilyName()` method from `Parent`, but it also adds its own `firstName` field and `showFullName()` method.
+
+### Types of Inheritance
+
+1. **Single Inheritance**: A class inherits from one superclass. Java uses single inheritance, meaning that a class can have only one parent class.
+
+   ```java
+   class A { /* Parent class */ }
+   class B extends A { /* Child class */ }
+   ```
+
+2. **Multilevel Inheritance**: A class can inherit from a child class, creating a chain of inheritance.
+
+   ```java
+   class A { /* Parent class */ }
+   class B extends A { /* Child class */ }
+   class C extends B { /* Grandchild class */ }
+   ```
+
+3. **Hierarchical Inheritance**: Multiple classes can inherit from the same superclass.
+
+   ```java
+   class A { /* Parent class */ }
+   class B extends A { /* Child class */ }
+   class C extends A { /* Another child class */ }
+   ```
+
+### Method Overriding
+
+One of the key features of inheritance is **method overriding**, where the child class provides a specific implementation of a method that is already defined in its parent class. This allows for **polymorphism**, enabling a single method to behave differently based on the object calling it.
+
+In Java, method overriding is achieved using the `@Override` annotation.
+
+```java
+class Animal {
+    void sound() {
+        System.out.println("This animal makes a sound.");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    void sound() {
+        System.out.println("The cat meows.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myCat = new Cat();
+        myCat.sound();  // Output: The cat meows.
+    }
+}
+```
+
+### Benefits of Inheritance
+
+- **Code Reusability**: By using inheritance, developers can reuse the code written in a parent class, reducing duplication.
+- **Extensibility**: Inheritance allows for easy extension of existing classes, making it simpler to add new functionality without modifying the existing code.
+- **Maintainability**: Since the shared behavior is centralized in the parent class, updates or fixes can be applied in one place, making the system easier to maintain.
+- **Polymorphism**: Inheritance enables polymorphism, where a method can take different forms based on the object calling it.
+
+---
+
+## 3. Polymorphism
+
+### What is Polymorphism?
+
+Polymorphism, one of the four foundational principles of Object-Oriented Programming (OOP), allows objects of different classes to be treated as objects of a common superclass. The term **polymorphism** itself is derived from Greek, meaning **many forms**, and it enables a single action to behave differently based on the object performing it. In programming, this usually translates to a method or function behaving differently depending on the object or the data type it's interacting with.
+
+Polymorphism in Java can be broadly categorized into two types:
+
+1. **Compile-time Polymorphism (Method Overloading)**
+2. **Run-time Polymorphism (Method Overriding)**
+
+### The History of Polymorphism
+
+Polymorphism as a concept is not new to programming, with its origins in mathematics and logic. In programming, it was first introduced by **Christopher Strachey** in the 1960s, a British computer scientist who worked on the idea of _polymorphic types_, which allowed functions to be written more generically.
+
+As object-oriented programming developed, especially with languages like **Simula** and **Smalltalk**, polymorphism became more integral, allowing for greater flexibility and modularity in software design. By the time **Java** was released in the 1990s, polymorphism was a well-established concept that helped Java handle complex systems with ease. Java simplified polymorphism by tightly integrating it with its inheritance and method overriding mechanisms, making it a fundamental part of the language's architecture.
+
+### Compile-time Polymorphism (Method Overloading)
+
+In **compile-time polymorphism**, also known as **method overloading**, the decision about which method to invoke is made at compile time. Method overloading occurs when multiple methods share the same name but differ in their parameter types or the number of parameters. This allows the same method name to perform different tasks based on the arguments passed to it.
+
+```java
+class Calculator {
+    // Overloaded method to add two integers
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    // Overloaded method to add three integers
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Overloaded method to add two doubles
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+
+        // Call different versions of the add() method
+        System.out.println(calc.add(5, 10));       // Output: 15
+        System.out.println(calc.add(5, 10, 20));   // Output: 35
+        System.out.println(calc.add(5.5, 10.5));   // Output: 16.0
+    }
+}
+```
+
+In the example above, the `add()` method is overloaded three times with different parameter signatures. The compiler determines which version of the method to call based on the argument types and number of arguments.
+
+### Run-time Polymorphism (Method Overriding)
+
+**Run-time polymorphism**, or **method overriding**, is achieved when a child class provides a specific implementation of a method that is already defined in its parent class. In this case, the method that gets executed is determined at **run-time**, depending on the type of object that is calling the method. This allows for **dynamic method dispatch**.
+
+In Java, run-time polymorphism is closely tied to inheritance and interfaces. A method in a parent class can be overridden by a child class to provide specialized behavior. The object of the child class can then be treated as an object of the parent class, but when the overridden method is called, the child class's version of the method is executed.
+
+```java
+class Animal {
+    void sound() {
+        System.out.println("This animal makes a sound.");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("The dog barks.");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    void sound() {
+        System.out.println("The cat meows.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+
+        myDog.sound();  // Output: The dog barks.
+        myCat.sound();  // Output: The cat meows.
+    }
+}
+```
+
+In this example, `myDog` and `myCat` are both of type `Animal`, but at run-time, Java knows to call the `sound()` method defined in the `Dog` and `Cat` classes, not the `Animal` class. This dynamic behavior is the essence of run-time polymorphism.
+
+### Polymorphism and Interfaces
+
+In addition to inheritance, polymorphism in Java can also be achieved through **interfaces**. An interface in Java is a contract that specifies a set of methods that a class must implement. Multiple classes can implement the same interface, allowing them to be treated polymorphically.
+
+```java
+interface Shape {
+    void draw();
+}
+
+class Circle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a Circle.");
+    }
+}
+
+class Rectangle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a Rectangle.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Shape circle = new Circle();
+        Shape rectangle = new Rectangle();
+
+        circle.draw();    // Output: Drawing a Circle.
+        rectangle.draw(); // Output: Drawing a Rectangle.
+    }
+}
+```
+
+In this example, both `Circle` and `Rectangle` implement the `Shape` interface, and despite being different classes, they are both treated as `Shape` objects. When the `draw()` method is called on each object, their specific implementations are invoked.
+
+### Advantages of Polymorphism
+
+Polymorphism provides several key advantages in software development:
+
+1. **Code Flexibility and Extensibility**: Polymorphism enables the same code to work with different types of objects, allowing for easier extension and adaptation of code.
+2. **Reduces Redundancy**: By allowing different objects to share the same method names, polymorphism reduces the need for redundant code.
+
+3. **Improved Maintainability**: Polymorphic code is easier to maintain, as changes to the parent class or interface propagate to all child classes, making updates centralized and consistent.
+
+4. **Supports Dynamic Method Dispatch**: Run-time polymorphism enables dynamic method invocation, allowing the program to adapt to different object types on the fly.
+
+### Disadvantages of Polymorphism
+
+While polymorphism provides many benefits, it can also have some drawbacks:
+
+1. **Complexity**: Polymorphism, particularly run-time polymorphism, can introduce complexity to the code, making it harder to trace which method is being invoked at runtime.
+
+2. **Performance Overhead**: Since run-time polymorphism involves dynamic method dispatch, it can introduce performance overhead compared to compile-time method resolution.
+
+3. **Requires a Strong Understanding of Inheritance**: Implementing polymorphism effectively requires a solid understanding of inheritance and how different classes and interfaces interact.
+
+---
+
+## 4. Encapsulation
+
+### What is Encapsulation?
+
+Encapsulation is one of the four fundamental Object-Oriented Programming (OOP) principles that refers to the bundling of data (variables) and methods (functions) into a single unit or class, while restricting access to some of the object's components. The key idea behind encapsulation is to ensure that an object's internal state cannot be altered arbitrarily by external entities, maintaining **data integrity** and **security**.
+
+In Java, encapsulation is achieved using **access modifiers** (such as `private`, `public`, `protected`) to control the visibility of class members. By setting fields to `private` and providing **getter** and **setter** methods, you create a protective boundary around the data. This ensures that any changes to the object's state go through controlled, validated methods rather than direct manipulation.
+
+### The History of Encapsulation
+
+The concept of encapsulation has its roots in early computing theory and programming paradigms. As software systems became more complex, developers sought ways to **hide complexity** and **protect data** from accidental misuse. **Simula 67**, the first OOP language, introduced the foundation of encapsulation by using **classes** to define both the data and the operations on that data. Later, languages like **Smalltalk** and **C++** further refined the concept by formalizing access control mechanisms, which allowed developers to define strict boundaries around their data.
+
+Java, which came in the mid-1990s, streamlined encapsulation with easy-to-use syntax for defining access levels, thus encouraging developers to adhere to the principle of **information hiding**. This improved the maintainability and security of complex Java applications.
+
+### Encapsulation in Java
+
+In Java, encapsulation is implemented by declaring fields as `private` and providing public `getter` and `setter` methods to allow controlled access to those fields. This is the essence of **data hiding**: preventing direct access to the object's state while exposing a public interface that enforces rules and constraints.
+
+```java
+class Employee {
+    // Private fields (encapsulated data)
+    private String name;
+    private double salary;
+
+    // Constructor
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    // Getter for name (read access)
+    public String getName() {
+        return name;
+    }
+
+    // Setter for name (write access)
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter for salary (read access)
+    public double getSalary() {
+        return salary;
+    }
+
+    // Setter for salary (write access)
+    public void setSalary(double salary) {
+        if (salary > 0) {
+            this.salary = salary;
+        } else {
+            System.out.println("Invalid salary value");
+        }
+    }
+
+    // Method to display employee details
+    public void displayInfo() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Salary: $" + salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of Employee class
+        Employee emp = new Employee("John Doe", 50000);
+
+        // Accessing private data through getter/setter methods
+        System.out.println("Initial Name: " + emp.getName());
+        emp.setSalary(60000); // Valid salary
+        emp.setSalary(-100);   // Invalid salary
+
+        // Display employee info
+        emp.displayInfo();
+    }
+}
+```
+
+In the above example, the `name` and `salary` fields are marked `private`, preventing direct access from outside the class. The public `getName()`, `setName()`, `getSalary()`, and `setSalary()` methods provide controlled access to these fields. The `setSalary()` method includes a simple validation check to ensure that only positive values are allowed for salary, demonstrating how encapsulation enhances data safety.
+
+### Benefits of Encapsulation
+
+1. **Data Protection**: By hiding fields from direct access, encapsulation protects data from accidental or malicious modification. Only validated and controlled access is allowed.
+2. **Increased Flexibility**: With encapsulation, the internal implementation of a class can be changed without affecting the external code that uses it. This means that you can modify how fields are stored or calculated without breaking existing code.
+
+3. **Improved Maintainability**: Encapsulation creates a clear separation between an object's internal state and its external interface. This makes code easier to read, understand, and maintain, especially in large systems.
+
+4. **Modularization**: Encapsulation promotes the idea of self-contained classes, which helps in modularizing large systems. Each class can be developed, tested, and debugged independently, contributing to better overall system architecture.
+
+5. **Reusability**: Encapsulation encourages the development of reusable components. A well-encapsulated class with a clear and controlled interface can be reused in different parts of an application or even in different projects.
+
+### Access Control with Modifiers
+
+Java provides four levels of access control for class members:
+
+1. **Private** (`private`): Accessible only within the same class. This is the most restrictive level of access, and it's typically used to enforce encapsulation.
+
+   ```java
+   private String name; // Only accessible within this class
+   ```
+
+2. **Public** (`public`): Accessible from any class. Public methods or fields provide an interface to the outside world.
+
+   ```java
+   public String getName() { return name; } // Accessible from any class
+   ```
+
+3. **Protected** (`protected`): Accessible within the same package or subclasses (even in different packages). This is often used in inheritance scenarios to allow child classes to access parent class members.
+
+   ```java
+   protected String department; // Accessible by subclasses
+   ```
+
+4. **Default** (no modifier): Accessible within the same package. This is sometimes referred to as **package-private** visibility.
+
+   ```java
+   String team; // Accessible within the same package
+   ```
+
+### Encapsulation in Practice
+
+Encapsulation is not just a theoretical concept but a best practice that is fundamental to modern software development. In large systems, it helps maintain the **separation of concerns**, keeping each class focused on a single responsibility. By encapsulating internal logic and data, developers can build complex systems with components that interact in a clean and predictable manner.
+
+For example, consider a banking system where user accounts must be protected from unauthorized access. Encapsulation ensures that sensitive data, such as account balances, are protected through private fields and that only authorized methods are allowed to modify them. This helps prevent accidental overdrafts or malicious attacks on the system's integrity.
+
+```java
+class BankAccount {
+    private double balance;
+
+    public BankAccount(double initialBalance) {
+        this.balance = initialBalance;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    // Controlled access to modify the balance
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        } else {
+            System.out.println("Invalid deposit amount");
+        }
+    }
+
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+        } else {
+            System.out.println("Invalid withdrawal amount");
+        }
+    }
+}
+```
+
+In this example, the `balance` field is private, meaning that no external code can directly modify it. The `deposit()` and `withdraw()` methods provide controlled, validated access to this sensitive data.
+
+---
+
+## 4. Abstraction
+
+### What is Abstraction?
+
+**Abstraction** is one of the core principles of Object-Oriented Programming (OOP), designed to simplify complex systems by breaking them down into smaller, more manageable pieces. In Java, abstraction means hiding the complex implementation details of a system and exposing only the necessary and relevant parts to the user. It allows developers to focus on **what** an object does rather than **how** it does it.
+
+Think of abstraction as a way to create a clear separation between the internal workings of an object and the functionality it offers. By using abstraction, developers can reduce complexity and improve code modularity, maintainability, and flexibility.
+
+In Java, abstraction can be achieved in two main ways:
+
+1. **Abstract Classes**
+2. **Interfaces**
+
+### History of Abstraction in Programming
+
+The concept of abstraction has roots in mathematics and logic, where it is used to simplify problems by focusing only on the essential details. Abstraction in programming was formalized in the 1960s with languages like **ALGOL** and **Simula**, the first language to support objects and classes.
+
+Simula introduced abstract data types, allowing programmers to define complex systems in simpler terms. As object-oriented programming evolved, languages like **Smalltalk** and **C++** refined the concept of abstraction, making it a fundamental feature of OOP. By the time **Java** emerged in the 1990s, abstraction had become a key part of OOP, and Java simplified its implementation by introducing a robust system of abstract classes and interfaces.
+
+### Abstract Classes
+
+An **abstract class** in Java is a class that cannot be instantiated on its own and serves as a blueprint for other classes. It may or may not contain abstract methods—methods that have no body and must be implemented by the child classes. The purpose of an abstract class is to provide common functionality to subclasses while allowing them to define their own specific behavior.
+
+#### Defining an Abstract Class
+
+To define an abstract class in Java, you use the `abstract` keyword. Any class that inherits from an abstract class must either implement all of its abstract methods or be declared abstract itself.
+
+```java
+// Abstract class
+abstract class Vehicle {
+    // Abstract method (no implementation)
+    abstract void startEngine();
+
+    // Concrete method (with implementation)
+    void fuelUp() {
+        System.out.println("Filling up fuel...");
+    }
+}
+
+// Subclass implementing the abstract method
+class Car extends Vehicle {
+    @Override
+    void startEngine() {
+        System.out.println("Car engine started.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle myCar = new Car();
+        myCar.startEngine();  // Output: Car engine started.
+        myCar.fuelUp();       // Output: Filling up fuel...
+    }
+}
+```
+
+In this example, `Vehicle` is an abstract class with one abstract method (`startEngine()`) and one concrete method (`fuelUp()`). The `Car` class inherits from `Vehicle` and provides an implementation for `startEngine()`. The `fuelUp()` method is inherited as-is.
+
+### Why Use Abstract Classes?
+
+Abstract classes are useful when you have a base class that defines general behavior, but you want specific classes to implement the details. This is particularly useful when you need to provide some shared code or default behavior while still enforcing certain requirements for the child classes.
+
+#### Key Features of Abstract Classes
+
+1. **Cannot be instantiated**: Abstract classes cannot be used to create objects directly. They must be subclassed by concrete classes.
+2. **May contain both abstract and concrete methods**: Unlike interfaces (discussed below), abstract classes can have methods with full implementations.
+3. **Supports constructors**: Abstract classes can have constructors, which can be called by subclasses to initialize fields.
+4. **May contain fields**: Abstract classes can define fields (variables) that can be inherited by subclasses.
+
+### Example of Abstract Class Usage
+
+Imagine a scenario where we have different types of employees in a company: **Full-TimeEmployee** and **Part-TimeEmployee**. Both share common attributes like name, salary, and department, but the way they calculate their pay might be different. We can use an abstract class to define shared behavior while letting subclasses handle the specific pay calculation logic.
+
+```java
+abstract class Employee {
+    String name;
+    String department;
+
+    // Abstract method to calculate salary
+    abstract double calculatePay();
+
+    // Concrete method
+    void displayEmployeeDetails() {
+        System.out.println("Employee: " + name + ", Department: " + department);
+    }
+}
+
+class FullTimeEmployee extends Employee {
+    double annualSalary;
+
+    FullTimeEmployee(String name, String department, double annualSalary) {
+        this.name = name;
+        this.department = department;
+        this.annualSalary = annualSalary;
+    }
+
+    @Override
+    double calculatePay() {
+        return annualSalary / 12; // Monthly pay
+    }
+}
+
+class PartTimeEmployee extends Employee {
+    double hourlyRate;
+    int hoursWorked;
+
+    PartTimeEmployee(String name, String department, double hourlyRate, int hoursWorked) {
+        this.name = name;
+        this.department = department;
+        this.hourlyRate = hourlyRate;
+        this.hoursWorked = hoursWorked;
+    }
+
+    @Override
+    double calculatePay() {
+        return hourlyRate * hoursWorked;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee fullTime = new FullTimeEmployee("John Doe", "Engineering", 120000);
+        Employee partTime = new PartTimeEmployee("Jane Smith", "Design", 50, 80);
+
+        fullTime.displayEmployeeDetails();
+        System.out.println("Monthly Pay: $" + fullTime.calculatePay());
+
+        partTime.displayEmployeeDetails();
+        System.out.println("Weekly Pay: $" + partTime.calculatePay());
+    }
+}
+```
+
+In this example, the `Employee` abstract class provides common fields and methods, while the subclasses implement their own `calculatePay()` logic. This allows for clean, reusable, and maintainable code.
+
+### Interfaces
+
+An **interface** in Java is another way to achieve abstraction. Unlike abstract classes, interfaces cannot contain any concrete methods (before Java 8), meaning all methods in an interface are implicitly abstract. Interfaces are used to define a contract or blueprint for classes without dictating how the methods should be implemented. A class can implement multiple interfaces, making interfaces a great way to achieve **multiple inheritance** in Java.
+
+#### Defining an Interface
+
+In Java, interfaces are declared using the `interface` keyword. A class that implements an interface must provide concrete implementations for all of its methods.
+
+```java
+// Defining an interface
+interface Drawable {
+    void draw();
+}
+
+// Implementing the interface
+class Circle implements Drawable {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle.");
+    }
+}
+
+class Rectangle implements Drawable {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a rectangle.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Drawable circle = new Circle();
+        Drawable rectangle = new Rectangle();
+
+        circle.draw();     // Output: Drawing a circle.
+        rectangle.draw();  // Output: Drawing a rectangle.
+    }
+}
+```
+
+In this example, both `Circle` and `Rectangle` implement the `Drawable` interface and provide their own implementation of the `draw()` method. The advantage here is that both classes can be treated polymorphically as `Drawable` objects.
+
+### Why Use Interfaces?
+
+Interfaces are ideal when you need to define a contract that multiple classes must adhere to but don't want to specify how the methods should be implemented. This allows for loose coupling and flexibility in how functionality is shared across different parts of the system.
+
+#### Key Features of Interfaces
+
+1. **Cannot contain fields**: Unlike abstract classes, interfaces do not allow instance variables (fields). However, they can contain constants (static final fields).
+2. **Only abstract methods (until Java 8)**: All methods in an interface were abstract until Java 8 introduced default and static methods, which can have concrete implementations.
+3. **Multiple inheritance**: A class can implement multiple interfaces, allowing it to inherit behavior from different sources without the complexity of multiple inheritance seen in languages like C++.
+4. **Used for defining contracts**: Interfaces are often used when you need to ensure that certain classes follow a specific protocol or contract.
+
+### Interface Example: Payment System
+
+Let's extend the employee example by creating a `Payable` interface, which any class that represents a payable entity must implement.
+
+```java
+// Defining the Payable interface
+interface Payable {
+    double calculatePay();
+}
+
+// Implementing Payable interface in FullTimeEmployee class
+class FullTimeEmployee implements Payable {
+    double annualSalary;
+
+    FullTimeEmployee(double annualSalary) {
+        this.annualSalary = annualSalary;
+    }
+
+    @Override
+    public double calculatePay() {
+        return annualSalary / 12;
+    }
+}
+
+// Implementing Payable interface in PartTimeEmployee class
+class PartTimeEmployee implements Payable {
+    double hourlyRate;
+    int hoursWorked;
+
+    PartTimeEmployee(double hourlyRate, int hoursWorked) {
+        this.hourlyRate = hourlyRate;
+        this.hoursWorked = hoursWorked;
+    }
+
+    @Override
+    public double calculatePay() {
+        return hourlyRate * hoursWorked;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Payable fullTime = new FullTimeEmployee(120000);
+        Payable partTime = new PartTimeEmployee(50, 80);
+
+        System.out.println("Full-Time Pay: $" + fullTime.calculatePay());
+        System.out.println("Part-Time Pay: $" + partTime.calculatePay());
+    }
+}
+```
+
+Here, both `FullTimeEmployee` and `PartTimeEmployee` implement the `Payable` interface
+
+, ensuring that they provide a `calculatePay()` method. This demonstrates the flexibility and reusability of interfaces in enforcing a contract across unrelated classes.
+
+### Abstraction in Java 8 and Beyond
+
+Java 8 introduced **default methods** and **static methods** in interfaces, allowing interfaces to contain concrete methods, which blur the line between interfaces and abstract classes.
+
+```java
+interface Printable {
+    default void print() {
+        System.out.println("Default printing...");
+    }
+
+    static void show() {
+        System.out.println("Static show method...");
+    }
+}
+```
+
+These enhancements give interfaces more power while maintaining backward compatibility.
+
+### Benefits of Abstraction
+
+1. **Simplifies Complexity**: Abstraction allows developers to focus on the essential functionality without getting bogged down by unnecessary details.
+2. **Increased Flexibility**: By hiding implementation details, abstraction allows you to modify or replace the underlying logic without affecting the external interface.
+
+3. **Enhances Reusability**: Abstract classes and interfaces promote code reuse by defining common behavior that can be inherited or implemented by multiple classes.
+
+4. **Promotes Loose Coupling**: Abstraction reduces dependency between components, making systems more modular and easier to maintain.
+
+5. **Supports Multiple Inheritance (through Interfaces)**: Interfaces enable multiple inheritance in Java, which allows classes to implement multiple behaviors without inheriting from multiple classes.
+
+---
+
+## Conclusion
+
+Java’s journey began in the 1990s as a solution to the limitations of existing languages like C and C++, particularly around issues of portability and memory management. By focusing on platform independence and simplifying Object-Oriented Programming (OOP), Java made it easier for developers to manage complexity in software systems. Concepts like **Encapsulation**, **Abstraction**, **Inheritance**, and **Polymorphism** became essential tools for organizing large-scale applications and promoting code reuse.
+
+Over time, Java’s influence extended beyond its original scope, inspiring the development of other languages like **C#**, **Python**, and **JavaScript**, which adopted and adapted its OOP principles. While Java was not the first object-oriented language, it popularized these concepts in a way that was accessible to many developers.
+
+In the broader context, the principles that underpin OOP are still relevant, though the software landscape has evolved. Newer languages such as **Kotlin** and **Swift** continue to refine and build on these ideas, while also incorporating elements from other paradigms like **Functional Programming**. Even within Java itself, features like **lambda expressions** and **streams** reflect the blending of OOP with modern programming trends.
+
+Java remains a widely used language, but like all technologies, it continues to evolve in response to new challenges and opportunities. Its role in shaping software development is undeniable, and the foundational OOP principles it helped popularize will likely continue to influence programming practices in the years to come.
