@@ -2,7 +2,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { ResumeCard } from "@/components/resume-card";
 import { DATA } from "@/data/resume";
-import { useBlurFadeDelay } from "@/hooks/BlurFadeContext";
+import { useBlurFadeDelay } from "@/components/context/BlurFadeContext";
 
 export default function Work() {
     const blurFadeDelay = useBlurFadeDelay();

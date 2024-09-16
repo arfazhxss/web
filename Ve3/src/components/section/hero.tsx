@@ -1,7 +1,7 @@
 "use client";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { useBlurFadeDelay } from "@/hooks/BlurFadeContext";
+import { useBlurFadeDelay } from "@/components/context/BlurFadeContext";
 import { DATA } from "@/data/resume";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";

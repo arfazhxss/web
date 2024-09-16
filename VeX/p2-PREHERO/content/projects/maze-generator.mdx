@@ -1,0 +1,43 @@
+---
+title: Maze Generator and Solver
+description: A maze generator and solver implemented in Java.
+repository: davidemarcoli/Maze-Generator
+date: 2021-07-15
+published: true
+---
+
+This project represents a maze generator and solver implemented in Java. It uses a classic algorithm based on cell visitation and a stack to remember the path to generate and then solve the maze.
+
+- It supports a fixed grid size, which is initialized during object creation.
+- It has the ability to either generate or solve a maze.
+- While generating the maze, it uses a stack (`history`) to keep track of the visited cells.
+- While solving the maze, it identifies neighboring cells and then determine the solution path.
+- The resulting maze is passed to the `Drawer` class for visualization.
+
+Each cell in the maze is represented by an enum, which can have one of the following values:
+- `PATH`: Represents a navigable path.
+- `WALL`: Represents a wall or barrier.
+- `VISITED`: Represents a cell that has been visited during maze generation/solution.
+- `CORRECT`: Represents the correct path of the maze solution.
+
+The maze can also be visualized using a `BufferedImage`, which is then saved as a PNG file.
+- Renders the maze to an image, which can then be saved.
+- Can optionally highlight the solution path in a different color.
+
+### Key Features:
+
+1. **Maze Generation**: The maze is generated using an iterative approach. As cells are visited, their type is updated, and their position is stored in a stack. This helps in tracing back if a dead-end is encountered.
+
+2. **Maze Solver**: Once the maze has been generated, the solver can be run to determine the solution path. This solution path is again determined using an iterative approach and can be visualized in the final rendered image.
+
+3. **Visualization**: The maze (with or without the solution path) is visualized using a `BufferedImage`, which is then saved as a PNG file.
+
+
+[//]: # (## Improvements and Considerations:)
+
+[//]: # ()
+[//]: # (1. **Error Handling**: Currently, simple error messages are displayed for certain conditions &#40;like entering a value less than 1&#41;. This can be expanded for more robust error handling and user feedback.)
+
+[//]: # (2. **Customization**: Additional features can be added for customizing the maze &#40;like specifying the start and end points, having multiple solutions, etc.&#41;.)
+
+[//]: # (3. **Performance**: The maze generation and solution can be optimized for larger grid sizes. Consideration can also be given to the efficiency of image rendering, especially for larger mazes.)

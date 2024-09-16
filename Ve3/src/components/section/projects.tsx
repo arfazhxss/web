@@ -3,7 +3,7 @@
 import { ProjectCard } from "@/components/project-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import { DATA } from "@/data/resume";
-import { useBlurFadeDelay } from "@/hooks/BlurFadeContext";
+import { useBlurFadeDelay } from "@/components/context/BlurFadeContext";
 
 export default function Projects() {
     const blurFadeDelay = useBlurFadeDelay();

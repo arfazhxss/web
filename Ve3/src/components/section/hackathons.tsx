@@ -2,7 +2,7 @@
 
 import { DATA } from "@/data/resume";
 import { HackathonCard } from "@/components/hackathon-card";
-import { useBlurFadeDelay } from "@/hooks/BlurFadeContext";
+import { useBlurFadeDelay } from "@/components/context/BlurFadeContext";
 import BlurFade from "@/components/magicui/blur-fade";
 
 export default function Hackathons() {

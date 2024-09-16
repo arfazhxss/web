@@ -1,7 +1,7 @@
 "use client";
 
 import { DATA } from "@/data/resume";
-import { useBlurFadeDelay } from "@/hooks/BlurFadeContext";
+import { useBlurFadeDelay } from "@/components/context/BlurFadeContext";
 import BlurFade from "@/components/magicui/blur-fade";
 import Markdown from "react-markdown";
 
