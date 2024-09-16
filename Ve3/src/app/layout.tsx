@@ -28,6 +28,14 @@ export const metadata: Metadata = {
     siteName: `${DATA.name}`,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: `${DATA.url}/openg.png`,  // Ensure you have a valid image path
+        width: 1200,
+        height: 630,
+        alt: "Arfaz Hussain | Software Developer",
+      },
+    ],
   },
   robots: {
     index: true,
