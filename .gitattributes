@@ -1,3 +1,18 @@
+# Exclude all HTML, CSS, and other files
 *.html linguist-vendored
 *.css linguist-vendored
 *.sh linguist-vendored
+*.json linguist-vendored
+*.xml linguist-vendored
+*.svg linguist-vendored
+*.png linguist-vendored
+*.jpg linguist-vendored
+*.jpeg linguist-vendored
+*.gif linguist-vendored
+
+# Ensure only TypeScript, React (.tsx), MDX, and JavaScript files are indexed
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+*.mdx linguist-language=MDX
+*.js linguist-language=JavaScript
+
