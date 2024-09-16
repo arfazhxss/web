@@ -1,17 +1,20 @@
-# Exclude all HTML, CSS, and other files
+# Exclude all HTML, CSS, and image files
 *.html linguist-vendored
 *.css linguist-vendored
-*.xml linguist-vendored
 *.svg linguist-vendored
 *.png linguist-vendored
 *.jpg linguist-vendored
 *.jpeg linguist-vendored
 *.gif linguist-vendored
-*.js linguist-vendored
 
-# Ensure only TypeScript, React (.tsx), MDX, and JavaScript files are indexed
+# Include Shell and JSON files in language stats
+*.sh linguist-language=Shell
+*.json linguist-language=JSON
+
+# Ensure only TypeScript, React (.tsx), and MDX files are indexed
 *.ts linguist-language=TypeScript
 *.tsx linguist-language=TypeScript
 *.mdx linguist-language=MDX
-*.sh linguist-language=Shell
-*.json linguist-language=JSON
+
+# Exclude JavaScript files from language stats
+*.js linguist-vendored
