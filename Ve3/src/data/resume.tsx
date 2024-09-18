@@ -114,129 +114,227 @@ export const DATA = {
       end: "2020",
     }
   ],
+  // projects: [
+  //   {
+  //     title: "Chat Collect",
+  //     href: "https://chatcollect.com",
+  //     dates: "Jan 2024 - Feb 2024",
+  //     active: true,
+  //     description:
+  //       "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+  //     technologies: [
+  //       "Next.js",
+  //       "Typescript",
+  //       "PostgreSQL",
+  //       "Prisma",
+  //       "TailwindCSS",
+  //       "Stripe",
+  //       "Shadcn UI",
+  //       "Magic UI",
+  //     ],
+  //     links: [
+  //       {
+  //         type: "Website",
+  //         href: "https://chatcollect.com",
+  //         icon: <Icons.globe className="size-3" />,
+  //       },
+  //     ],
+  //     image: "",
+  //     video:
+  //       "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+  //   },
+  //   {
+  //     title: "Magic UI",
+  //     href: "https://magicui.design",
+  //     dates: "June 2023 - Present",
+  //     active: true,
+  //     description:
+  //       "Designed, developed and sold animated UI components for developers.",
+  //     technologies: [
+  //       "Next.js",
+  //       "Typescript",
+  //       "PostgreSQL",
+  //       "Prisma",
+  //       "TailwindCSS",
+  //       "Stripe",
+  //       "Shadcn UI",
+  //       "Magic UI",
+  //     ],
+  //     links: [
+  //       {
+  //         type: "Website",
+  //         href: "https://magicui.design",
+  //         icon: <Icons.globe className="size-3" />,
+  //       },
+  //       {
+  //         type: "Source",
+  //         href: "https://github.com/magicuidesign/magicui",
+  //         icon: <Icons.github className="size-3" />,
+  //       },
+  //     ],
+  //     image: "",
+  //     video: "https://cdn.magicui.design/bento-grid.mp4",
+  //   },
+  //   {
+  //     title: "llm.report",
+  //     href: "https://llm.report",
+  //     dates: "April 2023 - September 2023",
+  //     active: true,
+  //     description:
+  //       "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+  //     technologies: [
+  //       "Next.js",
+  //       "Typescript",
+  //       "PostgreSQL",
+  //       "Prisma",
+  //       "TailwindCSS",
+  //       "Shadcn UI",
+  //       "Magic UI",
+  //       "Stripe",
+  //       "Cloudflare Workers",
+  //     ],
+  //     links: [
+  //       {
+  //         type: "Website",
+  //         href: "https://llm.report",
+  //         icon: <Icons.globe className="size-3" />,
+  //       },
+  //       {
+  //         type: "Source",
+  //         href: "https://github.com/dillionverma/llm.report",
+  //         icon: <Icons.github className="size-3" />,
+  //       },
+  //     ],
+  //     image: "",
+  //     video: "https://cdn.llm.report/openai-demo.mp4",
+  //   },
+  //   {
+  //     title: "Automatic Chat",
+  //     href: "https://automatic.chat",
+  //     dates: "April 2023 - March 2024",
+  //     active: true,
+  //     description:
+  //       "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+  //     technologies: [
+  //       "Next.js",
+  //       "Typescript",
+  //       "PostgreSQL",
+  //       "Prisma",
+  //       "TailwindCSS",
+  //       "Shadcn UI",
+  //       "Magic UI",
+  //       "Stripe",
+  //       "Cloudflare Workers",
+  //     ],
+  //     links: [
+  //       {
+  //         type: "Website",
+  //         href: "https://automatic.chat",
+  //         icon: <Icons.globe className="size-3" />,
+  //       },
+  //     ],
+  //     image: "",
+  //     video:
+  //       "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+  //   },
+  // ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Course Planner",
+      href: "https://github.com/arfazhxss/course-planner",
+      dates: "Feb 2024 - Present",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Developed a course planning tool using Next.js to help students plan courses and track degree progress. Integrated PostgreSQL for database management and implemented drag-and-drop functionality with React. Designed the User Experience using TailwindCSS.",
       technologies: [
         "Next.js",
-        "Typescript",
+        "React",
+        "TypeScript",
         "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "TailwindCSS"
       ],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
+          type: "GitHub",
+          href: "https://github.com/arfazhxss/course-planner",
+          icon: <Icons.github className="size-3" />
+        }
       ],
       image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      video: ""
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Automated Application System",
+      href: "https://github.com/arfazhxss/app-sys",
+      dates: "Dec 2023 - Present",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+        "Automated the job application process using Bash and Python. Utilized multithreading to optimize data extraction and processing, reducing runtime by 60%. Created command-line tools to improve workflow efficiency.",
+      technologies: ["Bash", "Python", "LaTeX"],
       links: [
         {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
+          type: "GitHub",
+          href: "https://github.com/arfazhxss/app-sys",
+          icon: <Icons.github className="size-3" />
+        }
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: ""
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Jabref - Open Source Contributions",
+      href: "https://github.com/arfazhxss/jabref",
+      dates: "Dec 2023 - May 2024",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
+        "Developed and optimized unit, caching, and integration tests for JabRef. Improved the performance and memory management of the software through 100+ unit tests and 30+ integration tests.",
+      technologies: ["Java", "JUnit"],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
+          type: "GitHub",
+          href: "https://github.com/arfazhxss/jabref",
+          icon: <Icons.github className="size-3" />
+        }
       ],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      video: ""
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "Ground Support System",
+      href: "https://github.com/UVicRocketry/Ground-Support",
+      dates: "Jul 2023 - Jan 2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
+        "Collaborated with a team to build telemetry software for analyzing rocket performance. Developed front-end components in TypeScript and integrated live telemetry data from MongoDB into MaterialUI tables for data visualization and post-flight analysis.",
+      technologies: ["React", "TypeScript", "MongoDB", "Figma"],
       links: [
         {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
+          type: "GitHub",
+          href: "https://github.com/UVicRocketry/Ground-Support",
+          icon: <Icons.github className="size-3" />
+        }
       ],
       image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      video: ""
     },
+    {
+      title: "Rubik's Cube (3D Simulation)",
+      href: "https://github.com/arfazhxss/rubiks-cube-cpp",
+      dates: "Feb 2023 - Jun 2023",
+      active: false,
+      description:
+        "Built a 3D Rubik's Cube simulation using C++ and OpenGL. Integrated keyboard controls and dynamic zoom features for enhanced user interaction.",
+      technologies: ["C++", "OpenGL", "GLSL"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/arfazhxss/rubiks-cube-cpp",
+          icon: <Icons.github className="size-3" />
+        }
+      ],
+      image: "",
+      video: ""
+    }
   ],
   hackathons: [
     {
