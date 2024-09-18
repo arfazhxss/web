@@ -240,9 +240,27 @@ export const DATA = {
   // ],
   projects: [
     {
+      title: "Automated Application System",
+      href: "https://github.com/arfazhxss/app-sys",
+      dates: "Dec 2023 - Present",
+      active: true,
+      description:
+        "Automated the job application process using Bash and Python. Utilized multithreading to optimize data extraction and processing, reducing runtime by 60%. Created command-line tools to improve workflow efficiency.",
+      technologies: ["Bash", "Python", "LaTeX"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/arfazhxss/app-sys",
+          icon: <Icons.github className="size-3" />
+        }
+      ],
+      image: "",
+      video: ""
+    },
+    {
       title: "Course Planner",
       href: "https://github.com/arfazhxss/course-planner",
-      dates: "Feb 2024 - Present",
+      dates: "Feb 2024",
       active: true,
       description:
         "Developed a course planning tool using Next.js to help students plan courses and track degree progress. Integrated PostgreSQL for database management and implemented drag-and-drop functionality with React. Designed the User Experience using TailwindCSS.",
@@ -257,24 +275,6 @@ export const DATA = {
         {
           type: "GitHub",
           href: "https://github.com/arfazhxss/course-planner",
-          icon: <Icons.github className="size-3" />
-        }
-      ],
-      image: "",
-      video: ""
-    },
-    {
-      title: "Automated Application System",
-      href: "https://github.com/arfazhxss/app-sys",
-      dates: "Dec 2023 - Present",
-      active: true,
-      description:
-        "Automated the job application process using Bash and Python. Utilized multithreading to optimize data extraction and processing, reducing runtime by 60%. Created command-line tools to improve workflow efficiency.",
-      technologies: ["Bash", "Python", "LaTeX"],
-      links: [
-        {
-          type: "GitHub",
-          href: "https://github.com/arfazhxss/app-sys",
           icon: <Icons.github className="size-3" />
         }
       ],
