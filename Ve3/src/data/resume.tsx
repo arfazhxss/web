@@ -334,7 +334,25 @@ export const DATA = {
       ],
       image: "",
       video: ""
-    }
+    },
+    {
+      title: "Tic-Tac-Toe Game",
+      href: "https://github.com/arfazhxss/tic-tac-toe-cpp",
+      dates: "Sep 2024 - Present",
+      active: true,
+      description:
+        "Developed a console-based Tic-Tac-Toe game in C++. The game features player turns, board updates, winner detection, and a tie state. The game flow includes checking for filled positions and ensuring a smooth turn-based system.",
+      technologies: ["C++", "Object-Priented Programming", "I/O Operations"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/arfazhxss/tic-tac-toe-cpp",
+          icon: <Icons.github className='size-3' />
+        }
+      ],
+      image: "",
+      video: ""
+    },
   ],
   hackathons: [
     {
