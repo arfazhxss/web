@@ -20,11 +20,17 @@ export default function Hackathons() {
                                 I like building things
                             </h2>
                             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                During my time in university, I participated in many hackathons
+                                where students from different universities and across campuses
+                                came together to build amazing projects within 8-24 hours or over
+                                2-3 days!
+                            </p>
+                            {/* <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                 During my time in university, I participated in over{" "}
                                 {DATA.hackathons.length}+ hackathons where students from
                                 different universities and across campuses came together
                                 to build amazing projects within 8-24 hours or over 2-3 days!
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </BlurFade>

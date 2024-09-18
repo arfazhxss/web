@@ -362,7 +362,7 @@ export const DATA = {
       description:
         "Developed Course Planner, a web application for University of Victoria students, utilizing NextJS, React, TailwindCSS, and Shadcn UI to simplify degree planning with a streamlined interface and progress tracking",
       image:
-        "Ve3/public/vikelabs.png",
+        "/vikelabs.png",
       mlh: "",
       links: [],
     },
