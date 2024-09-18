@@ -260,7 +260,7 @@ export const DATA = {
     {
       title: "CoopMe",
       href: "https://github.com/vikelabs/coopme",
-      dates: "Feb 2024-Present",
+      dates: "Feb 2024 - Present",
       active: true,
       description:
         "Developing a coop planning tool using Next.js to help students plan courses and track degree cooperative work terms. Integrated PostgreSQL for database management and implemented drag-and-drop functionality with React. Designed the User Experience using TailwindCSS.",
@@ -282,7 +282,7 @@ export const DATA = {
       video: ""
     },
     {
-      title: "Jabref - Open Source Contributions",
+      title: "Jabref [Open Source Contributions]",
       href: "https://github.com/arfazhxss/jabref",
       dates: "Dec 2023 - May 2024",
       active: true,
