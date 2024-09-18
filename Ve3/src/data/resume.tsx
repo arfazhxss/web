@@ -258,12 +258,12 @@ export const DATA = {
       video: ""
     },
     {
-      title: "Course Planner",
-      href: "https://github.com/arfazhxss/course-planner",
-      dates: "Feb 2024",
+      title: "CoopMe",
+      href: "https://github.com/vikelabs/coopme",
+      dates: "Feb 2024-Present",
       active: true,
       description:
-        "Developed a course planning tool using Next.js to help students plan courses and track degree progress. Integrated PostgreSQL for database management and implemented drag-and-drop functionality with React. Designed the User Experience using TailwindCSS.",
+        "Developing a coop planning tool using Next.js to help students plan courses and track degree cooperative work terms. Integrated PostgreSQL for database management and implemented drag-and-drop functionality with React. Designed the User Experience using TailwindCSS.",
       technologies: [
         "Next.js",
         "React",
@@ -362,8 +362,8 @@ export const DATA = {
       description:
         "Developed Course Planner, a web application for University of Victoria students, utilizing NextJS, React, TailwindCSS, and Shadcn UI to simplify degree planning with a streamlined interface and progress tracking",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+        "Ve3/public/vikelabs.png",
+      mlh: "",
       links: [],
     },
     //     {
