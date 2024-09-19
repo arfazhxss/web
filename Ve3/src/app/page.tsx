@@ -21,7 +21,7 @@ export default function Page() {
       <Work />
       <Skills />
       <Projects />
-      <Hackathons />
+      {/* <Hackathons /> */}
       <Contact />
       <Toaster />
     </main >
