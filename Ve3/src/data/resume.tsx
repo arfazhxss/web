@@ -9,9 +9,9 @@ export const DATA = {
   location: "Victoria, British Columbia",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "I am a software engineering student by day, and a full-stack developer by night — constantly learning and building along the way 🔧⚙️",
+    "I am a full-stack developer with 3+ years of experience, primarily focused on developing backened systems 🔧⚙️",
   summary:
-    "Currently, I'm an independent TypeScript Full-Stack developer based in British Columbia. At the beginning of 2021, I chose to step away from the familiar path and embrace new challenges that combine creativity with technology. My journey has involved [leading teams](#experiences), [organizing events](#volunteering-experiences), and [volunteering for causes](#volunteering-experiences) that matter to me. I'm passionate about using technology to drive change, whether through building software, mentoring others, or fostering community connections.\n\n",
+    "I have a passion for developing systems and automating processes. My journey with Java, Python, and TypeScript has equipped me with a solid grasp of diverse frameworks and databases. I enjoy diving into tools like Node.js, React, and PostgreSQL, and finding creative ways to make them work together seamlessly. I also have a keen interest in low-level, embedded and firmware engineering!",
   avatarUrl: "/me.png",
   skills: [
     "React",

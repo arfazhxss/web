@@ -20,7 +20,7 @@ export default function Hero() {
                             text={`I usually go by ${DATA.name.split(" ")[0]}`}
                         />
                         <BlurFadeText
-                            className="max-w-[600px] md:text-x font-noto-s-350"
+                            className="max-w-[600px] md:text-x font-light text-lg/relaxed"
                             delay={blurFadeDelay * 5}
                             text={DATA.description}
                         />

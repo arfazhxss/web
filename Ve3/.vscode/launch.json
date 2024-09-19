@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/arfaz/Desktop/Projects/WebPortfolio/Ve3",
+      "program": "/Users/arfaz/Desktop/Projects/WebPortfolio/Ve3/build/Debug/outDebug"
+    }
+  ]
+}
