@@ -282,7 +282,7 @@ export const DATA = {
       video: ""
     },
     {
-      title: "Jabref [Open Source Contributions]",
+      title: "Jabref (Open Source Contributions)",
       href: "https://github.com/arfazhxss/jabref",
       dates: "Dec 2023 - May 2024",
       active: true,
@@ -336,12 +336,30 @@ export const DATA = {
       video: ""
     },
     {
+      title: "Lexigraphy Context Mapper",
+      href: "https://github.com/yourusername/concordance-tool",
+      dates: "Sep 2022 - Nov 2022",
+      active: false,
+      description:
+        "Developed a command-line Python and C-based tool for generating keyword-in-context concordances from text files, indexing words and provides contextual analysis for advanced text exploration. The tool uses regular expressions for pattern matching and leverages Valgrind for optimal memory handling.",
+      technologies: ["Python", "C", "RegEx", "Valgrind", "Version Control"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/yourusername/concordance-tool",
+          icon: <Icons.github className="size-3" />
+        }
+      ],
+      image: "",
+      video: ""
+    },
+    {
       title: "Tic-Tac-Toe Game",
       href: "https://github.com/arfazhxss/tic-tac-toe-cpp",
-      dates: "Sep 2024 - Present",
+      dates: "Apr 2022 - Aug 2022",
       active: true,
       description:
-        "Developed a console-based Tic-Tac-Toe game in C++. The game features player turns, board updates, winner detection, and a tie state. The game flow includes checking for filled positions and ensuring a smooth turn-based system.",
+        "Developed a command-line Tic-Tac-Toe game in C++. The game features player turns, board updates, winner detection, and a tie state. The game flow includes checking for filled positions and ensuring a smooth turn-based system.",
       technologies: ["C++", "Object-Priented Programming", "I/O Operations"],
       links: [
         {
@@ -353,6 +371,24 @@ export const DATA = {
       image: "",
       video: ""
     },
+    {
+      title: "VEX Robotics Project",
+      href: "https://github.com/arfazhxss/vex-robotics-project",
+      dates: "Jan 2022 - Apr 2022",
+      active: false,
+      description:
+        "Developed and programmed a VEX Robot for ENGR120 Design II. Implemented mechanical and sensor-based functionalities, including movement, object placement, IR and sonar sensors for object detection, and obstacle avoidance.",
+      technologies: ["RobotC", "VEX EDR Kit", "IR Sensors", "Sonar Sensors", "Limit Switches"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/arfazhxss/vex-robotics-project",
+          icon: <Icons.github className="size-3" />
+        }
+      ],
+      image: "",
+      video: ""
+    }
   ],
   hackathons: [
     {
