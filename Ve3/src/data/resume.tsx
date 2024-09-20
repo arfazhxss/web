@@ -114,131 +114,25 @@ export const DATA = {
       end: "2020",
     }
   ],
-  // projects: [
-  //   {
-  //     title: "Chat Collect",
-  //     href: "https://chatcollect.com",
-  //     dates: "Jan 2024 - Feb 2024",
-  //     active: true,
-  //     description:
-  //       "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-  //     technologies: [
-  //       "Next.js",
-  //       "Typescript",
-  //       "PostgreSQL",
-  //       "Prisma",
-  //       "TailwindCSS",
-  //       "Stripe",
-  //       "Shadcn UI",
-  //       "Magic UI",
-  //     ],
-  //     links: [
-  //       {
-  //         type: "Website",
-  //         href: "https://chatcollect.com",
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //     ],
-  //     image: "",
-  //     video:
-  //       "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-  //   },
-  //   {
-  //     title: "Magic UI",
-  //     href: "https://magicui.design",
-  //     dates: "June 2023 - Present",
-  //     active: true,
-  //     description:
-  //       "Designed, developed and sold animated UI components for developers.",
-  //     technologies: [
-  //       "Next.js",
-  //       "Typescript",
-  //       "PostgreSQL",
-  //       "Prisma",
-  //       "TailwindCSS",
-  //       "Stripe",
-  //       "Shadcn UI",
-  //       "Magic UI",
-  //     ],
-  //     links: [
-  //       {
-  //         type: "Website",
-  //         href: "https://magicui.design",
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //       {
-  //         type: "Source",
-  //         href: "https://github.com/magicuidesign/magicui",
-  //         icon: <Icons.github className="size-3" />,
-  //       },
-  //     ],
-  //     image: "",
-  //     video: "https://cdn.magicui.design/bento-grid.mp4",
-  //   },
-  //   {
-  //     title: "llm.report",
-  //     href: "https://llm.report",
-  //     dates: "April 2023 - September 2023",
-  //     active: true,
-  //     description:
-  //       "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-  //     technologies: [
-  //       "Next.js",
-  //       "Typescript",
-  //       "PostgreSQL",
-  //       "Prisma",
-  //       "TailwindCSS",
-  //       "Shadcn UI",
-  //       "Magic UI",
-  //       "Stripe",
-  //       "Cloudflare Workers",
-  //     ],
-  //     links: [
-  //       {
-  //         type: "Website",
-  //         href: "https://llm.report",
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //       {
-  //         type: "Source",
-  //         href: "https://github.com/dillionverma/llm.report",
-  //         icon: <Icons.github className="size-3" />,
-  //       },
-  //     ],
-  //     image: "",
-  //     video: "https://cdn.llm.report/openai-demo.mp4",
-  //   },
-  //   {
-  //     title: "Automatic Chat",
-  //     href: "https://automatic.chat",
-  //     dates: "April 2023 - March 2024",
-  //     active: true,
-  //     description:
-  //       "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-  //     technologies: [
-  //       "Next.js",
-  //       "Typescript",
-  //       "PostgreSQL",
-  //       "Prisma",
-  //       "TailwindCSS",
-  //       "Shadcn UI",
-  //       "Magic UI",
-  //       "Stripe",
-  //       "Cloudflare Workers",
-  //     ],
-  //     links: [
-  //       {
-  //         type: "Website",
-  //         href: "https://automatic.chat",
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //     ],
-  //     image: "",
-  //     video:
-  //       "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-  //   },
-  // ],
   projects: [
+    {
+      title: "SmartMed: Medical Information & Resource System",
+      href: "https://github.com/arfazhxss/smart-med",
+      dates: "Sep 2024 - Present",
+      active: true,
+      description:
+        "Currently designing a medical information system using a microservices architecture and UML diagrams through constructing a prototype using the Flask framework in Python and REST APIs.",
+      technologies: ["Python", "Flask", "REST APIs", "Microservices", "UML", "Design Patterns"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/arfazhxss/mister-ed",
+          icon: <Icons.github className="size-3" />
+        }
+      ],
+      image: "",
+      video: ""
+    },
     {
       title: "Automated Application System",
       href: "https://github.com/arfazhxss/app-sys",
@@ -360,7 +254,7 @@ export const DATA = {
       active: true,
       description:
         "Developed a command-line Tic-Tac-Toe game in C++. The game features player turns, board updates, winner detection, and a tie state. The game flow includes checking for filled positions and ensuring a smooth turn-based system.",
-      technologies: ["C++", "Object-Priented Programming", "I/O Operations"],
+      technologies: ["C++", "Object-Oriented Design", "I/O Operations"],
       links: [
         {
           type: "GitHub",
@@ -388,7 +282,26 @@ export const DATA = {
       ],
       image: "",
       video: ""
+    },
+    {
+      title: "T-Rex Game (Java-based)",
+      href: "https://github.com/arfazhxss/T-Rex",
+      dates: "Aug 2021 - Dec 2021",
+      active: false,
+      description:
+        "Recreated Google's offline T-Rex game using object-oriented design in Java. Implemented game mechanics like jumping, obstacle collision detection, and scoring, along with smooth game rendering using Java Swing.",
+      technologies: ["Java", "Object-Oriented Design", "Swing"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/arfazhxss/T-Rex",
+          icon: <Icons.github className="size-3" />
+        }
+      ],
+      image: "",
+      video: ""
     }
+
   ],
   hackathons: [
     {
