@@ -240,7 +240,7 @@ export const DATA = {
       links: [
         {
           type: "GitHub",
-          href: "https://github.com/yourusername/concordance-tool",
+          href: "https://github.com/arfazhxss/lexigraph",
           icon: <Icons.github className="size-3" />
         }
       ],
