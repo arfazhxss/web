@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "I am a full-stack developer with 3+ years of experience, primarily focused on developing backend systems 🔧⚙️",
   summary:
-    "I have a passion for developing systems and automating processes. My journey with Java, Python, and TypeScript has equipped me with a solid grasp of diverse frameworks and databases. I enjoy diving into tools like Node.js, React, and PostgreSQL, and finding creative ways to make them work together seamlessly. I also have a keen interest in low-level, embedded and firmware engineering!",
+    "I have a passion for developing systems and automating processes. My journey with Java, Python, SQL and TypeScript has equipped me with a solid grasp of understanding over many frameworks and databases. I enjoy diving into tools like Node.js, React, and PostgreSQL, and finding creative ways to make them work together. I also have a keen interest in low-level, embedded and firmware engineering!",
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -107,7 +107,7 @@ export const DATA = {
     },
     {
       school: "Dhaka Residential Model College",
-      href: "https://drmc.edu.bd",
+      href: "http://www.drmc.edu.bd",
       degree: "Elementary, Middle and High School",
       logoUrl: "/drmc.png",
       start: "2010",
