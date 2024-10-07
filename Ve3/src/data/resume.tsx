@@ -9,9 +9,9 @@ export const DATA = {
   location: "Victoria, British Columbia",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "I am a full-stack developer with 3+ years of experience, primarily focused on developing backend systems 🔧⚙️",
+    "I am a full-stack developer with 3+ years of experience, primarily focused on developing cloud and backend processes 🔧⚙️",
   summary:
-    "I have a passion for developing systems and automating processes. My journey with Java, Python, SQL and TypeScript has equipped me with a solid grasp of understanding over many frameworks and databases. I enjoy diving into tools like Node.js, React, and PostgreSQL, and finding creative ways to make them work together. I also have a keen interest in low-level, embedded and firmware engineering!",
+    "I have a passion for developing systems and automating processes. I have extensive experience with Java, Python, SQL, and TypeScript, which has provided me with a solid understanding of various frameworks and databases. I am proficient in working with tools such as Node.js, React, and PostgreSQL, and excel at integrating them to develop robust, efficient systems. I also have a keen interest in low-level, embedded and firmware engineering!",
   avatarUrl: "/me.png",
   skills: [
     "React",
