@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useRef, useEffect, useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Section } from 'lucide-react'
 import { Card, CardContent } from "@/components/ui/card"
 import BlurFade from "@/components/magicui/blur-fade";
 import { useBlurFadeDelay } from "@/components/context/BlurFadeContext";
@@ -102,82 +102,84 @@ export default function Timeline() {
     const totalMonths = (END_YEAR - START_YEAR + 1) * 12
 
     return (
-        <Card className="w-full max-w-2xl mx-auto">
-            <CardContent className="p-4">
-                <BlurFade delay={blurFadeDelay * 5}>
-                    <h2 className="text-lg font-bold mb-2 text-center">Timeline Graph</h2>
-                </BlurFade>
-                <div className="relative">
-                    <button
-                        onClick={() => handleScroll('left')}
-                        className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-1 rounded-full shadow-md"
-                        aria-label="Scroll left"
-                    >
-                        <ChevronLeft className="h-3 w-3" />
-                    </button>
-                    <button
-                        onClick={() => handleScroll('right')}
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-1 rounded-full shadow-md"
-                        aria-label="Scroll right"
-                    >
-                        <ChevronRight className="h-3 w-3" />
-                    </button>
-                    <BlurFade delay={blurFadeDelay * 7}>
-                        <div
-                            ref={scrollContainerRef}
-                            className="overflow-x-scroll scrollbar-hide"
+        <section id="timeline">
+            <BlurFade delay={blurFadeDelay * 5}>
+                <h2 className="text-xl font-bold">Interactive Timeline</h2>
+            </BlurFade>
+            <Card className="w-full max-w-2xl mx-auto">
+                <CardContent className="p-4">
+                    <div className="relative">
+                        <button
+                            onClick={() => handleScroll('left')}
+                            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-1 rounded-full shadow-md"
+                            aria-label="Scroll left"
                         >
-                            <div className="w-[900px] h-[200px] relative">
-                                {/* Year labels */}
-                                <div className="absolute top-0 left-0 w-full h-4 flex">
-                                    {Array.from({ length: END_YEAR - START_YEAR + 1 }, (_, i) => START_YEAR + i).map((year) => (
-                                        <div key={year} className="flex-1 border-l border-gray-300 text-[8px] text-center">
-                                            {year}
-                                        </div>
-                                    ))}
+                            <ChevronLeft className="h-3 w-3" />
+                        </button>
+                        <button
+                            onClick={() => handleScroll('right')}
+                            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-1 rounded-full shadow-md"
+                            aria-label="Scroll right"
+                        >
+                            <ChevronRight className="h-3 w-3" />
+                        </button>
+                        <BlurFade delay={blurFadeDelay * 7}>
+                            <div
+                                ref={scrollContainerRef}
+                                className="overflow-x-scroll scrollbar-hide"
+                            >
+                                <div className="w-[900px] h-[200px] relative">
+                                    {/* Year labels */}
+                                    <div className="absolute top-0 left-0 w-full h-4 flex">
+                                        {Array.from({ length: END_YEAR - START_YEAR + 1 }, (_, i) => START_YEAR + i).map((year) => (
+                                            <div key={year} className="flex-1 border-l border-gray-300 text-[8px] text-center">
+                                                {year}
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    {/* Timeline bars */}
+                                    {timelineData.map((item, index) => {
+                                        const [startStr, endStr] = item.timeline.split(' - ')
+                                        const start = parseDate(startStr)
+                                        const end = endStr ? parseDate(endStr) : new Date()
+                                        const startMonth = getMonthsBetween(new Date(START_YEAR, 0), start)
+                                        const duration = getMonthsBetween(start, end)
+
+                                        return (
+                                            <BlurFade key={item.name} delay={blurFadeDelay * (9 + index * 2)}>
+                                                <button
+                                                    className={`absolute h-3 cursor-pointer transition-all duration-200 hover:bg-muted/50 ${categoryStyles[item.category]}`}
+                                                    style={{
+                                                        left: `${(startMonth / totalMonths) * 100}%`,
+                                                        width: `${(duration / totalMonths) * 100}%`,
+                                                        top: `${20 + index * 9}px`,
+                                                    }}
+                                                    onClick={() => setActiveItem(item)}
+                                                    onKeyDown={(e) => e.key === 'Enter' && setActiveItem(item)}
+                                                    aria-label={`${item.name}: ${item.timeline}`}
+                                                >
+                                                    <span className="absolute left-1 top-1/2 transform -translate-y-1/2 text-[6px] font-semibold text-foreground truncate w-full pr-1">
+                                                        {item.name}
+                                                    </span>
+                                                </button>
+                                            </BlurFade>
+                                        )
+                                    })}
                                 </div>
-
-                                {/* Timeline bars */}
-                                {timelineData.map((item, index) => {
-                                    const [startStr, endStr] = item.timeline.split(' - ')
-                                    const start = parseDate(startStr)
-                                    const end = endStr ? parseDate(endStr) : new Date()
-                                    const startMonth = getMonthsBetween(new Date(START_YEAR, 0), start)
-                                    const duration = getMonthsBetween(start, end)
-
-                                    return (
-                                        <BlurFade key={item.name} delay={blurFadeDelay * (9 + index * 2)}>
-                                            <button
-                                                className={`absolute h-3 cursor-pointer transition-all duration-200 hover:bg-muted/50 ${categoryStyles[item.category]}`}
-                                                style={{
-                                                    left: `${(startMonth / totalMonths) * 100}%`,
-                                                    width: `${(duration / totalMonths) * 100}%`,
-                                                    top: `${20 + index * 9}px`,
-                                                }}
-                                                onClick={() => setActiveItem(item)}
-                                                onKeyDown={(e) => e.key === 'Enter' && setActiveItem(item)}
-                                                aria-label={`${item.name}: ${item.timeline}`}
-                                            >
-                                                <span className="absolute left-1 top-1/2 transform -translate-y-1/2 text-[6px] font-semibold text-foreground truncate w-full pr-1">
-                                                    {item.name}
-                                                </span>
-                                            </button>
-                                        </BlurFade>
-                                    )
-                                })}
                             </div>
-                        </div>
-                    </BlurFade>
-                </div>
-                {activeItem && (
-                    <BlurFade delay={blurFadeDelay * (9 + timelineData.length * 2)}>
-                        <div className="mt-2 text-center">
-                            <h3 className="text-sm font-semibold">{activeItem.name}</h3>
-                            <p className="text-xs text-muted-foreground">{activeItem.timeline}</p>
-                        </div>
-                    </BlurFade>
-                )}
-            </CardContent>
-        </Card>
+                        </BlurFade>
+                    </div>
+                    {activeItem && (
+                        <BlurFade delay={blurFadeDelay * (9 + timelineData.length * 2)}>
+                            <div className="mt-2 text-center">
+                                <h3 className="text-sm font-semibold">{activeItem.name}</h3>
+                                <p className="text-xs text-muted-foreground">{activeItem.timeline}</p>
+                            </div>
+                        </BlurFade>
+                    )}
+                </CardContent>
+            </Card>
+        </section>
     )
 }
