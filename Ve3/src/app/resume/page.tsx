@@ -55,7 +55,7 @@ export default function ResumePage() {
                         </Button>
                     </div>
                 </div>
-                <div className="w-full max-w-9xl mx-auto overflow-hidden rounded-lg border border-gray-600 bg-gray-800">
+                <div className="w-full max-w-9xl mx-auto overflow-hidden border border-white-200 bg-slate-950">
                     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
                         <div style={{ height: 'calc(100vh - 200px)' }}>
                             <Viewer
