@@ -114,14 +114,14 @@ export default function Timeline() {
                             className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-1 rounded-full shadow-md"
                             aria-label="Scroll left"
                         >
-                            <ChevronLeft className="h-2 w-3" />
+                            <ChevronLeft className="h-6 w-6" />
                         </button>
                         <button
                             onClick={() => handleScroll('right')}
                             className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-1 rounded-full shadow-md"
                             aria-label="Scroll right"
                         >
-                            <ChevronRight className="h-6 w-3" />
+                            <ChevronRight className="h-6 w-6" />
                         </button>
                         <BlurFade delay={blurFadeDelay * 7}>
                             <div
