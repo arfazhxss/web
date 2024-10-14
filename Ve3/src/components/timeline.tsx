@@ -13,8 +13,8 @@ interface TimelineItem {
 }
 
 const timelineData: TimelineItem[] = [
-    { "name": "Software Team Lead", "timeline": "Feb 2023 - Present", "category": "work" },
-    { "name": "Data Analyst and Marketing Intern", "timeline": "Jan 2021 - Aug 2021", "category": "work" },
+    { "name": "Administrator and Software Team Lead, VikeLabs", "timeline": "Feb 2023 - Present", "category": "work" },
+    { "name": "Data Analyst and Marketing Intern, MTPL", "timeline": "Jan 2021 - Aug 2021", "category": "work" },
     { "name": "Bachelor of Engineering in Software Engineering, University of Victoria", "timeline": "Sep 2021 - May 2026 (Expected)", "category": "education" },
     { "name": "Course Planner", "timeline": "Feb 2024 - Present", "category": "project" },
     { "name": "Automated Application System", "timeline": "Dec 2023 - Present", "category": "project" },
@@ -114,25 +114,25 @@ export default function Timeline() {
                             className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-1 rounded-full shadow-md"
                             aria-label="Scroll left"
                         >
-                            <ChevronLeft className="h-3 w-3" />
+                            <ChevronLeft className="h-2 w-3" />
                         </button>
                         <button
                             onClick={() => handleScroll('right')}
                             className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-1 rounded-full shadow-md"
                             aria-label="Scroll right"
                         >
-                            <ChevronRight className="h-3 w-3" />
+                            <ChevronRight className="h-6 w-3" />
                         </button>
                         <BlurFade delay={blurFadeDelay * 7}>
                             <div
                                 ref={scrollContainerRef}
                                 className="overflow-x-scroll scrollbar-hide"
                             >
-                                <div className="w-[900px] h-[200px] relative">
+                                <div className="w-[786px] h-[450px] relative">
                                     {/* Year labels */}
-                                    <div className="absolute top-0 left-0 w-full h-4 flex">
+                                    <div className="absolute top-[calc(10%-50px)] left-0 w-full h-max flex items-center justify-flex">
                                         {Array.from({ length: END_YEAR - START_YEAR + 1 }, (_, i) => START_YEAR + i).map((year) => (
-                                            <div key={year} className="flex-1 border-l border-gray-300 text-[8px] text-center">
+                                            <div key={year} className="flex-1 border-l-2 h-max border-gray-300 text-[10px] text-center">
                                                 {year}
                                             </div>
                                         ))}
@@ -149,11 +149,11 @@ export default function Timeline() {
                                         return (
                                             <BlurFade key={item.name} delay={blurFadeDelay * (9 + index * 2)}>
                                                 <button
-                                                    className={`absolute h-3 cursor-pointer transition-all duration-200 hover:bg-muted/50 ${categoryStyles[item.category]}`}
+                                                    className={`absolute h-5 cursor-pointer transition-all duration-200 hover:bg-muted/50 ${categoryStyles[item.category]}`}
                                                     style={{
                                                         left: `${(startMonth / totalMonths) * 100}%`,
                                                         width: `${(duration / totalMonths) * 100}%`,
-                                                        top: `${20 + index * 9}px`,
+                                                        top: `${20 + index * 20}px`,
                                                     }}
                                                     onClick={() => setActiveItem(item)}
                                                     onKeyDown={(e) => e.key === 'Enter' && setActiveItem(item)}
