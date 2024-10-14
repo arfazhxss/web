@@ -35,7 +35,7 @@ export default function PreHeroTitle() {
                         xs:text-xs 
                         sm:text-sm 
                         md:text-md
-                        lg:text-lg">Seeking Spring 2025 Co-op opportunities!</p>
+                        lg:text-lg">Seeking Spring 2025 Co-op roles!</p>
                 </div>
                 <h1
                     className={`absolute 
