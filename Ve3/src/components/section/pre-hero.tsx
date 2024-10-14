@@ -35,9 +35,9 @@ export default function PreHeroTitle() {
                 <h1
                     className={`absolute 
                         top-[calc(30%+1px)]         /* Default */
-                        sm:top-[calc(20%+1px)]      /* Small screens */
-                        md:top-[calc(20%+5px)]      /* Medium screens */
-                        lg:top-[calc(20%+10px)]     /* Large screens */
+                        sm:top-[calc(25%+1px)]      /* Small screens */
+                        md:top-[calc(25%+5px)]      /* Medium screens */
+                        lg:top-[calc(25%+10px)]     /* Large screens */
                         text-5xl                    /* Default font size */
                         sm:text-6xl                 /* Small screens font size */
                         md:text-7xl                 /* Medium screens font size */
@@ -51,9 +51,9 @@ export default function PreHeroTitle() {
                 <div className="
                         absolute 
                         top-[calc(30%+30px)]        /* Default */
-                        sm:top-[calc(20%+35px)]     /* Small screens */
-                        md:top-[calc(20%+47px)]     /* Medium screens */
-                        lg:top-[calc(20%+65px)]     /* Large screens */
+                        sm:top-[calc(25%+35px)]     /* Small screens */
+                        md:top-[calc(25%+47px)]     /* Medium screens */
+                        lg:top-[calc(25%+65px)]     /* Large screens */
                         animate-fade-in 
                         delay-[10s] 
                         flex 
@@ -69,9 +69,9 @@ export default function PreHeroTitle() {
                 </div>
                 <div className="absolute 
                         top-[calc(30%+70px)] 
-                        sm:top-[calc(20%+70px)]     /* Small screens */
-                        md:top-[calc(20%+90px)]     /* Medium screens */
-                        lg:top-[calc(20%+115px)]    /* Large screens */
+                        sm:top-[calc(25%+70px)]     /* Small screens */
+                        md:top-[calc(25%+90px)]     /* Medium screens */
+                        lg:top-[calc(25%+115px)]    /* Large screens */
                         animate-fade-in delay-[10s] flex gap-2">
                     <Button asChild variant={'outline'} size="sm">
                         <Link href="/resume.pdf">
@@ -82,9 +82,9 @@ export default function PreHeroTitle() {
                 </div>
                 <div className="absolute 
                         top-[calc(49%+100px)] 
-                        sm:top-[calc(39%+100px)]     /* Small screens */
-                        md:top-[calc(39%+100px)]    /* Medium screens */
-                        lg:top-[calc(39%+150px)]    /* Large screens */
+                        sm:top-[calc(43%+100px)]     /* Small screens */
+                        md:top-[calc(43%+100px)]    /* Medium screens */
+                        lg:top-[calc(43%+150px)]    /* Large screens */
                         right-1/2 left-1/2 transform -translate-x-1/2 z-10">
                     <ScrollDownArrow />
                 </div>
