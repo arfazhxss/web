@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
 import { Viewer, Worker } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import { zoomPlugin } from '@react-pdf-viewer/zoom';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
@@ -9,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Download, ZoomIn, ZoomOut } from "lucide-react";
 
 export default function ResumePage() {
-    const defaultLayoutPluginInstance = defaultLayoutPlugin();
     const zoomPluginInstance = zoomPlugin();
     const { ZoomIn: ZoomInButton, ZoomOut: ZoomOutButton } = zoomPluginInstance;
 
