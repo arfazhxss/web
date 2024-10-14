@@ -2,8 +2,8 @@ import PreHeroTitle from "@/components/section/pre-hero";
 import FrontParticles from "@/components/section/front-particles";
 import Hero from "@/components/section/hero";
 import About from "@/components/section/about";
-import Education from "@/components/section/education";
-import Work from "@/components/section/work";
+// import Education from "@/components/section/education";
+// import Work from "@/components/section/work";
 import Skills from "@/components/section/skills";
 import Projects from "@/components/section/projects";
 // import Hackathons from "@/components/section/hackathons";
@@ -17,8 +17,8 @@ export default function Page() {
       <PreHeroTitle />
       <Hero />
       <About />
-      <Education />
-      <Work />
+      {/* <Education /> */}
+      {/* <Work /> */}
       <Skills />
       <Projects />
       {/* <Hackathons /> */}
