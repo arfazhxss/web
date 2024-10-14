@@ -9,7 +9,7 @@ import Projects from "@/components/section/projects";
 // import Hackathons from "@/components/section/hackathons";
 import Contact from "@/components/section/contact";
 import Timeline from "@/components/timeline";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 
 export default function Page() {
   return (

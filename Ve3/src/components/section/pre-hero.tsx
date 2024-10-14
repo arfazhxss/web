@@ -79,7 +79,7 @@ export default function PreHeroTitle() {
                         lg:top-[calc(25%+115px)]    /* Large screens */
                         animate-fade-in delay-[10s] flex gap-2">
                     <Button asChild variant={'outline'} size="sm">
-                        <Link href="/resume.pdf">
+                        <Link href="/resume">
                             View Resume <ArrowUpRightIcon className="ml-2 size-4" />
                         </Link>
                     </Button>
