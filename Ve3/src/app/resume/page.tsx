@@ -7,7 +7,7 @@ export default function ResumePage() {
             </header>
             <div className="mb-12">
                 <h2 className="text-2xl font-semibold mb-3">My Resume</h2>
-                <div className="aspect-[20.5/25] w-full max-w-9xl mx-auto overflow-hidden rounded-lg border bg-muted">
+                <div className="aspect-[8/23.5] w-full max-w-9xl mx-auto overflow-hidden rounded-lg border bg-muted">
                     <iframe
                         src="/resume.pdf"
                         className="w-full h-full"
