@@ -6,7 +6,7 @@ import Education from "@/components/section/education";
 import Work from "@/components/section/work";
 import Skills from "@/components/section/skills";
 import Projects from "@/components/section/projects";
-import Hackathons from "@/components/section/hackathons";
+// import Hackathons from "@/components/section/hackathons";
 import Contact from "@/components/section/contact";
 import { Toaster } from "@/components/ui/toaster"
 
