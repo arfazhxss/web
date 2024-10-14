@@ -71,7 +71,7 @@ const categoryStyles: { [key: string]: string } = {
 
 export default function Timeline() {
     const [activeItem, setActiveItem] = useState<TimelineItem | null>(
-        timelineData.find(item => item.name.includes("Bachelor of Engineering in Software Engineering"))
+        timelineData.find(item => item.name.includes("Bachelor of Engineering in Software Engineering")) || null
     )
     const scrollContainerRef = useRef<HTMLDivElement>(null)
     const blurFadeDelay = useBlurFadeDelay();
