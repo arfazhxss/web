@@ -30,7 +30,7 @@ export default function PreHeroTitle() {
                         lg:top-[calc(10%-100px)]     /* Large screens */
                         flex flex-row slide-out-to-left-1/2 items-center pr-8 animate-fade-in delay-[10s] z-10">
                     <div className="blob green"></div>
-                    <p className="font-medium text-sm md:text-md">Available For Work</p>
+                    <p className="font-medium text-sm md:text-md">Currently looking for Spring 2025 Co-ops!</p>
                 </div>
                 <h1
                     className={`absolute 

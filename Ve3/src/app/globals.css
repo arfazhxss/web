@@ -279,7 +279,7 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
     transform: scale(1);
     background: rgb(32 243 194);
     box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
-    animation: pulse-green 2s infinite;
+    animation: pulse-green 2s infinite, change-color 4s infinite;
 }
 
 @keyframes pulse-green {
@@ -302,21 +302,21 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 @keyframes change-color {
     0%, 100% {
         background: rgb(32, 243, 194);
-        box-shadow: 0 0 0 0 rgba(32, 243, 194, 0.814);
+        /* box-shadow: 0 0 0 0 rgba(32, 243, 194, 0.814); */
     }
 
     25% {
         background: rgb(46, 204, 113);
-        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.814);
+        /* box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.814); */
     }
 
     50% {
         background: rgb(39, 174, 96);
-        box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.814);
+        /* box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.814); */
     }
 
     75% {
         background: rgb(0, 230, 118);
-        box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.814);
+        /* box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.814); */
     }
 }
