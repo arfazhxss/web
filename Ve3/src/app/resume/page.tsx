@@ -62,7 +62,7 @@ export default function ResumePage() {
                         <div style={{ height: 'calc(100vh - 200px)' }}>
                             <Viewer
                                 fileUrl="/resume.pdf"
-                                plugins={[defaultLayoutPluginInstance, zoomPluginInstance]}
+                                plugins={[zoomPluginInstance]}
                                 theme="dark"
                             />
                         </div>
