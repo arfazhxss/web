@@ -17,10 +17,11 @@ export default function ResumePage() {
                 <h2 className="font-semibold mb-3 text-lg md:text-lg lg:text-2xl">
                     My Resume
                 </h2>
-                <div className="w-full max-w-9xl mx-auto h-[1200px] overflow-hidden rounded-lg border bg-muted">
+                <div className="w-full max-w-9xl mx-auto overflow-hidden rounded-lg border bg-muted">
                     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
                         <Viewer
                             fileUrl="/resume.pdf"
+                            defaultScale={1}
                         />
                     </Worker>
                 </div>
