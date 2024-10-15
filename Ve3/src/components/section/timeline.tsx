@@ -159,7 +159,13 @@ export default function Timeline() {
                                                     onKeyDown={(e) => e.key === 'Enter' && setActiveItem(item)}
                                                     aria-label={`${item.name}: ${item.timeline}`}
                                                 >
-                                                    <span className="absolute left-1 top-1/2 transform -translate-y-1/2 text-[6px] font-semibold text-foreground truncate w-full pr-1">
+                                                    <span className="
+                                                        absolute 
+                                                        text-[8px]
+                                                        sm:text-[8px]
+                                                        md:text-[9px]
+                                                        lg:text-[10px]
+                                                        left-1 top-1/2 transform -translate-y-1/2 font-semibold text-foreground truncate w-full pr-1">
                                                         {item.name}
                                                     </span>
                                                 </button>
