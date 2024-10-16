@@ -18,7 +18,7 @@ export default function Page() {
       <PreHeroTitle />
       <Hero />
       <About />
-      <Timeline />
+      {/* <Timeline /> */}
       {/* <Education /> */}
       {/* <Work /> */}
       <Skills />

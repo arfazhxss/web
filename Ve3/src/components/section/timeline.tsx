@@ -13,26 +13,26 @@ interface TimelineItem {
 }
 
 const timelineData: TimelineItem[] = [
-    { "name": "Administrator and Software Team Lead, VikeLabs", "timeline": "Feb 2023 - Present", "category": "work" },
+    { "name": "Complete Web Bootcamp - Udemy, Angela Yu", "timeline": "2021 - 2022", "category": "course" },
     { "name": "Data Analyst and Marketing Intern, MTPL", "timeline": "Jan 2021 - Aug 2021", "category": "work" },
-    { "name": "Bachelor of Engineering in Software Engineering, University of Victoria", "timeline": "Sep 2021 - May 2026 (Expected)", "category": "education" },
-    { "name": "Course Planner", "timeline": "Feb 2024 - Present", "category": "project" },
-    { "name": "Automated Application System", "timeline": "Dec 2023 - Present", "category": "project" },
-    { "name": "Jabref - Open Source Contributions", "timeline": "Dec 2023 - May 2024", "category": "project" },
-    { "name": "Ground Support System", "timeline": "Jul 2023 - Jan 2024", "category": "project" },
-    { "name": "Rubik's Cube (3D Simulation)", "timeline": "Feb 2023 - Jun 2023", "category": "project" },
-    { "name": "Lexicographic Context Mapper", "timeline": "May 2023 - Aug 2023", "category": "project" },
-    { "name": "VEX Robotics Project", "timeline": "Jan 2022 - Apr 2022", "category": "project" },
     { "name": "T-Rex Game - Java Implementation", "timeline": "Aug 2021 - Dec 2021", "category": "project" },
-    { "name": "Next.js & React.js - Udemy, Maximilian Schwarzmüller", "timeline": "2024", "category": "course" },
-    { "name": "Understanding TypeScript - Udemy, Maximilian Schwarzmüller", "timeline": "2024", "category": "course" },
-    { "name": "Computational Geometry Algorithm in C++ - Udemy, Kasun Liyanage", "timeline": "2024", "category": "course" },
+    { "name": "Bachelor of Engineering in Software Engineering, University of Victoria", "timeline": "Sep 2021 - May 2026 (Expected)", "category": "education" },
+    { "name": "VEX Robotics Project", "timeline": "Jan 2022 - Apr 2022", "category": "project" },
     { "name": "BackEnd Development in Node.js & Express - Udemy, Jonas Schmedtmann", "timeline": "2022 - 2024", "category": "course" },
+    { "name": "JavaScript ES6 - Udemy, Jonas Schmedtmann", "timeline": "2022 - 2023", "category": "course" },
+    { "name": "Administrator and Software Team Lead, VikeLabs", "timeline": "Feb 2023 - Present", "category": "work" },
+    { "name": "Rubik's Cube (3D Simulation)", "timeline": "Feb 2023 - Jun 2023", "category": "project" },
     { "name": "Agile Fundamentals: Scrum & Kanban - Udemy", "timeline": "2023", "category": "course" },
     { "name": "Computer Graphics with Modern OpenGL & C++ - Udemy, Ben Cook", "timeline": "2023", "category": "course" },
     { "name": "Data Structures & Algorithms in C and C++ - Udemy, Abdul Bari", "timeline": "2023", "category": "course" },
-    { "name": "JavaScript ES6 - Udemy, Jonas Schmedtmann", "timeline": "2022 - 2023", "category": "course" },
-    { "name": "Complete Web Bootcamp - Udemy, Angela Yu", "timeline": "2021", "category": "course" }
+    { "name": "Lexicographic Context Mapper", "timeline": "May 2023 - Aug 2023", "category": "project" },
+    { "name": "Ground Support System", "timeline": "Jul 2023 - Jan 2024", "category": "project" },
+    { "name": "Next.js & React.js - Udemy, Maximilian Schwarzmüller", "timeline": "2024", "category": "course" },
+    { "name": "Understanding TypeScript - Udemy, Maximilian Schwarzmüller", "timeline": "2024", "category": "course" },
+    { "name": "Computational Geometry Algorithm in C++ - Udemy, Kasun Liyanage", "timeline": "2024", "category": "course" },
+    { "name": "Course Planner", "timeline": "Feb 2024 - Present", "category": "project" },
+    { "name": "Automated Application System", "timeline": "Dec 2023 - Present", "category": "project" },
+    { "name": "Jabref - Open Source Contributions", "timeline": "Dec 2023 - May 2024", "category": "project" }
 ]
 
 const START_YEAR = 2021
@@ -153,7 +153,7 @@ export default function Timeline() {
                                                     style={{
                                                         left: `${(startMonth / totalMonths) * 100}%`,
                                                         width: `${(duration / totalMonths) * 100}%`,
-                                                        top: `${20 + index * 20}px`,
+                                                        top: `${25 + index * 20}px`,
                                                     }}
                                                     onClick={() => setActiveItem(item)}
                                                     onKeyDown={(e) => e.key === 'Enter' && setActiveItem(item)}
